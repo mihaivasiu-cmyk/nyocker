@@ -1,0 +1,546 @@
+{
+ "events": [
+  {
+   "color": "#5be37d",
+   "d": "Flea market: clothes, accessories, books, records. Last listing we found: 16 May 2026.",
+   "id": "zsibi",
+   "place": "Teleki téri piac",
+   "spot": "teleki",
+   "title": "Teleki Zsibi",
+   "when": "Next date TBA"
+  },
+  {
+   "color": "#ff5fa2",
+   "d": "Concerts, film screenings and the rooftop. Your bill goes here.",
+   "id": "golyanight",
+   "place": "Gólya, Orczy út 46-48",
+   "spot": "golya",
+   "title": "Gólya gig night",
+   "when": "Line-up TBA"
+  },
+  {
+   "color": "#4cc9f0",
+   "d": "In 2024: late November to December, with metal samba, Renaissance music and a free ice rink.",
+   "id": "tervarazs",
+   "place": "Horváth Mihály tér",
+   "spot": "horvath",
+   "title": "Térvarázs winter",
+   "when": "2026 dates TBA"
+  },
+  {
+   "color": "#f8b800",
+   "d": "Evening music series. Ran in January, February and March 2026.",
+   "id": "cafe",
+   "place": "Józsefvárosi Múzeum",
+   "spot": "museum",
+   "title": "Gypsy Music Café",
+   "when": "Next date TBA"
+  },
+  {
+   "color": "#ff7a59",
+   "d": "Free family festival. Last edition: 13 June 2026.",
+   "id": "feszt",
+   "place": "Józsefváros",
+   "spot": "matyas",
+   "title": "8Feszt",
+   "when": "2027 date TBA"
+  }
+ ],
+ "radio": [
+  {
+   "artist": "Lego Lassi",
+   "color": "#4cc9f0",
+   "meta": "2024. Budapest space jazz.",
+   "player": "album=2399067455",
+   "release": "Lego Lassi",
+   "url": "https://legolassi.bandcamp.com/album/lego-lassi",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Hét Hat Club",
+   "color": "#ff7a59",
+   "meta": "2019. Balkan dance party from street musicians who met in Budapest.",
+   "player": "album=1053993976",
+   "release": "Schengen Shuffle",
+   "url": "https://hethatclub.bandcamp.com/album/schengen-shuffle",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Decolonize Your Mind Society",
+   "color": "#ff5fa2",
+   "meta": "2023. Microtonal psych jazz.",
+   "player": "album=3484831750",
+   "release": "A Second Invitation To An Uninterrupted Katabatic Lens",
+   "url": "https://decolonizeyourmind.bandcamp.com/album/a-second-invitation-to-an-uninterrupted-katabatic-lens",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Zakhorov",
+   "color": "#5be37d",
+   "meta": "2025. Debut solo single from Budapest flautist Fanni Zahár.",
+   "player": "track=2480828434",
+   "release": "Catalin",
+   "url": "https://zakhorov.bandcamp.com/track/catalin",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Jazzbois",
+   "color": "#ffd23f",
+   "meta": "2024. Budapest trio where jam sessions meet hip-hop.",
+   "player": "album=3361646642",
+   "release": "Still Blunted",
+   "url": "https://jazzbois.bandcamp.com/album/still-blunted",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Zeitgeist Freedom Energy Exchange",
+   "color": "#f8b800",
+   "meta": "2025. Broken beat and dub from London and Berlin, with keyboardist Szabolcs Bognár.",
+   "player": "album=483183889",
+   "release": "INSPIRE // RADICALISE",
+   "url": "https://zeitgeistfreedomenergyexchange.bandcamp.com/album/inspire-radicalise",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Sauropoda",
+   "color": "#4cc9f0",
+   "meta": "2024. Second album, on Budapest label Blue Sun.",
+   "player": "album=4124888280",
+   "release": "The Overstory",
+   "url": "https://bluesun.bandcamp.com/album/the-overstory",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Jazzbois",
+   "color": "#ffd23f",
+   "meta": "2026. Recorded during the Montreal Jazz Festival.",
+   "player": "album=65497198",
+   "release": "Live in Montreal",
+   "url": "https://jazzbois.bandcamp.com/album/live-in-montreal",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Hét Hat Club",
+   "color": "#ff7a59",
+   "meta": "2018. Jazz manouche meets Balkan folk.",
+   "player": "album=547285191",
+   "release": "Balkanouche",
+   "url": "https://hethatclub.bandcamp.com/album/balkanouche",
+   "via": "Bandcamp"
+  },
+  {
+   "artist": "Various artists",
+   "color": "#e6e3f6",
+   "meta": "2023. A 12-track map of the scene, from Bujdosó Trio to Dorota and Qiyan.",
+   "player": "album=1311631843",
+   "release": "The Underground Jazz Scene in Budapest Today",
+   "url": "https://invertedspectrumrecords.bandcamp.com/album/the-underground-jazz-scene-in-budapest-today-an-adventurous-introduction",
+   "via": "Bandcamp"
+  }
+ ],
+ "spots": [
+  {
+   "a": "Horánszky utca 5",
+   "c": "bar",
+   "d": "Plants, craft beer and a tiny concert room in a former chemical factory. The reaction is now mostly social.",
+   "id": "lumen",
+   "lat": 47.492488,
+   "lon": 19.067473,
+   "n": "Lumen"
+  },
+  {
+   "a": "Mikszáth Kálmán tér",
+   "c": "bar",
+   "d": "Big terrace, small square, sits on the site of the original Lumen. Summer save point.",
+   "id": "kislumen",
+   "lat": 47.490182,
+   "lon": 19.066642,
+   "n": "Kis Lumen"
+  },
+  {
+   "a": "Bródy Sándor utca, start of the street",
+   "c": "bar",
+   "d": "A beer institute by the Museum Garden. Several taps, one terrace, full of students researching.",
+   "id": "brody",
+   "lat": 47.491974,
+   "lon": 19.061685,
+   "n": "Bródy Italintézet"
+  },
+  {
+   "a": "Treffort Kert, ELTE",
+   "c": "bar",
+   "d": "A university cellar pub open to everyone. Drinks only after 16:00, so finish your thesis first.",
+   "id": "kk",
+   "lat": 47.493407,
+   "lon": 19.060745,
+   "n": "Könyvtár Klub"
+  },
+  {
+   "a": "Bacsó Béla utca 15",
+   "c": "bar",
+   "d": "Living-room bar with craft beer and cocktails. Like a mate's flat if your mate could mix.",
+   "id": "hintalo",
+   "lat": 47.494834,
+   "lon": 19.071812,
+   "n": "Hintaló Iszoda"
+  },
+  {
+   "a": "József körút",
+   "c": "bar",
+   "d": "Craft beer spot loved by locals. Do not release it.",
+   "id": "kraken",
+   "lat": 47.493015,
+   "lon": 19.07089,
+   "n": "Krak'n Town",
+   "old": true
+  },
+  {
+   "a": "Népszínház utca",
+   "c": "bar",
+   "d": "Full name: Fővárosi Kulipintyó. A small local pub with no interest in your brunch plans.",
+   "id": "zsir",
+   "lat": 47.4961606,
+   "lon": 19.0710165,
+   "n": "Zsír"
+  },
+  {
+   "a": "Nagy Fuvaros utca",
+   "c": "bar",
+   "d": "Feels less like a pub, more like a dorm club that forgot to close.",
+   "id": "susuka",
+   "lat": 47.49348188502475,
+   "lon": 19.07783126698837,
+   "n": "Susuka"
+  },
+  {
+   "a": "Orczy út 46-48",
+   "c": "club",
+   "d": "Cooperative-run community house: gigs, film nights, rooftop terrace. Owned by the people pouring your beer.",
+   "id": "golya",
+   "lat": 47.486632,
+   "lon": 19.095021,
+   "n": "Gólya"
+  },
+  {
+   "a": "Auróra utca 11",
+   "c": "club",
+   "d": "Bar, gig room and NGO hive. Has survived more closure orders than any other final boss on this map.",
+   "id": "aurora",
+   "lat": 47.494125,
+   "lon": 19.076045,
+   "n": "Auróra",
+   "old": true
+  },
+  {
+   "a": "Corvin negyed",
+   "c": "club",
+   "d": "Huge pub with swings, many rooms and a mulberry tree the owners rescued from the chop.",
+   "id": "grund",
+   "lat": 47.484862,
+   "lon": 19.076042,
+   "n": "A Grund"
+  },
+  {
+   "a": "Baross utca",
+   "c": "art",
+   "d": "Café, gallery and analogue photo hub in a former flat. Develops film and regrettable friendships.",
+   "id": "fofoto",
+   "lat": 47.489385,
+   "lon": 19.068733,
+   "n": "Főfoto Café & Bar"
+  },
+  {
+   "a": "Víg utca 2",
+   "c": "art",
+   "d": "Bookshop plus gallery. Two reasons to stand around looking thoughtful.",
+   "id": "isbn",
+   "lat": 47.495302,
+   "lon": 19.072974,
+   "n": "ISBN könyv+galéria",
+   "old": true
+  },
+  {
+   "a": "Bródy Sándor utca 23/b",
+   "c": "art",
+   "d": "Gallery in the Palace Quarter, on the same street as half your coffee options.",
+   "id": "kupsus",
+   "lat": 47.492916,
+   "lon": 19.06799,
+   "n": "Ari Kupsus Galéria",
+   "old": true
+  },
+  {
+   "a": "Vas utca",
+   "c": "art",
+   "d": "Ceramics workshop. Drink specialty coffee from a cup you made, leak included.",
+   "id": "cozy",
+   "lat": 47.4956861,
+   "lon": 19.0657393,
+   "n": "Cozy Studio & Café"
+  },
+  {
+   "a": "József körút 70",
+   "c": "art",
+   "d": "Local history in the rooms of the legendary Józsefvárosi Kiállítóterem, an art venue from 1976 to 1988.",
+   "id": "museum",
+   "lat": 47.487386,
+   "lon": 19.070639,
+   "n": "Józsefvárosi Múzeum"
+  },
+  {
+   "a": "Orczy út 46-48",
+   "c": "art",
+   "d": "Community house where an alliance of social and cultural groups share one roof and one boiler-sized idea.",
+   "id": "kazan",
+   "lat": 47.48635,
+   "lon": 19.09545,
+   "n": "Kazán Közösségi Ház"
+  },
+  {
+   "a": "Kőfaragó utca and Vas utca",
+   "c": "eat",
+   "d": "Specialty coffee and toasties by day. Turns into a bar on Friday and Saturday nights.",
+   "id": "kv",
+   "lat": 47.493679,
+   "lon": 19.066923,
+   "n": "kv the coffee shop"
+  },
+  {
+   "a": "Bródy Sándor utca 17",
+   "c": "eat",
+   "d": "Moved exactly one door over and got bigger. The shortest relocation in district history.",
+   "id": "apricot",
+   "lat": 47.492762,
+   "lon": 19.066672,
+   "n": "Apricot Coffee"
+  },
+  {
+   "a": "Bródy Sándor utca, near Gutenberg tér",
+   "c": "eat",
+   "d": "Own pastries, own sourdough. Arrive early, leave heavier.",
+   "id": "anton",
+   "lat": 47.492848,
+   "lon": 19.066142,
+   "n": "Anton Coffee & Bakery"
+  },
+  {
+   "a": "Mikszáth Kálmán tér",
+   "c": "eat",
+   "d": "Student HQ with a daily lunch menu. Group projects go here to die.",
+   "id": "fecske",
+   "lat": 47.48985,
+   "lon": 19.0668,
+   "n": "Fecske"
+  },
+  {
+   "a": "Rákóczi tér 7-9",
+   "c": "eat",
+   "d": "Market hall from 1897 with hot food counters and Saturday chaos. Still open after everything that happened around it.",
+   "id": "csarnok",
+   "lat": 47.4911,
+   "lon": 19.0727,
+   "n": "Rákóczi téri vásárcsarnok"
+  },
+  {
+   "a": "Kőbányai út, Ganz-MÁVAG side",
+   "c": "eat",
+   "d": "Where the old market traders moved. Go hungry and follow the people who know.",
+   "id": "kiskina",
+   "lat": 47.488782,
+   "lon": 19.094206,
+   "n": "Kiskína"
+  },
+  {
+   "a": "József körút 74",
+   "c": "thrift",
+   "d": "One of the biggest vintage floors around. Bring a free afternoon and low standards for fitting rooms.",
+   "id": "humana",
+   "lat": 47.48713,
+   "lon": 19.070608,
+   "n": "Humana Vintage",
+   "old": true
+  },
+  {
+   "a": "Práter utca 9",
+   "c": "thrift",
+   "d": "Eclectic vintage for people who think matching is a weakness.",
+   "id": "prater",
+   "lat": 47.48667,
+   "lon": 19.071573,
+   "n": "Vintage Shop Práter",
+   "old": true
+  },
+  {
+   "a": "József utca 16",
+   "c": "thrift",
+   "d": "Clothes and accessories behind the market hall. Short opening hours, so treat it like a rare spawn.",
+   "id": "konfekcio",
+   "lat": 47.491102,
+   "lon": 19.073222,
+   "n": "Konfekció",
+   "old": true
+  },
+  {
+   "a": "Krúdy Gyula utca",
+   "c": "thrift",
+   "d": "Carefully curated second hand for all. No typos detected.",
+   "id": "typo",
+   "lat": 47.49042433907452,
+   "lon": 19.069634443495932,
+   "n": "Typo Showroom",
+   "old": true
+  },
+  {
+   "a": "Somogyi Béla utca",
+   "c": "thrift",
+   "d": "Small shop, big rack of women's clothing. Do not feed after midnight.",
+   "id": "gizmo",
+   "lat": 47.4939567,
+   "lon": 19.0697492,
+   "n": "Gizmo Vintage",
+   "old": true
+  },
+  {
+   "a": "Teleki László tér",
+   "c": "thrift",
+   "d": "The square held the city's official junk market from 1897 to 1950. The Teleki Zsibi flea market keeps the sport alive.",
+   "id": "teleki",
+   "lat": 47.49405418967085,
+   "lon": 19.083482854733568,
+   "n": "Teleki téri piac + Zsibi"
+  },
+  {
+   "a": "Szabó Ervin tér 1",
+   "c": "local",
+   "d": "A working public library inside the Wenckheim Palace. Revise in a ballroom like the aristocrat you are not.",
+   "id": "szabo",
+   "lat": 47.489411,
+   "lon": 19.064459,
+   "n": "Szabó Ervin Library"
+  },
+  {
+   "a": "Horváth Mihály tér",
+   "c": "local",
+   "d": "Square that hosts the winter Térvarázs. Once featured metal samba. Yes, metal samba.",
+   "id": "horvath",
+   "lat": 47.48917013430398,
+   "lon": 19.07540049872087,
+   "n": "Horváth Mihály tér"
+  },
+  {
+   "a": "Mátyás tér",
+   "c": "local",
+   "d": "Park at the heart of the Magdolna Quarter, and stage of the Night of Gypsy Music.",
+   "id": "matyas",
+   "lat": 47.4922,
+   "lon": 19.0785,
+   "n": "Mátyás tér"
+  },
+  {
+   "a": "Illés utca",
+   "c": "local",
+   "d": "The botanic garden. Secret green level hidden behind the blocks.",
+   "id": "fuvesz",
+   "lat": 47.4839691,
+   "lon": 19.0852741,
+   "n": "Füvészkert"
+  },
+  {
+   "a": "Fiumei út",
+   "c": "local",
+   "d": "The biggest quiet zone on the map. Very low noise complaints.",
+   "id": "kerepesi",
+   "lat": 47.495985,
+   "lon": 19.084234,
+   "n": "Fiumei úti sírkert"
+  },
+  {
+   "a": "Karácsony Sándor utca",
+   "c": "lore",
+   "d": "A parked car dropped into a pit about 2.5 m wide and 6-7 m long. By 2016 residents were saying the street was under siege from utility works. Do not park on this tile.",
+   "id": "sinkhole",
+   "lat": 47.490985526259394,
+   "lon": 19.08482426875545,
+   "n": "The Street That Ate A Car",
+   "src": "HVG, Index",
+   "when": "18 NOV 2013"
+  },
+  {
+   "a": "Auróra utca",
+   "c": "lore",
+   "d": "Police searched Auróra for 14 hours, detained 15 people and also seized industrial hemp from a sustainability programme. A closure order followed in 2018; the place opened the next day anyway. In 2019 police were the surprise guests at a fundraiser.",
+   "id": "raid",
+   "lat": 47.49445,
+   "lon": 19.0766,
+   "n": "The 14-Hour Boss Fight",
+   "src": "444.hu, Global Voices",
+   "when": "JUNE 2017"
+  },
+  {
+   "a": "Kőbányai út",
+   "c": "lore",
+   "d": "A 39,000 m2 container market with over 2,000 stall tenants at its peak, running since 1993. Bailiffs and police cleared it. Traders crossed the road and the game continued.",
+   "id": "tigris",
+   "lat": 47.4884,
+   "lon": 19.0958,
+   "n": "Level Cleared: Négy Tigris",
+   "src": "444.hu, Index, Pénzcentrum",
+   "when": "16 JUNE 2014"
+  },
+  {
+   "a": "Blaha Lujza tér, on the department store roof",
+   "c": "lore",
+   "d": "Rooftop terrace on the fifth floor from May 2007. Closed by the district in 2018. Game over, no continues.",
+   "id": "corvinrip",
+   "lat": 47.49585,
+   "lon": 19.069,
+   "n": "R.I.P. Corvin Club",
+   "src": "Wikipedia HU, We Love Budapest",
+   "when": "2007-2018"
+  },
+  {
+   "a": "Blaha Lujza tér",
+   "c": "lore",
+   "d": "The rebuild took 505 days and 3.68 billion forints, adding 80 trees to the ten already there. People took the square back with tea and frantic dancing on opening day.",
+   "id": "blaha",
+   "lat": 47.4962763,
+   "lon": 19.0704158,
+   "n": "Blaha Speedrun: 505 Days",
+   "src": "BKK, Telex",
+   "when": "10 DEC 2022"
+  },
+  {
+   "a": "Bókay János utca",
+   "c": "lore",
+   "d": "Rising rents pushed Gólya out of its old pub. It crowdfunded a building of its own, renovated largely by volunteers. Gentrification: 1, Storks: still flying.",
+   "id": "oldgolya",
+   "lat": 47.4834841,
+   "lon": 19.0781603,
+   "n": "The Great Stork Migration",
+   "src": "HVG, Index, Wikipedia HU",
+   "when": "2018-2019"
+  },
+  {
+   "a": "Bókay utca",
+   "c": "lore",
+   "d": "The Grund Kert community garden was cleared for new Corvin Sétány housing. HVG reported a huge hole where one of the most colourful corners had been.",
+   "id": "grundkert",
+   "lat": 47.4839,
+   "lon": 19.0768,
+   "n": "The Vanishing Garden",
+   "src": "HVG",
+   "when": "JAN 2014"
+  },
+  {
+   "a": "Baross tér",
+   "c": "lore",
+   "d": "No joke on this one. After days stranded outside a closed station, about a thousand people, mostly Syrians, set off from here on foot for Vienna.",
+   "id": "keleti",
+   "lat": 47.5003,
+   "lon": 19.0837,
+   "n": "Keleti, September 2015",
+   "src": "Euronews, Middle East Eye",
+   "when": "4 SEPT 2015"
+  }
+ ]
+}

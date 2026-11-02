@@ -1,0 +1,27 @@
+# Stories waiting for approval
+
+Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
+Untouched stories disappear after 14 days.
+
+- [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
+- [ ] 7 halloweeni program gyerekeknek - Ingyenes családbarát rendezvények országszerte — mindmegette.hu (2026-10-30) <https://www.mindmegette.hu/erdekessegek/halloweeni-programok-gyerekeknek-2026> `7d09524955dd`
+- [ ] Utcajogász Egyesület: Tévedésből rakták utcára a józsefvárosi bérlőt, most nyert a bíróságon — szeretlekmagyarorszag.hu (2026-10-29) <https://www.szeretlekmagyarorszag.hu/hirek/utcajogasz-jozsefvarosi-berlo-visszaterhet-otthonaba/> `158c40ec8729`
+- [ ] Komoly lépésre készülnek a budapesti parkolás ügyében — vezess.hu (2026-10-25) <https://www.vezess.hu/vezetunk/2026/10/25/komoly-lepesre-keszulnek-a-budapesti-parkolas-ugyeben/> `4f05e4626b4f`
+- [ ] Fellázadtak Karácsony Gergely ellen a kerületek: visszavonatnák a milliárdos parkolási megállapodást — Világgazdaság (2026-10-24) <https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/10/parkolas-fellazadtak-karacsony-gergely-ellen-a-keruletek> `4d8b36c0a6cf`
+- [ ] Pikó András: Folyamatos lesz a rendőri jelenlét a Blahán — Klubrádió (2026-10-24) <https://www.klubradio.hu/hirek/piko-andras-folyamatos-lesz-a-rendori-jelenlet-a-blahan-164910> `768aeac42d99`
+- [ ] Rendőrök lepik el a Blaha Lujza tér környékét, felszámolnák a tarthatatlan állapotokat — msn.com (2026-10-24) <https://www.msn.com/hu-hu/hirek/other/rend%C5%91r%C3%B6k-lepik-el-a-blaha-lujza-t%C3%A9r-k%C3%B6rny%C3%A9k%C3%A9t-felsz%C3%A1moln%C3%A1k-a-tarthatatlan-%C3%A1llapotokat/ar-AA2fYz0n> `e6b778dc2237`
+- [ ] Állampolgársága miatt utasította vissza az OTP Bank a ruandai férfi, valamint magyar felesége hitelkérelmét — Magyar Narancs (2026-10-24) <https://magyarnarancs.hu/belpol/allampolgarsaga-miatt-utasitotta-vissza-az-otp-bank-a-ruandai-ferfi-valamint-magyar-felesege-hitelkerelmet-280456> `506091465d7c`
+- [ ] Ez a film mutatta meg a legjobban 1956 lényegét — port.hu (2026-10-23) <https://port.hu/cikk/mozi/ez-a-film-mutatta-meg-a-legjobban-1956-lenyeget/article-132310> `8a6b06e0c89f`
+- [ ] Autópálya, Duna-híd, Józsefváros – mire elég a zárolt Matolcsy-vagyon? — Magyar Narancs (2026-10-22) <https://magyarnarancs.hu/belpol/autopalya-duna-hid-jozsefvaros-mire-eleg-a-zarolt-matolcsy-vagyon-280462> `a4bcf33990e0`
+- [ ] Magukon kezdik a spórolást a nyolcadik kerületi önkormányzat vezetői — msn.com (2026-10-22) <https://www.msn.com/hu-hu/hirek/other/magukon-kezdik-a-sp%C3%B3rol%C3%A1st-a-nyolcadik-ker%C3%BCleti-%C3%B6nkorm%C3%A1nyzat-vezet%C5%91i/ar-AA2fQPAL> `e259f2b3ea33`
+- [ ] Csökkentik Józsefváros vezetőinek fizetését — Origo (2026-10-22) <https://www.origo.hu/belpol/2026/10/csokkentik-jozsefvaros-vezetok-fizetes> `479129d8a700`
+- [ ] Januártól új korszak jön a budapesti közlekedésben, ha a képviselők is úgy akarják — Hírstart (2026-10-22) <https://www.hirstart.hu/hk/20261022_regen_volt_ilyen_jo_helyzetben_a_budapesti_koltsegvetes_fontos_ulesre_keszulnek_a_kepviselok> `fa2f2e3816e5`
+- [ ] kocsis sándor — Origo (2026-10-22) <https://www.origo.hu/cimke/kocsis-sandor-2> `5b99c170d351`
+- [ ] Csökkentik a VIII. kerület vezetőinek fizetését a parkolási rendszer tervezett átrendezése miatt — Hírstart (2026-10-22) <https://www.hirstart.hu/hk/20261022_csokkentik_jozsefvaros_vezetoinek_fizeteset> `33fefe52112d`
+- [ ] Megújult az Új köztemető Nemzeti Gyászparkja — hirnavigator.hu (2026-10-22) <https://hirnavigator.hu/hir/10925429-megujult-az-uj-koztemeto-nemzeti-gyaszparkja> `3a5a24aca6a3`
+- [ ] Ruszin-Szendi az összefogás fontosságát hangsúlyozta az 1956-os emlékünnepségen — hirnavigator.hu (2026-10-22) <https://hirnavigator.hu/hir/10925428-ruszin-szendi-az-osszefogas-fontossagat-hangsulyozta-az-1956-os-emlekunnepsegen> `7022a81f3548`
+- [ ] ’56 gyermekei – Rajzok egy innsbrucki diákotthonból — port.hu (2026-10-22) <https://port.hu/esemeny/kiallitas/56-gyermekei-rajzok-egy-innsbrucki-diakotthonbol/event-6288982> `9a4a2e9efb9a`
+- [ ] Szigorítás lesz Józsefvárosban — Infostart (2026-10-21) <https://infostart.hu/belfold/2026/10/22/szigoritas-lesz-jozsefvarosban> `b77a58fd46aa`
+- [ ] Létezik egy biztonságos hely a bántalmazott nőknek? — nlc.hu (2026-10-20) <https://nlc.hu/csalad/20261020/egy-biztonsagos-hely-film/> `e672809b0e81`
+
+<!-- rejected:  -->

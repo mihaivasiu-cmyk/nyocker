@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C2D53B956A180F862CB00F /* Feeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A821DB174CABB44B4B9C9B6 /* Feeds.swift */; };
+		06E6195FE1B9D4761F2E283A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C14155757765FAFF34E514 /* Theme.swift */; };
+		11C4CEC13DD4D6A0DFD658E6 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19A269EF81C7D906A65078 /* News.swift */; };
+		21EADA1EEA85C8C0A3DB5CD0 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CFD03CF085145DCFE4EB7 /* MapScreen.swift */; };
+		37AFDD5185491B8C18404225 /* news-seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EA61FB9E160C583F27D81A0 /* news-seed.json */; };
+		826D1ECFE19389ABD8C4EF7D /* NyockerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FBD570353E6F321FC098E /* NyockerApp.swift */; };
+		84C05ECF853E738B11A8C184 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A07C433A4E9526F0A68105 /* Content.swift */; };
+		89B8DC10E6F742133E640DCD /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 584A4F3518FAFA6EE017A681 /* content.json */; };
+		9856D2A948DF5793A30F4CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587953E65280688F19A7F158 /* Assets.xcassets */; };
+		C49272035E3B546AF8243394 /* events-seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F54363E73BA9696DBC759BA /* events-seed.json */; };
+		FA76D596B28121D0E15141E3 /* RadioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A20CBB3D109945BE626B48 /* RadioScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C19A269EF81C7D906A65078 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		274CFD03CF085145DCFE4EB7 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		2DC122173BCD92B2EDE47EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31A07C433A4E9526F0A68105 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		3A821DB174CABB44B4B9C9B6 /* Feeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeds.swift; sourceTree = "<group>"; };
+		48F6F1CD94D8D22C51BC961C /* Nyocker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Nyocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		584A4F3518FAFA6EE017A681 /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
+		587953E65280688F19A7F158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A20CBB3D109945BE626B48 /* RadioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioScreen.swift; sourceTree = "<group>"; };
+		69C14155757765FAFF34E514 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6F54363E73BA9696DBC759BA /* events-seed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "events-seed.json"; sourceTree = "<group>"; };
+		8A4FBD570353E6F321FC098E /* NyockerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyockerApp.swift; sourceTree = "<group>"; };
+		8EA61FB9E160C583F27D81A0 /* news-seed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "news-seed.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		13087343C4B4400B3EB5D873 /* Nyocker */ = {
+			isa = PBXGroup;
+			children = (
+				587953E65280688F19A7F158 /* Assets.xcassets */,
+				584A4F3518FAFA6EE017A681 /* content.json */,
+				31A07C433A4E9526F0A68105 /* Content.swift */,
+				6F54363E73BA9696DBC759BA /* events-seed.json */,
+				3A821DB174CABB44B4B9C9B6 /* Feeds.swift */,
+				2DC122173BCD92B2EDE47EC5 /* Info.plist */,
+				274CFD03CF085145DCFE4EB7 /* MapScreen.swift */,
+				8EA61FB9E160C583F27D81A0 /* news-seed.json */,
+				0C19A269EF81C7D906A65078 /* News.swift */,
+				8A4FBD570353E6F321FC098E /* NyockerApp.swift */,
+				69A20CBB3D109945BE626B48 /* RadioScreen.swift */,
+				69C14155757765FAFF34E514 /* Theme.swift */,
+			);
+			path = Nyocker;
+			sourceTree = "<group>";
+		};
+		2A134BE91D5A156B46D4272A = {
+			isa = PBXGroup;
+			children = (
+				13087343C4B4400B3EB5D873 /* Nyocker */,
+				D9AA076B18E06D08919E5122 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9AA076B18E06D08919E5122 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48F6F1CD94D8D22C51BC961C /* Nyocker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95137A9585A3D7D1A4493FC8 /* Nyocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9AE9020E7C63A55D16461B7 /* Build configuration list for PBXNativeTarget "Nyocker" */;
+			buildPhases = (
+				FBACE1F94AE3AA1FEA97D1BB /* Sources */,
+				4A2922219684013E02DE08CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nyocker;
+			packageProductDependencies = (
+			);
+			productName = Nyocker;
+			productReference = 48F6F1CD94D8D22C51BC961C /* Nyocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FBC28C9BFAA82C75A34ECCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					95137A9585A3D7D1A4493FC8 = {
+						DevelopmentTeam = PAP6H5K8D7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 47F0F1571FEDAF868ABECD18 /* Build configuration list for PBXProject "Nyocker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2A134BE91D5A156B46D4272A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D9AA076B18E06D08919E5122 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95137A9585A3D7D1A4493FC8 /* Nyocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A2922219684013E02DE08CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9856D2A948DF5793A30F4CC1 /* Assets.xcassets in Resources */,
+				89B8DC10E6F742133E640DCD /* content.json in Resources */,
+				C49272035E3B546AF8243394 /* events-seed.json in Resources */,
+				37AFDD5185491B8C18404225 /* news-seed.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBACE1F94AE3AA1FEA97D1BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C05ECF853E738B11A8C184 /* Content.swift in Sources */,
+				06C2D53B956A180F862CB00F /* Feeds.swift in Sources */,
+				21EADA1EEA85C8C0A3DB5CD0 /* MapScreen.swift in Sources */,
+				11C4CEC13DD4D6A0DFD658E6 /* News.swift in Sources */,
+				826D1ECFE19389ABD8C4EF7D /* NyockerApp.swift in Sources */,
+				FA76D596B28121D0E15141E3 /* RadioScreen.swift in Sources */,
+				06E6195FE1B9D4761F2E283A /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15CBA8BD8FDF53FA5B866DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Nyocker/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaivasiu.nyocker;
+				PRODUCT_NAME = Nyocker;
+			};
+			name = Release;
+		};
+		23CE5BE94380F901FA540D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Nyocker/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaivasiu.nyocker;
+				PRODUCT_NAME = Nyocker;
+			};
+			name = Debug;
+		};
+		3BF71B7CE860AB7E39B4FBA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = PAP6H5K8D7;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8DC80CC073449A76A55FCBBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = PAP6H5K8D7;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47F0F1571FEDAF868ABECD18 /* Build configuration list for PBXProject "Nyocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF71B7CE860AB7E39B4FBA4 /* Debug */,
+				8DC80CC073449A76A55FCBBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9AE9020E7C63A55D16461B7 /* Build configuration list for PBXNativeTarget "Nyocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CE5BE94380F901FA540D12 /* Debug */,
+				15CBA8BD8FDF53FA5B866DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FBC28C9BFAA82C75A34ECCE /* Project object */;
+}

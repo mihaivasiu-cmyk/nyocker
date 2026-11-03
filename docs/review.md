@@ -3,6 +3,8 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Dupla florárium workshop a Turbinában — port.hu (2026-11-02) <https://port.hu/esemeny/egyeb/dupla-florarium-workshop-a-turbinaban/event-6290419> `6cef838ea1d8`
+- [ ] Bloc w/ Delta Funktionen, Dé, Indirect Movement, Korodi — port.hu (2026-11-02) <https://port.hu/esemeny/zene/bloc-w-delta-funktionen-de-indirect-movement-korodi/event-6290472> `8a47f4d48a62`
 - [ ] Házkutatást tartott a NAV egy fideszes parlamenti képviselő testvérének alapítványánál — Portfolio (2026-11-02) <https://www.portfolio.hu/gazdasag/20261102/hazkutatast-tartott-a-nav-egy-fideszes-parlamenti-kepviselo-testverenek-alapitvanyanal-873744> `0e19219151a5`
 - [ ] Új életre kelhet az elhagyatottan álló ikonikus intézmény: szolgálati lakások és pihenőpark épülhet a birtokon — Portfolio (2026-11-02) <https://www.portfolio.hu/ingatlan/20261102/uj-eletre-kelhet-az-elhagyatottan-allo-ikonikus-intezmeny-szolgalati-lakasok-es-pihenopark-epulhet-a-birtokon-873740> `9961ac6a6c18`
 - [ ] Belekötöttek Zugló polgármesterébe az Őrs vezér téri aluljáróban — rtl.hu (2026-11-02) <https://rtl.hu/hirado/2026/11/02/rozsa-andras-ors-vezer-tere-aluljaro-bejaras> `1ed3160dce83`

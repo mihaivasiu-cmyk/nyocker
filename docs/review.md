@@ -8,6 +8,8 @@ Untouched stories disappear after 14 days.
 - [ ] Házkutatást tartott a NAV egy fideszes parlamenti képviselő testvérének alapítványánál — Portfolio (2026-11-02) <https://www.portfolio.hu/gazdasag/20261102/hazkutatast-tartott-a-nav-egy-fideszes-parlamenti-kepviselo-testverenek-alapitvanyanal-873744> `0e19219151a5`
 - [ ] Új életre kelhet az elhagyatottan álló ikonikus intézmény: szolgálati lakások és pihenőpark épülhet a birtokon — Portfolio (2026-11-02) <https://www.portfolio.hu/ingatlan/20261102/uj-eletre-kelhet-az-elhagyatottan-allo-ikonikus-intezmeny-szolgalati-lakasok-es-pihenopark-epulhet-a-birtokon-873740> `9961ac6a6c18`
 - [ ] Belekötöttek Zugló polgármesterébe az Őrs vezér téri aluljáróban — rtl.hu (2026-11-02) <https://rtl.hu/hirado/2026/11/02/rozsa-andras-ors-vezer-tere-aluljaro-bejaras> `1ed3160dce83`
+- [ ] Józsefvárosi Fidesz-közeli alapítványra csaptak le a NAV nyomozói — Magyar Hang (2026-11-02) <https://hang.hu/belfold/jozsefvarosi-fidesz-kozeli-alapitvanyra-csapott-le-a-nav-193527> `4cb979e324f7`
+- [ ] „Köpni-nyelni nem tudott”: Schmidt Mária keményen beleszállt Magyar Péterbe az Orbán-hír miatt — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968552-kopni-nyelni-nem-tudott-schmidt-maria-kemenyen-beleszallt-magyar-peterbe-az-orban-hir-miatt> `d94954540472`
 - [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
 - [ ] 7 halloweeni program gyerekeknek - Ingyenes családbarát rendezvények országszerte — mindmegette.hu (2026-10-30) <https://www.mindmegette.hu/erdekessegek/halloweeni-programok-gyerekeknek-2026> `7d09524955dd`
 - [ ] Utcajogász Egyesület: Tévedésből rakták utcára a józsefvárosi bérlőt, most nyert a bíróságon — szeretlekmagyarorszag.hu (2026-10-29) <https://www.szeretlekmagyarorszag.hu/hirek/utcajogasz-jozsefvarosi-berlo-visszaterhet-otthonaba/> `158c40ec8729`
@@ -42,5 +44,6 @@ Untouched stories disappear after 14 days.
 - [ ] Csökkentik a VIII. kerület vezetőinek fizetését a parkolási rendszer tervezett átrendezése miatt — Infostart (2026-10-22) <https://infostart.hu/belfold/2026/10/22/csokkentik-a-viii-kerulet-vezetoinek-fizeteset-a-parkolasi-rendszer-tervezett-atrendezese-miatt> `40db57fab2b9`
 - [ ] Szigorítás lesz Józsefvárosban — Infostart (2026-10-21) <https://infostart.hu/belfold/2026/10/22/szigoritas-lesz-jozsefvarosban> `b77a58fd46aa`
 - [ ] Létezik egy biztonságos hely a bántalmazott nőknek? — nlc.hu (2026-10-20) <https://nlc.hu/csalad/20261020/egy-biztonsagos-hely-film/> `e672809b0e81`
+- [ ] A rendőri erőszak és a városi lázadások sajátos francia hagyományból táplálkoznak, aminek nincs köze a bevándorláshoz — qubit.hu (2026-10-20) <https://qubit.hu/2026/10/20/a-rendori-eroszak-es-a-varosi-lazadasok-sajatos-francia-hagyomanybol-taplalkoznak-aminek-nincs-koze-a-bevandorlashoz> `af56a12999f1`
 
 <!-- rejected:  -->

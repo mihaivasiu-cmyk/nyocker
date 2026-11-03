@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-03T06:48:06Z",
+ "updated": "2026-11-03T17:03:56Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,41 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "f757d6a2e0e6",
+   "title": "17 éves fiú rabolt ki két tinit a Józsefvárosban",
+   "source": "24.hu",
+   "url": "https://24.hu/belfold/2026/11/03/jozsefvaros-golgota-ter-tinik-rablas/",
+   "date": "2026-11-03T11:24:08Z"
+  },
+  {
+   "id": "23adb25fc2b1",
+   "title": "More green space, more rainwater retained on site: Redevelopment of the Baross utca parking area begins",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/11/more-green-space-more-rainwater-retained-on-site-redevelopment-of-the-baross-utca-parking-area-begins/",
+   "date": "2026-11-03T11:01:37Z"
+  },
+  {
+   "id": "9fb5c51a2be6",
+   "title": "Férfiak egészsége – figyeljünk magunkra, ne csak akkor, ha baj van!",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/ferfiak-egeszsege-figyeljunk-magunkra-ne-csak-akkor-ha-baj-van/",
+   "date": "2026-11-03T09:38:42Z"
+  },
+  {
+   "id": "4308b5795aad",
+   "title": "Több zöld, helyben tartott csapadékvíz: indul a Baross utcai parkoló fejlesztése",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/tobb-zold-helyben-tartott-csapadekviz-indul-a-baross-utcai-parkolo-fejlesztese/",
+   "date": "2026-11-03T09:31:11Z"
+  },
+  {
+   "id": "1ae2614786d1",
+   "title": "A Józsefvárosi Múzeum novemberi programjai",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/a-jozsefvarosi-muzeum-novemberi-programjai-2/",
+   "date": "2026-11-03T09:05:06Z"
   },
   {
    "id": "1c7fba20058d",

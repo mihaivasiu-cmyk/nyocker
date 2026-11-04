@@ -3,6 +3,8 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Csomó a mellben szoptatás alatt: több oka is lehet, de komolyan kell venni! — wmn.hu (2026-11-03) <https://wmn.hu/cikk/68502/> `7c02c89e2c03`
+- [ ] Két kamaszt rabolt ki egy 17 éves tinédzser Józsefvárosban, a rendőrök perceken belül elfogták — Index (2026-11-03) <https://index.hu/belfold/2026/11/03/budapest-jozsefvaros-rablas-golgota-ter-rendorseg/> `cb411fc7cc4f`
 - [ ] Dupla florárium workshop a Turbinában — port.hu (2026-11-02) <https://port.hu/esemeny/egyeb/dupla-florarium-workshop-a-turbinaban/event-6290419> `6cef838ea1d8`
 - [ ] Bloc w/ Delta Funktionen, Dé, Indirect Movement, Korodi — port.hu (2026-11-02) <https://port.hu/esemeny/zene/bloc-w-delta-funktionen-de-indirect-movement-korodi/event-6290472> `8a47f4d48a62`
 - [ ] Házkutatást tartott a NAV egy fideszes parlamenti képviselő testvérének alapítványánál — Portfolio (2026-11-02) <https://www.portfolio.hu/gazdasag/20261102/hazkutatast-tartott-a-nav-egy-fideszes-parlamenti-kepviselo-testverenek-alapitvanyanal-873744> `0e19219151a5`

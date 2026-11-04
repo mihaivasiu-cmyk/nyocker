@@ -43,7 +43,5 @@ Untouched stories disappear after 14 days.
 - [ ] ’56 gyermekei – Rajzok egy innsbrucki diákotthonból — port.hu (2026-10-22) <https://port.hu/esemeny/kiallitas/56-gyermekei-rajzok-egy-innsbrucki-diakotthonbol/event-6288982> `9a4a2e9efb9a`
 - [ ] Csökkentik a VIII. kerület vezetőinek fizetését a parkolási rendszer tervezett átrendezése miatt — Infostart (2026-10-22) <https://infostart.hu/belfold/2026/10/22/csokkentik-a-viii-kerulet-vezetoinek-fizeteset-a-parkolasi-rendszer-tervezett-atrendezese-miatt> `40db57fab2b9`
 - [ ] Szigorítás lesz Józsefvárosban — Infostart (2026-10-21) <https://infostart.hu/belfold/2026/10/22/szigoritas-lesz-jozsefvarosban> `b77a58fd46aa`
-- [ ] Létezik egy biztonságos hely a bántalmazott nőknek? — nlc.hu (2026-10-20) <https://nlc.hu/csalad/20261020/egy-biztonsagos-hely-film/> `e672809b0e81`
-- [ ] A rendőri erőszak és a városi lázadások sajátos francia hagyományból táplálkoznak, aminek nincs köze a bevándorláshoz — qubit.hu (2026-10-20) <https://qubit.hu/2026/10/20/a-rendori-eroszak-es-a-varosi-lazadasok-sajatos-francia-hagyomanybol-taplalkoznak-aminek-nincs-koze-a-bevandorlashoz> `af56a12999f1`
 
 <!-- rejected:  -->

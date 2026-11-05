@@ -3,6 +3,7 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Fordulat a Blaha Lujza téren: megszólaltak a vállalkozók – már most figyelmeztetnek, mi jöhet tavasszal, az önkormányzat közzétette a rendészeti számokat — Világgazdaság (2026-11-05) <https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/11/blaha-lujza-ter-kozbiztonsag-ellenorzes-budapest> `f5f96cd992d2`
 - [ ] Csomó a mellben szoptatás alatt: több oka is lehet, de komolyan kell venni! — wmn.hu (2026-11-03) <https://wmn.hu/cikk/68502/> `7c02c89e2c03`
 - [ ] Két kamaszt rabolt ki egy 17 éves tinédzser Józsefvárosban, a rendőrök perceken belül elfogták — Index (2026-11-03) <https://index.hu/belfold/2026/11/03/budapest-jozsefvaros-rablas-golgota-ter-rendorseg/> `cb411fc7cc4f`
 - [ ] Beton helyett szivacs – fontos jogszabályi javaslatcsomag a fővárosban — magyarmezogazdasag.hu (2026-11-02) <https://magyarmezogazdasag.hu/2026/11/02/beton-helyett-szivacs-fontos-jogszabalyi-javaslatcsomag-a-fovarosban/> `28cef361954b`
@@ -17,8 +18,10 @@ Untouched stories disappear after 14 days.
 - [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
 - [ ] 7 halloweeni program gyerekeknek - Ingyenes családbarát rendezvények országszerte — mindmegette.hu (2026-10-30) <https://www.mindmegette.hu/erdekessegek/halloweeni-programok-gyerekeknek-2026> `7d09524955dd`
 - [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője, de van más kikötés is — Infostart (2026-10-30) <https://infostart.hu/belfold/2026/10/30/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje-de-van-mas-kikotes-is> `afb3c020455f`
+- [ ] Megrohamozzák a garzonokat a fiatalok, már ha lesz elég önerő — economx.hu (2026-10-29) <https://www.economx.hu/ingatlan/2026/10/30/garzon-fiatal-wekerle-plusz-otthon-start-onero-hitel-lakas/> `168e63db168f`
 - [ ] Utcajogász Egyesület: Tévedésből rakták utcára a józsefvárosi bérlőt, most nyert a bíróságon — szeretlekmagyarorszag.hu (2026-10-29) <https://www.szeretlekmagyarorszag.hu/hirek/utcajogasz-jozsefvarosi-berlo-visszaterhet-otthonaba/> `158c40ec8729`
 - [ ] Jelentős felújítás indul a forgalmas csomópontban: villamospályát és utat is javítanak novemberben — Portfolio (2026-10-29) <https://www.portfolio.hu/ingatlan/20261029/jelentos-felujitas-indul-a-forgalmas-csomopontban-villamospalyat-es-utat-is-javitanak-novemberben-872806> `a6621ae91b53`
+- [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője — tudastar.ingatlan.com (2026-10-29) <https://tudastar.ingatlan.com/hirek/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje/> `83ce961cbba5`
 - [ ] Tovább mélyül a vita: megfosztanák elnöki címétől Karácsony Gergelyt a kerületi polgármesterek — Origo (2026-10-27) <https://www.origo.hu/belpol/2026/10/karacsony-gergely-bosz-budapest-fovaros-polgarmesterek> `25fa8c6cabfe`
 - [ ] Rendőrből és egy rendészből álló páros járőrözik majd a Blahán, akkora a gond — novekedes.hu (2026-10-26) <https://novekedes.hu/hirek/rendorbol-es-egy-rendeszbol-allo-paros-jarorozik-majd-a-blahan-naponta-ket-fovel> `d03390ab03fd`
 - [ ] Újabb elkeseredett próbálkozással vetnének gáncsot Karácsony Gergelynek a kerületi polgármesterek — Magyar Nemzet (2026-10-25) <https://magyarnemzet.hu/belfold/2026/10/ujabb-elkeseredett-probalkozassal-vetnenek-gancsot-karacsony-gergelynek-a-keruleti-polgarmesterek> `1f6900796ed4`

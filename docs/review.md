@@ -5,6 +5,7 @@ Untouched stories disappear after 14 days.
 
 - [ ] Csomó a mellben szoptatás alatt: több oka is lehet, de komolyan kell venni! — wmn.hu (2026-11-03) <https://wmn.hu/cikk/68502/> `7c02c89e2c03`
 - [ ] Két kamaszt rabolt ki egy 17 éves tinédzser Józsefvárosban, a rendőrök perceken belül elfogták — Index (2026-11-03) <https://index.hu/belfold/2026/11/03/budapest-jozsefvaros-rablas-golgota-ter-rendorseg/> `cb411fc7cc4f`
+- [ ] Beton helyett szivacs – fontos jogszabályi javaslatcsomag a fővárosban — magyarmezogazdasag.hu (2026-11-02) <https://magyarmezogazdasag.hu/2026/11/02/beton-helyett-szivacs-fontos-jogszabalyi-javaslatcsomag-a-fovarosban/> `28cef361954b`
 - [ ] Dupla florárium workshop a Turbinában — port.hu (2026-11-02) <https://port.hu/esemeny/egyeb/dupla-florarium-workshop-a-turbinaban/event-6290419> `6cef838ea1d8`
 - [ ] Bloc w/ Delta Funktionen, Dé, Indirect Movement, Korodi — port.hu (2026-11-02) <https://port.hu/esemeny/zene/bloc-w-delta-funktionen-de-indirect-movement-korodi/event-6290472> `8a47f4d48a62`
 - [ ] Házkutatást tartott a NAV egy fideszes parlamenti képviselő testvérének alapítványánál — Portfolio (2026-11-02) <https://www.portfolio.hu/gazdasag/20261102/hazkutatast-tartott-a-nav-egy-fideszes-parlamenti-kepviselo-testverenek-alapitvanyanal-873744> `0e19219151a5`
@@ -12,8 +13,10 @@ Untouched stories disappear after 14 days.
 - [ ] Belekötöttek Zugló polgármesterébe az Őrs vezér téri aluljáróban — rtl.hu (2026-11-02) <https://rtl.hu/hirado/2026/11/02/rozsa-andras-ors-vezer-tere-aluljaro-bejaras> `1ed3160dce83`
 - [ ] Józsefvárosi Fidesz-közeli alapítványra csaptak le a NAV nyomozói — Magyar Hang (2026-11-02) <https://hang.hu/belfold/jozsefvarosi-fidesz-kozeli-alapitvanyra-csapott-le-a-nav-193527> `4cb979e324f7`
 - [ ] „Köpni-nyelni nem tudott”: Schmidt Mária keményen beleszállt Magyar Péterbe az Orbán-hír miatt — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968552-kopni-nyelni-nem-tudott-schmidt-maria-kemenyen-beleszallt-magyar-peterbe-az-orban-hir-miatt> `d94954540472`
+- [ ] Keresés a bevezető szövegekben (lead) is — Hírstart (2026-10-31) <https://www.hirstart.hu/keres/benu> `63421eddcccf`
 - [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
 - [ ] 7 halloweeni program gyerekeknek - Ingyenes családbarát rendezvények országszerte — mindmegette.hu (2026-10-30) <https://www.mindmegette.hu/erdekessegek/halloweeni-programok-gyerekeknek-2026> `7d09524955dd`
+- [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője, de van más kikötés is — Infostart (2026-10-30) <https://infostart.hu/belfold/2026/10/30/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje-de-van-mas-kikotes-is> `afb3c020455f`
 - [ ] Utcajogász Egyesület: Tévedésből rakták utcára a józsefvárosi bérlőt, most nyert a bíróságon — szeretlekmagyarorszag.hu (2026-10-29) <https://www.szeretlekmagyarorszag.hu/hirek/utcajogasz-jozsefvarosi-berlo-visszaterhet-otthonaba/> `158c40ec8729`
 - [ ] Jelentős felújítás indul a forgalmas csomópontban: villamospályát és utat is javítanak novemberben — Portfolio (2026-10-29) <https://www.portfolio.hu/ingatlan/20261029/jelentos-felujitas-indul-a-forgalmas-csomopontban-villamospalyat-es-utat-is-javitanak-novemberben-872806> `a6621ae91b53`
 - [ ] Tovább mélyül a vita: megfosztanák elnöki címétől Karácsony Gergelyt a kerületi polgármesterek — Origo (2026-10-27) <https://www.origo.hu/belpol/2026/10/karacsony-gergely-bosz-budapest-fovaros-polgarmesterek> `25fa8c6cabfe`
@@ -44,6 +47,5 @@ Untouched stories disappear after 14 days.
 - [ ] Ruszin-Szendi az összefogás fontosságát hangsúlyozta az 1956-os emlékünnepségen — hirnavigator.hu (2026-10-22) <https://hirnavigator.hu/hir/10925428-ruszin-szendi-az-osszefogas-fontossagat-hangsulyozta-az-1956-os-emlekunnepsegen> `7022a81f3548`
 - [ ] ’56 gyermekei – Rajzok egy innsbrucki diákotthonból — port.hu (2026-10-22) <https://port.hu/esemeny/kiallitas/56-gyermekei-rajzok-egy-innsbrucki-diakotthonbol/event-6288982> `9a4a2e9efb9a`
 - [ ] Csökkentik a VIII. kerület vezetőinek fizetését a parkolási rendszer tervezett átrendezése miatt — Infostart (2026-10-22) <https://infostart.hu/belfold/2026/10/22/csokkentik-a-viii-kerulet-vezetoinek-fizeteset-a-parkolasi-rendszer-tervezett-atrendezese-miatt> `40db57fab2b9`
-- [ ] Szigorítás lesz Józsefvárosban — Infostart (2026-10-21) <https://infostart.hu/belfold/2026/10/22/szigoritas-lesz-jozsefvarosban> `b77a58fd46aa`
 
 <!-- rejected:  -->

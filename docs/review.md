@@ -41,15 +41,5 @@ Untouched stories disappear after 14 days.
 - [ ] Rendőrök lepik el a Blaha Lujza tér környékét, felszámolnák a tarthatatlan állapotokat — Index (2026-10-24) <https://index.hu/belfold/2026/10/24/piko-andras-blaha-lujza-ter-rendorseg-kozbiztonsag-budapest/> `7bda59b3cc33`
 - [ ] Pikó András: Folyamatos lesz a rendőri jelenlét a Blahán — hirnavigator.hu (2026-10-24) <https://hirnavigator.hu/hir/10933591-piko-andras-folyamatos-lesz-a-rendori-jelenlet-a-blahan> `6d624e92bb04`
 - [ ] Ez a film mutatta meg a legjobban 1956 lényegét — port.hu (2026-10-23) <https://port.hu/cikk/mozi/ez-a-film-mutatta-meg-a-legjobban-1956-lenyeget/article-132310> `8a6b06e0c89f`
-- [ ] Autópálya, Duna-híd, Józsefváros – mire elég a zárolt Matolcsy-vagyon? — Magyar Narancs (2026-10-22) <https://magyarnarancs.hu/belpol/autopalya-duna-hid-jozsefvaros-mire-eleg-a-zarolt-matolcsy-vagyon-280462> `a4bcf33990e0`
-- [ ] Magukon kezdik a spórolást a nyolcadik kerületi önkormányzat vezetői — msn.com (2026-10-22) <https://www.msn.com/hu-hu/hirek/other/magukon-kezdik-a-sp%C3%B3rol%C3%A1st-a-nyolcadik-ker%C3%BCleti-%C3%B6nkorm%C3%A1nyzat-vezet%C5%91i/ar-AA2fQPAL> `e259f2b3ea33`
-- [ ] Csökkentik Józsefváros vezetőinek fizetését — Origo (2026-10-22) <https://www.origo.hu/belpol/2026/10/csokkentik-jozsefvaros-vezetok-fizetes> `479129d8a700`
-- [ ] Januártól új korszak jön a budapesti közlekedésben, ha a képviselők is úgy akarják — Hírstart (2026-10-22) <https://www.hirstart.hu/hk/20261022_regen_volt_ilyen_jo_helyzetben_a_budapesti_koltsegvetes_fontos_ulesre_keszulnek_a_kepviselok> `fa2f2e3816e5`
-- [ ] kocsis sándor — Origo (2026-10-22) <https://www.origo.hu/cimke/kocsis-sandor-2> `5b99c170d351`
-- [ ] Csökkentik a VIII. kerület vezetőinek fizetését a parkolási rendszer tervezett átrendezése miatt — Hírstart (2026-10-22) <https://www.hirstart.hu/hk/20261022_csokkentik_jozsefvaros_vezetoinek_fizeteset> `33fefe52112d`
-- [ ] Megújult az Új köztemető Nemzeti Gyászparkja — hirnavigator.hu (2026-10-22) <https://hirnavigator.hu/hir/10925429-megujult-az-uj-koztemeto-nemzeti-gyaszparkja> `3a5a24aca6a3`
-- [ ] Ruszin-Szendi az összefogás fontosságát hangsúlyozta az 1956-os emlékünnepségen — hirnavigator.hu (2026-10-22) <https://hirnavigator.hu/hir/10925428-ruszin-szendi-az-osszefogas-fontossagat-hangsulyozta-az-1956-os-emlekunnepsegen> `7022a81f3548`
-- [ ] ’56 gyermekei – Rajzok egy innsbrucki diákotthonból — port.hu (2026-10-22) <https://port.hu/esemeny/kiallitas/56-gyermekei-rajzok-egy-innsbrucki-diakotthonbol/event-6288982> `9a4a2e9efb9a`
-- [ ] Csökkentik a VIII. kerület vezetőinek fizetését a parkolási rendszer tervezett átrendezése miatt — Infostart (2026-10-22) <https://infostart.hu/belfold/2026/10/22/csokkentik-a-viii-kerulet-vezetoinek-fizeteset-a-parkolasi-rendszer-tervezett-atrendezese-miatt> `40db57fab2b9`
 
 <!-- rejected:  -->

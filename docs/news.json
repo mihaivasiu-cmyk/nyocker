@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-05T23:38:49Z",
+ "updated": "2026-11-06T23:08:54Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,20 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "1493cb5921e1",
+   "title": "Józsefváros kitüntetettjeinek díjátadója – 2026",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/jozsefvaros-kituntetettjeinek-dijatadoja-2026/",
+   "date": "2026-11-06T17:58:17Z"
+  },
+  {
+   "id": "5bb8977612fb",
+   "title": "Téli nyitvatartás a Tolnai kertben",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/teli-nyitvatartas-a-tolnai-kertben/",
+   "date": "2026-11-06T17:04:12Z"
   },
   {
    "id": "7ea45d74d175",
@@ -148,13 +162,6 @@
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/10/ingyenes-jogi-konzultacio-jozsefvarosi-szakembereknek/",
    "date": "2026-10-27T13:05:55Z"
-  },
-  {
-   "id": "7a56d984c1d1",
-   "title": "Józsefváros kitüntetettjeinek díjátadója – 2026",
-   "source": "Józsefváros",
-   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/10/jozsefvaros-kituntetettjeinek-dijatadoja-2026/",
-   "date": "2026-10-27T11:01:26Z"
   },
   {
    "id": "ddac3a0ec84a",

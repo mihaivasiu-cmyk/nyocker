@@ -40,6 +40,5 @@ Untouched stories disappear after 14 days.
 - [ ] Bejelentették: mostantól állandó rendőri jelenlét lesz a Blaha Lujza téren — Portfolio (2026-10-24) <https://www.portfolio.hu/gazdasag/20261024/bejelentettek-mostantol-allando-rendori-jelenlet-lesz-a-blaha-lujza-teren-871796> `b4c5d0069b56`
 - [ ] Rendőrök lepik el a Blaha Lujza tér környékét, felszámolnák a tarthatatlan állapotokat — Index (2026-10-24) <https://index.hu/belfold/2026/10/24/piko-andras-blaha-lujza-ter-rendorseg-kozbiztonsag-budapest/> `7bda59b3cc33`
 - [ ] Pikó András: Folyamatos lesz a rendőri jelenlét a Blahán — hirnavigator.hu (2026-10-24) <https://hirnavigator.hu/hir/10933591-piko-andras-folyamatos-lesz-a-rendori-jelenlet-a-blahan> `6d624e92bb04`
-- [ ] Ez a film mutatta meg a legjobban 1956 lényegét — port.hu (2026-10-23) <https://port.hu/cikk/mozi/ez-a-film-mutatta-meg-a-legjobban-1956-lenyeget/article-132310> `8a6b06e0c89f`
 
 <!-- rejected:  -->

@@ -6,6 +6,8 @@ Untouched stories disappear after 14 days.
 - [ ] Fordulat a Blaha Lujza téren: megszólaltak a vállalkozók – már most figyelmeztetnek, mi jöhet tavasszal, az önkormányzat közzétette a rendészeti számokat — Világgazdaság (2026-11-05) <https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/11/blaha-lujza-ter-kozbiztonsag-ellenorzes-budapest> `f5f96cd992d2`
 - [ ] Csomó a mellben szoptatás alatt: több oka is lehet, de komolyan kell venni! — wmn.hu (2026-11-03) <https://wmn.hu/cikk/68502/> `7c02c89e2c03`
 - [ ] Két kamaszt rabolt ki egy 17 éves tinédzser Józsefvárosban, a rendőrök perceken belül elfogták — Index (2026-11-03) <https://index.hu/belfold/2026/11/03/budapest-jozsefvaros-rablas-golgota-ter-rendorseg/> `cb411fc7cc4f`
+- [ ] Kipofozhatják az Örs vezér terét, de a közbiztonsági problémákat ez nem oldja meg — mfor.hu (2026-11-03) <https://mfor.hu/cikkek/kozelet/kipofozhatjak-az-ors-vezer-teret-de-a-kozbiztonsagi-problemakat-ez-nem-oldja-meg.html> `d3841585264c`
+- [ ] Vitályos Fanni Fidesz-közeli alapítványánál tartott házkutatást a NAV — kontroll.hu (2026-11-03) <https://kontroll.hu/cikk/belfold/2026/11/03/vitalyos-fanni-fidesz-koezeli-alapitvanyanal-tartott-hazkutatast-a-nav-1> `5b4742d7d81b`
 - [ ] Beton helyett szivacs – fontos jogszabályi javaslatcsomag a fővárosban — magyarmezogazdasag.hu (2026-11-02) <https://magyarmezogazdasag.hu/2026/11/02/beton-helyett-szivacs-fontos-jogszabalyi-javaslatcsomag-a-fovarosban/> `28cef361954b`
 - [ ] Dupla florárium workshop a Turbinában — port.hu (2026-11-02) <https://port.hu/esemeny/egyeb/dupla-florarium-workshop-a-turbinaban/event-6290419> `6cef838ea1d8`
 - [ ] Bloc w/ Delta Funktionen, Dé, Indirect Movement, Korodi — port.hu (2026-11-02) <https://port.hu/esemeny/zene/bloc-w-delta-funktionen-de-indirect-movement-korodi/event-6290472> `8a47f4d48a62`
@@ -14,6 +16,7 @@ Untouched stories disappear after 14 days.
 - [ ] Belekötöttek Zugló polgármesterébe az Őrs vezér téri aluljáróban — rtl.hu (2026-11-02) <https://rtl.hu/hirado/2026/11/02/rozsa-andras-ors-vezer-tere-aluljaro-bejaras> `1ed3160dce83`
 - [ ] Józsefvárosi Fidesz-közeli alapítványra csaptak le a NAV nyomozói — Magyar Hang (2026-11-02) <https://hang.hu/belfold/jozsefvarosi-fidesz-kozeli-alapitvanyra-csapott-le-a-nav-193527> `4cb979e324f7`
 - [ ] „Köpni-nyelni nem tudott”: Schmidt Mária keményen beleszállt Magyar Péterbe az Orbán-hír miatt — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968552-kopni-nyelni-nem-tudott-schmidt-maria-kemenyen-beleszallt-magyar-peterbe-az-orban-hir-miatt> `d94954540472`
+- [ ] HungaroMet Zrt: mínusz 5,2 fokig zuhant a hőmérséklet, de még zordabb reggelek jönnek — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968551-hungaromet-zrt-minusz-5-2-fokig-zuhant-a-homerseklet-de-meg-zordabb-reggelek-jonnek> `950488b0cbbe`
 - [ ] Keresés a bevezető szövegekben (lead) is — Hírstart (2026-10-31) <https://www.hirstart.hu/keres/benu> `63421eddcccf`
 - [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
 - [ ] 7 halloweeni program gyerekeknek - Ingyenes családbarát rendezvények országszerte — mindmegette.hu (2026-10-30) <https://www.mindmegette.hu/erdekessegek/halloweeni-programok-gyerekeknek-2026> `7d09524955dd`

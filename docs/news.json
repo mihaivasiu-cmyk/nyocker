@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-07T19:25:55Z",
+ "updated": "2026-11-08T00:36:54Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,76 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "64c1c5b4674b",
+   "title": "Szilágyi Lenke",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/szilagyi-lenke/",
+   "date": "2026-11-07T20:05:40Z"
+  },
+  {
+   "id": "bd6be10dd17b",
+   "title": "Farkas Gyula (posztumusz)",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/farkas-gyula-posztumusz/",
+   "date": "2026-11-07T20:04:03Z"
+  },
+  {
+   "id": "a0398c804224",
+   "title": "Dr. König Éva",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/dr-konig-eva/",
+   "date": "2026-11-07T20:02:22Z"
+  },
+  {
+   "id": "4bb4553eac8a",
+   "title": "Dr. Czalbert-Halasi János",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/dr-czalbert-halasi-janos/",
+   "date": "2026-11-07T20:01:02Z"
+  },
+  {
+   "id": "4a8401c34dd5",
+   "title": "Eranus Alapítvány",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/eranus-alapitvany/",
+   "date": "2026-11-07T19:58:12Z"
+  },
+  {
+   "id": "903e3a7d759b",
+   "title": "Láthatatlan tanoda",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/lathatatlan-tanoda/",
+   "date": "2026-11-07T19:56:27Z"
+  },
+  {
+   "id": "ef244225ad02",
+   "title": "Gégény Noémi",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/gegeny-noemi/",
+   "date": "2026-11-07T19:54:39Z"
+  },
+  {
+   "id": "48cb59267894",
+   "title": "Kazal Tamás",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/kazal-tamas/",
+   "date": "2026-11-07T19:53:11Z"
+  },
+  {
+   "id": "b02e0805f3b6",
+   "title": "Takács Gábor",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/takacs-gabor/",
+   "date": "2026-11-07T19:51:47Z"
+  },
+  {
+   "id": "28252c8f0d45",
+   "title": "Gláser Jakab Emlékalapítvány",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/kozosseg-es-kerulet/kituntetesek/2026/11/glaser-jakab-emlekalapitvany/",
+   "date": "2026-11-07T19:47:39Z"
   },
   {
    "id": "df05989b6e38",

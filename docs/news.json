@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-08T00:36:54Z",
+ "updated": "2026-11-08T17:55:55Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,13 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "b399c3d14b76",
+   "title": "Ők kapták idén Józsefváros kitüntetéseit",
+   "source": "Józsefváros Újság",
+   "url": "https://jozsefvarosujsag.hu/ok-kaptak-iden-jozsefvaros-kitunteteseit/",
+   "date": "2026-11-08T08:36:00Z"
   },
   {
    "id": "64c1c5b4674b",
@@ -365,13 +372,6 @@
    "source": "24.hu",
    "url": "https://24.hu/belfold/2026/06/20/rendorseg-jozsef-varos-emberoles-gyanusitott-dedunoka/",
    "date": "2026-06-20T07:34:12Z"
-  },
-  {
-   "id": "013d4b434e38",
-   "title": "Józsefváros társadalmi egyeztetést indít az Airbnb-k szabályozásáról",
-   "source": "Telex",
-   "url": "https://telex.hu/belfold/2026/05/12/jozsefvaros-onkormanyzat-tarsadalmi-egyeztetes-airbnb",
-   "date": "2026-05-12T15:46:59Z"
   },
   {
    "id": "jazzbois-montreal",

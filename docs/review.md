@@ -28,12 +28,5 @@ Untouched stories disappear after 14 days.
 - [ ] Nagy lendülettel indult, de a hónap végét sem érte meg Bódis Kriszta krízisbuszprogramja — Origo (2026-10-29) <https://www.origo.hu/belpol/2026/10/bodis-kriszta-krizisbusz-program-leallas> `15e1533fb8f1`
 - [ ] Tovább mélyül a vita: megfosztanák elnöki címétől Karácsony Gergelyt a kerületi polgármesterek — Origo (2026-10-27) <https://www.origo.hu/belpol/2026/10/karacsony-gergely-bosz-budapest-fovaros-polgarmesterek> `25fa8c6cabfe`
 - [ ] Rendőrből és egy rendészből álló páros járőrözik majd a Blahán, akkora a gond — novekedes.hu (2026-10-26) <https://novekedes.hu/hirek/rendorbol-es-egy-rendeszbol-allo-paros-jarorozik-majd-a-blahan-naponta-ket-fovel> `d03390ab03fd`
-- [ ] Újabb elkeseredett próbálkozással vetnének gáncsot Karácsony Gergelynek a kerületi polgármesterek — Magyar Nemzet (2026-10-25) <https://magyarnemzet.hu/belfold/2026/10/ujabb-elkeseredett-probalkozassal-vetnenek-gancsot-karacsony-gergelynek-a-keruleti-polgarmesterek> `1f6900796ed4`
-- [ ] Komoly lépésre készülnek a budapesti parkolás ügyében — vezess.hu (2026-10-25) <https://www.vezess.hu/vezetunk/2026/10/25/komoly-lepesre-keszulnek-a-budapesti-parkolas-ugyeben/> `4f05e4626b4f`
-- [ ] Nem csitul a vita Karácsony Gergely és a kerületi polgármesterek között — mfor.hu (2026-10-25) <https://mfor.hu/cikkek/kozerdeku/nem-csitul-a-vita-karacsony-gergely-es-a-keruleti-polgarmesterek-kozott.html> `dbd67328872b`
-- [ ] Feszülten figyelheti Karácsony Gergely a hétfőre összehívott rendkívüli ülést — privatbankar.hu (2026-10-25) <https://privatbankar.hu/cikkek/makro/feszulten-figyelheti-karacsony-gergely-a-hetfore-osszehivott-rendkivuli-ulest.html> `b5f5eec1b494`
-- [ ] Karácsony Gergely nem szabadul a kutyaszorítóból, nem engednek követeléseikből a kerületi polgármesterek — Origo (2026-10-25) <https://www.origo.hu/belpol/2026/10/parkolas-budapest-karacsony-gergely-keruleti-polgarmesterek> `f15bb55512e2`
-- [ ] Fellázadtak a kerületi polgármesterek: évek óta működésképtelen szervezetet támasztanának fel Budapesten — Portfolio (2026-10-25) <https://www.portfolio.hu/gazdasag/20261025/fellazadtak-a-keruleti-polgarmesterek-evek-ota-mukodeskeptelen-szervezetet-tamasztananak-fel-budapesten-871866> `8905fcbb2d52`
-- [ ] Összefogtak a polgármesterek Karácsony Gergely ellen, a parkolási rendszerről szóló döntés visszavonását követelik — Index (2026-10-25) <https://index.hu/belfold/2026/10/25/budapest-parkolas-visszavonas-polgarmesterek-budapesti-onkormanyzatok-szovetsege/> `b19111ff4031`
 
 <!-- rejected:  -->

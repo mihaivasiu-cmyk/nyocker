@@ -4,6 +4,7 @@ Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
 - [ ] Fordulat a Blaha Lujza téren: megszólaltak a vállalkozók – már most figyelmeztetnek, mi jöhet tavasszal, az önkormányzat közzétette a rendészeti számokat — Világgazdaság (2026-11-05) <https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/11/blaha-lujza-ter-kozbiztonsag-ellenorzes-budapest> `f5f96cd992d2`
+- [ ] Hetven éve vérbe fojtották a magyar szabadságot: megrendítő képeken 1956 tragédiája — Origo (2026-11-03) <https://www.origo.hu/itthon/2026/11/nemzeti-gyasznap-forrafalom-1956-tragedia-galeria> `9cdd4624044a`
 - [ ] Józsefváros: itt kell élned, hogy elhidd — wmn.hu (2026-11-03) <https://wmn.hu/cikk/68494/> `a4239382a21c`
 - [ ] Csomó a mellben szoptatás alatt: több oka is lehet, de komolyan kell venni! — wmn.hu (2026-11-03) <https://wmn.hu/cikk/68502/> `7c02c89e2c03`
 - [ ] Két kamaszt rabolt ki egy 17 éves tinédzser Józsefvárosban, a rendőrök perceken belül elfogták — Index (2026-11-03) <https://index.hu/belfold/2026/11/03/budapest-jozsefvaros-rablas-golgota-ter-rendorseg/> `cb411fc7cc4f`

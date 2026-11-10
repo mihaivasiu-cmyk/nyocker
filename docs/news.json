@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-09T19:50:15Z",
+ "updated": "2026-11-10T14:54:31Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,34 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "5b382ea1f3c0",
+   "title": "Community Christmas Tree Decorating in Józsefváros 2026",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/11/community-christmas-tree-decorating-in-jozsefvaros-2026/",
+   "date": "2026-11-10T12:03:45Z"
+  },
+  {
+   "id": "032fb3bf015f",
+   "title": "Közösségi Karácsonyfa díszítések Józsefvárosban 2026",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/kozossegi-karacsonyfa-diszitesek-jozsefvarosban-2026/",
+   "date": "2026-11-10T12:00:56Z"
+  },
+  {
+   "id": "a2da964ef0ea",
+   "title": "A Józsefvárosi Rendészet 2026. október 19. – november 1. közötti intézkedési statisztikája",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/a-jozsefvarosi-rendeszet-2026-oktober-19-november-1-kozotti-intezkedesi-statisztikaja/",
+   "date": "2026-11-10T09:16:59Z"
+  },
+  {
+   "id": "cf80507b6def",
+   "title": "Amikor mindenki hozzátesz egy kicsit a városkép tönkretételéhez",
+   "source": "Józsefváros Újság",
+   "url": "https://jozsefvarosujsag.hu/amikor-mindenki-hozzatesz-egy-kicsit-a-varoskep-tonkretetelehez/",
+   "date": "2026-11-09T23:04:00Z"
   },
   {
    "id": "184c99a37cb3",
@@ -393,13 +421,6 @@
    "source": "24.hu",
    "url": "https://24.hu/belfold/2026/06/20/rendorseg-jozsef-varos-emberoles-gyanusitott-dedunoka/",
    "date": "2026-06-20T07:34:12Z"
-  },
-  {
-   "id": "jazzbois-montreal",
-   "title": "Jazzbois drop a live record from Montreal",
-   "source": "New music",
-   "url": "https://jazzbois.bandcamp.com/album/live-in-montreal",
-   "date": "2026-03-20T00:00:00Z"
   }
  ]
 }

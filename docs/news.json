@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-10T14:54:31Z",
+ "updated": "2026-11-10T21:18:26Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,13 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "9d961698212d",
+   "title": "Dog Census in Józsefváros 2026",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/11/dog-census-in-jozsefvaros-2026/",
+   "date": "2026-11-10T18:32:59Z"
   },
   {
    "id": "5b382ea1f3c0",
@@ -414,13 +421,6 @@
    "source": "24.hu",
    "url": "https://24.hu/belfold/2026/06/25/jozsefvaros-airbnb-szallashely-korlatozas/",
    "date": "2026-06-25T09:59:19Z"
-  },
-  {
-   "id": "be09c9ed6725",
-   "title": "Dédunokája ölhette meg a 85 éves józsefvárosi nőt",
-   "source": "24.hu",
-   "url": "https://24.hu/belfold/2026/06/20/rendorseg-jozsef-varos-emberoles-gyanusitott-dedunoka/",
-   "date": "2026-06-20T07:34:12Z"
   }
  ]
 }

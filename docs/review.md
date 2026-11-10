@@ -3,6 +3,8 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] 19,2 milliárd forint volt a tét: kihúzták az Eurojackpot keddi nyerőszámait — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004611-19-2-milliard-forint-volt-a-tet-kihuztak-az-eurojackpot-keddi-nyeroszamait> `e27e2a14b308`
+- [ ] Egy józsefvárosi loft, ahol nappal reklámfilmek forognak, este exkluzív vacsorákat rendeznek — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004597-egy-jozsefvarosi-loft-ahol-nappal-reklamfilmek-forognak-este-exkluziv-vacsorakat-rendeznek> `d98c748e34f9`
 - [ ] Fordulat a Blaha Lujza téren: megszólaltak a vállalkozók – már most figyelmeztetnek, mi jöhet tavasszal, az önkormányzat közzétette a rendészeti számokat — Világgazdaság (2026-11-05) <https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/11/blaha-lujza-ter-kozbiztonsag-ellenorzes-budapest> `f5f96cd992d2`
 - [ ] Hetven éve vérbe fojtották a magyar szabadságot: megrendítő képeken 1956 tragédiája — Origo (2026-11-03) <https://www.origo.hu/itthon/2026/11/nemzeti-gyasznap-forrafalom-1956-tragedia-galeria> `9cdd4624044a`
 - [ ] Józsefváros: itt kell élned, hogy elhidd — wmn.hu (2026-11-03) <https://wmn.hu/cikk/68494/> `a4239382a21c`

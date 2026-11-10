@@ -9,6 +9,7 @@ Untouched stories disappear after 14 days.
 - [ ] Két kamaszt rabolt ki egy 17 éves tinédzser Józsefvárosban, a rendőrök perceken belül elfogták — Index (2026-11-03) <https://index.hu/belfold/2026/11/03/budapest-jozsefvaros-rablas-golgota-ter-rendorseg/> `cb411fc7cc4f`
 - [ ] Kipofozhatják az Örs vezér terét, de a közbiztonsági problémákat ez nem oldja meg — mfor.hu (2026-11-03) <https://mfor.hu/cikkek/kozelet/kipofozhatjak-az-ors-vezer-teret-de-a-kozbiztonsagi-problemakat-ez-nem-oldja-meg.html> `d3841585264c`
 - [ ] Vitályos Fanni Fidesz-közeli alapítványánál tartott házkutatást a NAV — kontroll.hu (2026-11-03) <https://kontroll.hu/cikk/belfold/2026/11/03/vitalyos-fanni-fidesz-koezeli-alapitvanyanal-tartott-hazkutatast-a-nav-1> `5b4742d7d81b`
+- [ ] Magyar Péter kimondta, mi volt a baj Feledy Botond kinevezésével — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10970726-magyar-peter-kimondta-mi-volt-a-baj-feledy-botond-kinevezesevel> `21b56ce8d3d4`
 - [ ] Beton helyett szivacs – fontos jogszabályi javaslatcsomag a fővárosban — magyarmezogazdasag.hu (2026-11-02) <https://magyarmezogazdasag.hu/2026/11/02/beton-helyett-szivacs-fontos-jogszabalyi-javaslatcsomag-a-fovarosban/> `28cef361954b`
 - [ ] Dupla florárium workshop a Turbinában — port.hu (2026-11-02) <https://port.hu/esemeny/egyeb/dupla-florarium-workshop-a-turbinaban/event-6290419> `6cef838ea1d8`
 - [ ] Bloc w/ Delta Funktionen, Dé, Indirect Movement, Korodi — port.hu (2026-11-02) <https://port.hu/esemeny/zene/bloc-w-delta-funktionen-de-indirect-movement-korodi/event-6290472> `8a47f4d48a62`
@@ -28,6 +29,5 @@ Untouched stories disappear after 14 days.
 - [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője — tudastar.ingatlan.com (2026-10-29) <https://tudastar.ingatlan.com/hirek/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje/> `83ce961cbba5`
 - [ ] Nagy lendülettel indult, de a hónap végét sem érte meg Bódis Kriszta krízisbuszprogramja — Origo (2026-10-29) <https://www.origo.hu/belpol/2026/10/bodis-kriszta-krizisbusz-program-leallas> `15e1533fb8f1`
 - [ ] Tovább mélyül a vita: megfosztanák elnöki címétől Karácsony Gergelyt a kerületi polgármesterek — Origo (2026-10-27) <https://www.origo.hu/belpol/2026/10/karacsony-gergely-bosz-budapest-fovaros-polgarmesterek> `25fa8c6cabfe`
-- [ ] Rendőrből és egy rendészből álló páros járőrözik majd a Blahán, akkora a gond — novekedes.hu (2026-10-26) <https://novekedes.hu/hirek/rendorbol-es-egy-rendeszbol-allo-paros-jarorozik-majd-a-blahan-naponta-ket-fovel> `d03390ab03fd`
 
 <!-- rejected:  -->

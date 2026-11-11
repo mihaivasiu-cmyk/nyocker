@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-10T21:18:26Z",
+ "updated": "2026-11-11T17:08:28Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,20 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "bbe7b766ae05",
+   "title": "Zajlik a készülő lakásrendelet véleményezése – mi történt eddig, és mi várható még?",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/zajlik-a-keszulo-lakasrendelet-velemenyezese-mi-tortent-eddig-es-mi-varhato-meg/",
+   "date": "2026-11-11T14:39:37Z"
+  },
+  {
+   "id": "e82beebd1083",
+   "title": "Fogadóórát tartottak tegnap Belső-Józsefváros lakóinak",
+   "source": "Józsefváros Újság",
+   "url": "https://jozsefvarosujsag.hu/fogadoorat-tartottak-tegnap-belso-jozsefvaros-lakoinak/",
+   "date": "2026-11-11T08:56:00Z"
   },
   {
    "id": "9d961698212d",
@@ -407,20 +421,6 @@
    "source": "Telex",
    "url": "https://telex.hu/g7/kozelet/2026/06/30/kozbiztonsag-buncselekmeny-budapest-rendorseg-jozsefvaros-drog-kabitoszer",
    "date": "2026-06-30T12:04:37Z"
-  },
-  {
-   "id": "6904ddb25cf9",
-   "title": "Jön az Airbnb-korlát Józsefvárosban, megszavazták a képviselők",
-   "source": "Telex",
-   "url": "https://telex.hu/gazdasag/2026/06/25/airbnb-jozsefvaros",
-   "date": "2026-06-25T10:06:03Z"
-  },
-  {
-   "id": "74ade11f2cd4",
-   "title": "Józsefvárosban is döntés született az Airbnb-k korlátozásáról",
-   "source": "24.hu",
-   "url": "https://24.hu/belfold/2026/06/25/jozsefvaros-airbnb-szallashely-korlatozas/",
-   "date": "2026-06-25T09:59:19Z"
   }
  ]
 }

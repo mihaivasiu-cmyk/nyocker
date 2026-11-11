@@ -31,6 +31,5 @@ Untouched stories disappear after 14 days.
 - [ ] Jelentős felújítás indul a forgalmas csomópontban: villamospályát és utat is javítanak novemberben — Portfolio (2026-10-29) <https://www.portfolio.hu/ingatlan/20261029/jelentos-felujitas-indul-a-forgalmas-csomopontban-villamospalyat-es-utat-is-javitanak-novemberben-872806> `a6621ae91b53`
 - [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője — tudastar.ingatlan.com (2026-10-29) <https://tudastar.ingatlan.com/hirek/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje/> `83ce961cbba5`
 - [ ] Nagy lendülettel indult, de a hónap végét sem érte meg Bódis Kriszta krízisbuszprogramja — Origo (2026-10-29) <https://www.origo.hu/belpol/2026/10/bodis-kriszta-krizisbusz-program-leallas> `15e1533fb8f1`
-- [ ] Tovább mélyül a vita: megfosztanák elnöki címétől Karácsony Gergelyt a kerületi polgármesterek — Origo (2026-10-27) <https://www.origo.hu/belpol/2026/10/karacsony-gergely-bosz-budapest-fovaros-polgarmesterek> `25fa8c6cabfe`
 
 <!-- rejected:  -->

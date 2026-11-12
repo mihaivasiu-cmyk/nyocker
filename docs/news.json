@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-11T17:08:28Z",
+ "updated": "2026-11-12T11:11:02Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,27 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "2b8cf202186c",
+   "title": "Tovább folytatódnak a járdafelújítások Józsefvárosban",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/tovabb-folytatodnak-a-jardafelujitasok-jozsefvarosban/",
+   "date": "2026-11-12T11:09:31Z"
+  },
+  {
+   "id": "849ec4e30f9f",
+   "title": "Kiadó üzlethelyiségek Józsefvárosban – 19 üzlethelyiség vár új bérlőre",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/kiado-uzlethelyisegek-jozsefvarosban-19-uzlethelyiseg-var-uj-berlore/",
+   "date": "2026-11-12T10:51:21Z"
+  },
+  {
+   "id": "95351874894f",
+   "title": "Betonozási munkák a Tömő utca 5. előtt: 2026. november 13.",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/kozteruleti-lezarasok/2026/11/betonozasi-munkak-a-tomo-utca-5-elott-2026-november-13/",
+   "date": "2026-11-12T09:07:44Z"
   },
   {
    "id": "bbe7b766ae05",
@@ -400,27 +421,6 @@
    "source": "24.hu",
    "url": "https://24.hu/fn/gazdasag/2026/08/18/piko-andras-jozsefvaros-fidesz-kampany-kozpenz-vitalyos-eszter-testver/",
    "date": "2026-08-18T06:47:37Z"
-  },
-  {
-   "id": "4d90d55bff03",
-   "title": "„Ha már úgyis bevisznek, miért nem szívhatom el?” – üvegpipák, palackgyűjtés és hétköznapi félelem Józsefvárosban",
-   "source": "24.hu",
-   "url": "https://24.hu/belfold/2026/07/28/budapest-kozbiztonsag-jozsefvaros-droghasznalat/",
-   "date": "2026-07-28T09:00:55Z"
-  },
-  {
-   "id": "0dcb0ebc8065",
-   "title": "A romló budapesti közbiztonság miatt sürgős intézkedést kérnek a kormánytól a belső kerületek polgármesterei",
-   "source": "Telex",
-   "url": "https://telex.hu/belfold/2026/07/15/budapest-erzsebetvaros-niedermuller-peter-kozbiztonsag-kormany-szocialis-krizis",
-   "date": "2026-07-15T17:40:31Z"
-  },
-  {
-   "id": "794fb0da467d",
-   "title": "Nem látszik, hogy vészhelyzet közelében lenne Budapest a bűnügyi adatok alapján",
-   "source": "Telex",
-   "url": "https://telex.hu/g7/kozelet/2026/06/30/kozbiztonsag-buncselekmeny-budapest-rendorseg-jozsefvaros-drog-kabitoszer",
-   "date": "2026-06-30T12:04:37Z"
   }
  ]
 }

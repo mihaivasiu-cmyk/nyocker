@@ -3,6 +3,7 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Újabb három hónapra befagyasztották az Airbnb-piacot — msn.com (2026-11-11) <https://www.msn.com/hu-hu/hirek/other/%C3%BAjabb-h%C3%A1rom-h%C3%B3napra-befagyasztott%C3%A1k-az-airbnb-piacot/ar-AA2heBdQ> `9ca71d3d9070`
 - [ ] 19,2 milliárd forint volt a tét: kihúzták az Eurojackpot keddi nyerőszámait — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004611-19-2-milliard-forint-volt-a-tet-kihuztak-az-eurojackpot-keddi-nyeroszamait> `e27e2a14b308`
 - [ ] Egy józsefvárosi loft, ahol nappal reklámfilmek forognak, este exkluzív vacsorákat rendeznek — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004597-egy-jozsefvarosi-loft-ahol-nappal-reklamfilmek-forognak-este-exkluziv-vacsorakat-rendeznek> `d98c748e34f9`
 - [ ] Fordulat a Blaha Lujza téren: megszólaltak a vállalkozók – már most figyelmeztetnek, mi jöhet tavasszal, az önkormányzat közzétette a rendészeti számokat — Világgazdaság (2026-11-05) <https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/11/blaha-lujza-ter-kozbiztonsag-ellenorzes-budapest> `f5f96cd992d2`

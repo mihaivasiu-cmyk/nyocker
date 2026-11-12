@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-12T11:11:02Z",
+ "updated": "2026-11-12T19:54:44Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,34 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "22ec41d81b8e",
+   "title": "A Mi Fidónk! Lakossági ötletelés a FiDo park fejlesztésére.",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/a-mi-fidonk-lakossagi-otleteles-a-fido-park-fejlesztesere/",
+   "date": "2026-11-12T16:40:35Z"
+  },
+  {
+   "id": "bf4f5cb01ac0",
+   "title": "Ice rink in Józsefváros",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/11/ice-rink-in-jozsefvaros/",
+   "date": "2026-11-12T15:42:51Z"
+  },
+  {
+   "id": "fb96ebb16481",
+   "title": "Józsefvárosi Jégpálya 2026",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/jozsefvarosi-jegpalya-2026/",
+   "date": "2026-11-12T15:37:47Z"
+  },
+  {
+   "id": "a9658b7282ab",
+   "title": "Road and sidewalk renovation works continue in Józsefváros",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/11/road-and-sidewalk-renovation-works-continue-in-jozsefvaros-2/",
+   "date": "2026-11-12T12:44:41Z"
   },
   {
    "id": "2b8cf202186c",
@@ -29,6 +57,13 @@
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/otthon/hirdetotabla/kozteruleti-lezarasok/2026/11/betonozasi-munkak-a-tomo-utca-5-elott-2026-november-13/",
    "date": "2026-11-12T09:07:44Z"
+  },
+  {
+   "id": "eb91209299b1",
+   "title": "Közösségi karácsonyfa-díszítés",
+   "source": "Józsefváros Újság",
+   "url": "https://jozsefvarosujsag.hu/kozossegi-karacsonyfadiszites/",
+   "date": "2026-11-12T03:04:00Z"
   },
   {
    "id": "bbe7b766ae05",
@@ -386,41 +421,6 @@
    "source": "24.hu",
    "url": "https://24.hu/belfold/2026/09/28/piko-andras-feljelentes-nka-kaptalanfured-kocsis-mate/",
    "date": "2026-09-28T14:48:35Z"
-  },
-  {
-   "id": "489fc4e61eb8",
-   "title": "Felháborodtak a kutyatulajdonosok az Erkel Színház be nem jelentett tűzijátéka miatt",
-   "source": "24.hu",
-   "url": "https://24.hu/kultura/2026/09/15/erkel-szinhaz-tuzijatek-kutya-jozsefvaros/",
-   "date": "2026-09-15T10:51:28Z"
-  },
-  {
-   "id": "8fa9afc7146c",
-   "title": "Lemondott mandátumáról a józsefvárosi Fidesz frakcióvezetője",
-   "source": "24.hu",
-   "url": "https://24.hu/belfold/2026/09/09/jozsefvaros-lemondott-mandatumarol-fidesz-frakciovezeto/",
-   "date": "2026-09-09T19:02:16Z"
-  },
-  {
-   "id": "c90d8720d56e",
-   "title": "Pikó András szerint belátható időn belül javulhat Budapest közbiztonsága",
-   "source": "Telex",
-   "url": "https://telex.hu/belfold/2026/08/26/budapest-kozbiztonsag-kerulet-belugyminiszterium",
-   "date": "2026-08-26T18:25:58Z"
-  },
-  {
-   "id": "83223b811dcf",
-   "title": "Pikó András: Fizessen a MOHU!",
-   "source": "24.hu",
-   "url": "https://24.hu/fn/gazdasag/2026/08/26/mohu-uvegvisszavaltas-kozbiztonsag-piko-andras/",
-   "date": "2026-08-26T06:15:22Z"
-  },
-  {
-   "id": "153711d33dea",
-   "title": "Pikó Andrásék szerint a Vitályos Eszter testvére vezette alapítvány Fidesz-kampányra kapott közpénzt",
-   "source": "24.hu",
-   "url": "https://24.hu/fn/gazdasag/2026/08/18/piko-andras-jozsefvaros-fidesz-kampany-kozpenz-vitalyos-eszter-testver/",
-   "date": "2026-08-18T06:47:37Z"
   }
  ]
 }

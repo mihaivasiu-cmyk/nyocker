@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-12T19:54:44Z",
+ "updated": "2026-11-13T10:58:59Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,20 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "bbf3998ac639",
+   "title": "Fitneszeszközökkel bővül a Leonardo da Vinci köz",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/fitneszeszkozokkel-bovul-a-leonardo-da-vinci-koz/",
+   "date": "2026-11-13T07:30:12Z"
+  },
+  {
+   "id": "b3fb2b93d2b0",
+   "title": "Térvarázs a Horváth Mihály téren- Józsefvárosi Bálaszín",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/tervarazs-a-horvath-mihaly-teren-jozsefvarosi-balaszin/",
+   "date": "2026-11-13T07:28:17Z"
   },
   {
    "id": "22ec41d81b8e",
@@ -407,20 +421,6 @@
    "source": "Telex",
    "url": "https://telex.hu/belfold/2026/10/06/jozsefvaros-sporolas-parkolas-elvett-penz-polgarmester-fizetes-csokkentes",
    "date": "2026-10-06T12:48:24Z"
-  },
-  {
-   "id": "0e655eda8c38",
-   "title": "Kétszáznál is több fa nőtt magokból az egykori parkolóban, a helyére most szálloda épül",
-   "source": "Telex",
-   "url": "https://telex.hu/eletmod/2026/09/30/aurora-klimakert-erdokert-zseberdo-nyolcadik-kerulet-klimavaltozas-epitkezes",
-   "date": "2026-09-30T15:36:08Z"
-  },
-  {
-   "id": "1dbc324d411a",
-   "title": "Józsefváros polgármestere várja, hogy Kocsis Mátéhoz is elérjen a tisztítótűz",
-   "source": "24.hu",
-   "url": "https://24.hu/belfold/2026/09/28/piko-andras-feljelentes-nka-kaptalanfured-kocsis-mate/",
-   "date": "2026-09-28T14:48:35Z"
   }
  ]
 }

@@ -3,6 +3,7 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] MEGINT A CD AZ ÚJ BAKELIT? Az úgynevezett vinylreneszánszról, 2. rész — hirnavigator.hu (2026-11-12) <https://hirnavigator.hu/hir/11014142-megint-a-cd-az-uj-bakelit-az-ugynevezett-vinylreneszanszrol-2-resz> `0d506a8af5c0`
 - [ ] Újabb három hónapra befagyasztották az Airbnb-piacot — msn.com (2026-11-11) <https://www.msn.com/hu-hu/hirek/other/%C3%BAjabb-h%C3%A1rom-h%C3%B3napra-befagyasztott%C3%A1k-az-airbnb-piacot/ar-AA2heBdQ> `9ca71d3d9070`
 - [ ] 19,2 milliárd forint volt a tét: kihúzták az Eurojackpot keddi nyerőszámait — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004611-19-2-milliard-forint-volt-a-tet-kihuztak-az-eurojackpot-keddi-nyeroszamait> `e27e2a14b308`
 - [ ] Egy józsefvárosi loft, ahol nappal reklámfilmek forognak, este exkluzív vacsorákat rendeznek — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004597-egy-jozsefvarosi-loft-ahol-nappal-reklamfilmek-forognak-este-exkluziv-vacsorakat-rendeznek> `d98c748e34f9`
@@ -27,10 +28,5 @@ Untouched stories disappear after 14 days.
 - [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
 - [ ] 7 halloweeni program gyerekeknek - Ingyenes családbarát rendezvények országszerte — mindmegette.hu (2026-10-30) <https://www.mindmegette.hu/erdekessegek/halloweeni-programok-gyerekeknek-2026> `7d09524955dd`
 - [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője, de van más kikötés is — Infostart (2026-10-30) <https://infostart.hu/belfold/2026/10/30/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje-de-van-mas-kikotes-is> `afb3c020455f`
-- [ ] Megrohamozzák a garzonokat a fiatalok, már ha lesz elég önerő — economx.hu (2026-10-29) <https://www.economx.hu/ingatlan/2026/10/30/garzon-fiatal-wekerle-plusz-otthon-start-onero-hitel-lakas/> `168e63db168f`
-- [ ] Utcajogász Egyesület: Tévedésből rakták utcára a józsefvárosi bérlőt, most nyert a bíróságon — szeretlekmagyarorszag.hu (2026-10-29) <https://www.szeretlekmagyarorszag.hu/hirek/utcajogasz-jozsefvarosi-berlo-visszaterhet-otthonaba/> `158c40ec8729`
-- [ ] Jelentős felújítás indul a forgalmas csomópontban: villamospályát és utat is javítanak novemberben — Portfolio (2026-10-29) <https://www.portfolio.hu/ingatlan/20261029/jelentos-felujitas-indul-a-forgalmas-csomopontban-villamospalyat-es-utat-is-javitanak-novemberben-872806> `a6621ae91b53`
-- [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője — tudastar.ingatlan.com (2026-10-29) <https://tudastar.ingatlan.com/hirek/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje/> `83ce961cbba5`
-- [ ] Nagy lendülettel indult, de a hónap végét sem érte meg Bódis Kriszta krízisbuszprogramja — Origo (2026-10-29) <https://www.origo.hu/belpol/2026/10/bodis-kriszta-krizisbusz-program-leallas> `15e1533fb8f1`
 
 <!-- rejected:  -->

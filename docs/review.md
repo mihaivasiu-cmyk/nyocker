@@ -28,7 +28,5 @@ Untouched stories disappear after 14 days.
 - [ ] HungaroMet Zrt: mínusz 5,2 fokig zuhant a hőmérséklet, de még zordabb reggelek jönnek — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968551-hungaromet-zrt-minusz-5-2-fokig-zuhant-a-homerseklet-de-meg-zordabb-reggelek-jonnek> `950488b0cbbe`
 - [ ] Keresés a bevezető szövegekben (lead) is — Hírstart (2026-10-31) <https://www.hirstart.hu/keres/benu> `63421eddcccf`
 - [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
-- [ ] 7 halloweeni program gyerekeknek - Ingyenes családbarát rendezvények országszerte — mindmegette.hu (2026-10-30) <https://www.mindmegette.hu/erdekessegek/halloweeni-programok-gyerekeknek-2026> `7d09524955dd`
-- [ ] Budapesten 29 ezerrel kisebb lehet egy új Wekerle-garzon törlesztője, de van más kikötés is — Infostart (2026-10-30) <https://infostart.hu/belfold/2026/10/30/budapesten-29-ezerrel-kisebb-lehet-egy-uj-wekerle-garzon-torlesztoje-de-van-mas-kikotes-is> `afb3c020455f`
 
 <!-- rejected:  -->

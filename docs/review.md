@@ -26,7 +26,5 @@ Untouched stories disappear after 14 days.
 - [ ] Józsefvárosi Fidesz-közeli alapítványra csaptak le a NAV nyomozói — Magyar Hang (2026-11-02) <https://hang.hu/belfold/jozsefvarosi-fidesz-kozeli-alapitvanyra-csapott-le-a-nav-193527> `4cb979e324f7`
 - [ ] „Köpni-nyelni nem tudott”: Schmidt Mária keményen beleszállt Magyar Péterbe az Orbán-hír miatt — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968552-kopni-nyelni-nem-tudott-schmidt-maria-kemenyen-beleszallt-magyar-peterbe-az-orban-hir-miatt> `d94954540472`
 - [ ] HungaroMet Zrt: mínusz 5,2 fokig zuhant a hőmérséklet, de még zordabb reggelek jönnek — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968551-hungaromet-zrt-minusz-5-2-fokig-zuhant-a-homerseklet-de-meg-zordabb-reggelek-jonnek> `950488b0cbbe`
-- [ ] Keresés a bevezető szövegekben (lead) is — Hírstart (2026-10-31) <https://www.hirstart.hu/keres/benu> `63421eddcccf`
-- [ ] Amikor a 4-6-oson késelnek, nem az a kérdés, hogy az elkövetőnek milyen nehéz gyermekkora volt — Index (2026-10-31) <https://index.hu/belfold/2026/10/31/budapest-drog-nemeth-adam-geza-rendorseg/> `2cc17ba45517`
 
 <!-- rejected:  -->

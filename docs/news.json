@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-13T10:58:59Z",
+ "updated": "2026-11-15T16:22:20Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,13 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "8aecf771665e",
+   "title": "Józsefvárosi intézmények is csatlakoznak a Koraszülöttek Világnapjához",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/jozsefvarosi-intezmenyek-is-csatlakoznak-a-koraszulottek-vilagnapjahoz/",
+   "date": "2026-11-15T07:37:59Z"
   },
   {
    "id": "bbf3998ac639",
@@ -414,13 +421,6 @@
    "source": "24.hu",
    "url": "https://24.hu/belfold/2026/10/06/jozsefvaros-emberoles-kiserlet-kollegano-24extra/",
    "date": "2026-10-06T14:46:35Z"
-  },
-  {
-   "id": "444f227c8921",
-   "title": "Pikó: Másfél milliárdot veszít Józsefváros, fejlesztéseket kell leállítani, csökken a kerületvezetés fizetése",
-   "source": "Telex",
-   "url": "https://telex.hu/belfold/2026/10/06/jozsefvaros-sporolas-parkolas-elvett-penz-polgarmester-fizetes-csokkentes",
-   "date": "2026-10-06T12:48:24Z"
   }
  ]
 }

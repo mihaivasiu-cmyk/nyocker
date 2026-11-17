@@ -17,15 +17,5 @@ Untouched stories disappear after 14 days.
 - [ ] Két kamaszt rabolt ki egy 17 éves tinédzser Józsefvárosban, a rendőrök perceken belül elfogták — Index (2026-11-03) <https://index.hu/belfold/2026/11/03/budapest-jozsefvaros-rablas-golgota-ter-rendorseg/> `cb411fc7cc4f`
 - [ ] Kipofozhatják az Örs vezér terét, de a közbiztonsági problémákat ez nem oldja meg — mfor.hu (2026-11-03) <https://mfor.hu/cikkek/kozelet/kipofozhatjak-az-ors-vezer-teret-de-a-kozbiztonsagi-problemakat-ez-nem-oldja-meg.html> `d3841585264c`
 - [ ] Vitályos Fanni Fidesz-közeli alapítványánál tartott házkutatást a NAV — kontroll.hu (2026-11-03) <https://kontroll.hu/cikk/belfold/2026/11/03/vitalyos-fanni-fidesz-koezeli-alapitvanyanal-tartott-hazkutatast-a-nav-1> `5b4742d7d81b`
-- [ ] Magyar Péter kimondta, mi volt a baj Feledy Botond kinevezésével — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10970726-magyar-peter-kimondta-mi-volt-a-baj-feledy-botond-kinevezesevel> `21b56ce8d3d4`
-- [ ] Beton helyett szivacs – fontos jogszabályi javaslatcsomag a fővárosban — magyarmezogazdasag.hu (2026-11-02) <https://magyarmezogazdasag.hu/2026/11/02/beton-helyett-szivacs-fontos-jogszabalyi-javaslatcsomag-a-fovarosban/> `28cef361954b`
-- [ ] Dupla florárium workshop a Turbinában — port.hu (2026-11-02) <https://port.hu/esemeny/egyeb/dupla-florarium-workshop-a-turbinaban/event-6290419> `6cef838ea1d8`
-- [ ] Bloc w/ Delta Funktionen, Dé, Indirect Movement, Korodi — port.hu (2026-11-02) <https://port.hu/esemeny/zene/bloc-w-delta-funktionen-de-indirect-movement-korodi/event-6290472> `8a47f4d48a62`
-- [ ] Házkutatást tartott a NAV egy fideszes parlamenti képviselő testvérének alapítványánál — Portfolio (2026-11-02) <https://www.portfolio.hu/gazdasag/20261102/hazkutatast-tartott-a-nav-egy-fideszes-parlamenti-kepviselo-testverenek-alapitvanyanal-873744> `0e19219151a5`
-- [ ] Új életre kelhet az elhagyatottan álló ikonikus intézmény: szolgálati lakások és pihenőpark épülhet a birtokon — Portfolio (2026-11-02) <https://www.portfolio.hu/ingatlan/20261102/uj-eletre-kelhet-az-elhagyatottan-allo-ikonikus-intezmeny-szolgalati-lakasok-es-pihenopark-epulhet-a-birtokon-873740> `9961ac6a6c18`
-- [ ] Belekötöttek Zugló polgármesterébe az Őrs vezér téri aluljáróban — rtl.hu (2026-11-02) <https://rtl.hu/hirado/2026/11/02/rozsa-andras-ors-vezer-tere-aluljaro-bejaras> `1ed3160dce83`
-- [ ] Józsefvárosi Fidesz-közeli alapítványra csaptak le a NAV nyomozói — Magyar Hang (2026-11-02) <https://hang.hu/belfold/jozsefvarosi-fidesz-kozeli-alapitvanyra-csapott-le-a-nav-193527> `4cb979e324f7`
-- [ ] „Köpni-nyelni nem tudott”: Schmidt Mária keményen beleszállt Magyar Péterbe az Orbán-hír miatt — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968552-kopni-nyelni-nem-tudott-schmidt-maria-kemenyen-beleszallt-magyar-peterbe-az-orban-hir-miatt> `d94954540472`
-- [ ] HungaroMet Zrt: mínusz 5,2 fokig zuhant a hőmérséklet, de még zordabb reggelek jönnek — hirnavigator.hu (2026-11-02) <https://hirnavigator.hu/hir/10968551-hungaromet-zrt-minusz-5-2-fokig-zuhant-a-homerseklet-de-meg-zordabb-reggelek-jonnek> `950488b0cbbe`
 
 <!-- rejected:  -->

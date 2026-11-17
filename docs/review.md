@@ -3,6 +3,7 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Új Munka Törvénykönyvét és a „rabszolgatörvény” eltörlését követelik közéleti szereplők — Index (2026-11-17) <https://index.hu/belfold/2026/11/17/munka-torvenykonyve-rabszolgatorveny-munkavallaloi-jogok-koveteles/> `ba268d657f59`
 - [ ] A titkos kazamatarendszer nyomaira sem 1956-ban, sem a rendszerváltás után nem sikerült még rálelni — Index (2026-11-15) <https://index.hu/kultur/jardasziget/2026/11/15/ii.-janos-pal-papa-ter-budapest-nepopera/> `522d1898221b`
 - [ ] Megindult a lejtmenet: a főváros 12 kerületében kezdtek csökkenni a lakásárak — Portfolio (2026-11-13) <https://www.portfolio.hu/ingatlan/20261113/megindult-a-lejtmenet-a-fovaros-12-keruleteben-kezdtek-csokkenni-a-lakasarak-876226> `da5538cf8b6d`
 - [ ] MEGINT A CD AZ ÚJ BAKELIT? Az úgynevezett vinylreneszánszról, 2. rész — hirnavigator.hu (2026-11-12) <https://hirnavigator.hu/hir/11014142-megint-a-cd-az-uj-bakelit-az-ugynevezett-vinylreneszanszrol-2-resz> `0d506a8af5c0`

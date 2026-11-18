@@ -258,7 +258,8 @@ struct AgendaRow: View {
     }
 }
 
-/// One spot's dates: from the live feed and the regulars in content.json.
+/// One spot's programme, drawn in the venue's own colours: the live feed (the Google Sheet and
+/// any calendar the venue keeps, Google Calendar included) grouped by month, then the regulars.
 /// Shown by the Events button when a spot has no programme page of its own.
 struct SpotEventsSheet: View {
     @EnvironmentObject private var feed: EventStore
@@ -267,71 +268,170 @@ struct SpotEventsSheet: View {
     @State private var reading: URL?
     let spot: Spot
 
+    private var page: DiscoverPage? { spot.discoverPage }
+    private var ground: Color { page.map { Color(css: $0.colors.deep) } ?? theme.bg }
+    private var card: Color { page.map { Color(css: $0.colors.brick) } ?? theme.surface }
+    private var ink: Color { page.map { Color(css: $0.colors.text ?? $0.colors.paper) } ?? theme.text }
+    private var gold: Color { page.map { Color(css: $0.colors.gold) } ?? theme.accent }
+    private var design: Font.Design { page?.look.design ?? .serif }
+    private var caps: Bool { page?.look.caps ?? false }
+    private var corner: CGFloat { CGFloat(page?.look.corner ?? 6) }
+
+    private static func formatter(_ pattern: String) -> DateFormatter {
+        let format = DateFormatter()
+        format.locale = Locale(identifier: "en_GB")
+        format.timeZone = TimeZone(identifier: "Europe/Budapest")
+        format.dateFormat = pattern
+        return format
+    }
+    private static let dayNumber = formatter("d")
+    private static let weekday = formatter("EEE")
+    private static let month = formatter("LLLL yyyy")
+    private static let clock = formatter("HH:mm")
+
     private var live: [LiveEvent] {
         let today = Calendar.current.startOfDay(for: Date())
-        return feed.feed.items.filter { $0.spot == spot.id && ($0.date.map { $0 >= today } ?? false) }
+        return feed.feed.items
+            .filter { $0.spot == spot.id && ($0.date.map { $0 >= today } ?? false) }
+            .sorted { ($0.date ?? .distantFuture) < ($1.date ?? .distantFuture) }
+    }
+
+    private var months: [(title: String, events: [LiveEvent])] {
+        var order: [String] = []
+        var grouped: [String: [LiveEvent]] = [:]
+        for event in live {
+            let title = event.date.map(Self.month.string(from:)) ?? ""
+            if grouped[title] == nil { order.append(title) }
+            grouped[title, default: []].append(event)
+        }
+        return order.map { (title: $0, events: grouped[$0] ?? []) }
     }
 
     private var regulars: [QuestEvent] { Content.shared.events.filter { $0.spot == spot.id } }
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 14) {
-                HStack(alignment: .top) {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("EVENTS").font(.caption.weight(.heavy)).tracking(1.5).foregroundStyle(theme.accent)
-                        Text(spot.n).font(.title2.weight(.bold)).foregroundStyle(theme.text)
-                        Text(spot.a).font(.subheadline).foregroundStyle(theme.muted)
-                    }
-                    Spacer()
-                    Button { dismiss() } label: {
-                        Image(systemName: "xmark").font(.system(size: 15, weight: .bold)).foregroundStyle(theme.text)
-                            .frame(width: 36, height: 36).background(theme.raised, in: Circle())
-                            .frame(width: 44, height: 44)
-                    }
-                    .accessibilityLabel("Close")
-                }
-                ForEach(live) { event in
-                    row(pill: event.when, colour: theme.fill, title: event.title, detail: event.note, link: event.url)
-                }
-                ForEach(regulars) { event in
-                    row(pill: event.when, colour: Color(css: event.color), title: event.title, detail: event.d, link: nil)
-                }
-                if live.isEmpty && regulars.isEmpty {
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text("No dates listed here yet.").font(.headline).foregroundStyle(theme.text)
-                        Text("New ones land in the Events tab as soon as they're posted.")
-                            .font(.subheadline).foregroundStyle(theme.muted)
-                        if let site = spot.discoverPage?.links?.first, let url = site.link {
-                            Button("Check \(site.title)") { reading = url }.buttonStyle(OutlineButton()).padding(.top, 4)
+            VStack(alignment: .leading, spacing: 0) {
+                header
+                VStack(alignment: .leading, spacing: 22) {
+                    ForEach(months, id: \.title) { group in
+                        VStack(alignment: .leading, spacing: 10) {
+                            label(group.title)
+                            ForEach(group.events) { event in eventRow(event) }
                         }
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(16)
-                    .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
+                    if !regulars.isEmpty {
+                        VStack(alignment: .leading, spacing: 10) {
+                            label("Regulars")
+                            ForEach(regulars) { event in regularRow(event) }
+                        }
+                    }
+                    if live.isEmpty && regulars.isEmpty { empty }
                 }
+                .padding(16)
             }
-            .padding(16)
         }
-        .background(theme.bg.ignoresSafeArea())
+        .background(ground.ignoresSafeArea())
         .sheet(item: $reading) { WebPage(url: $0).ignoresSafeArea() }
     }
 
-    private func row(pill: String, colour: Color, title: String, detail: String?, link: URL?) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(pill).font(.caption.weight(.bold)).foregroundStyle(Color.ink)
-                .padding(.horizontal, 9).padding(.vertical, 3)
-                .background(colour, in: Capsule())
-            Text(title).font(.title3.weight(.bold)).foregroundStyle(theme.text).padding(.top, 4)
-            if let detail {
-                Text(detail).font(.subheadline).foregroundStyle(theme.text)
+    private var header: some View {
+        ZStack(alignment: .bottomLeading) {
+            if let hero = page?.hero, UIImage(named: hero) != nil {
+                Image(hero).resizable().scaledToFill()
+                    .frame(maxWidth: .infinity).frame(height: 190).clipped()
+                    .overlay(LinearGradient(colors: [.clear, ground], startPoint: .center, endPoint: .bottom))
+                    .accessibilityHidden(true)
+            } else {
+                card.frame(height: 120)
             }
-            if let link {
-                Button("Details") { reading = link }.buttonStyle(OutlineButton()).padding(.top, 6)
+            VStack(alignment: .leading, spacing: 4) {
+                Text("PROGRAMME").font(.system(.caption, design: .monospaced).weight(.bold)).tracking(2).foregroundStyle(gold)
+                Text(caps ? spot.n.uppercased() : spot.n)
+                    .font(.system(.title, design: design).weight(.bold)).foregroundStyle(ink)
+                Text(spot.a).font(.system(.subheadline, design: .monospaced)).foregroundStyle(ink.opacity(0.7))
+            }
+            .padding(16)
+        }
+        .overlay(alignment: .topTrailing) {
+            Button { dismiss() } label: {
+                Image(systemName: "xmark").font(.system(size: 15, weight: .bold)).foregroundStyle(ink)
+                    .frame(width: 36, height: 36).background(ground.opacity(0.85), in: Circle())
+                    .frame(width: 44, height: 44)
+            }
+            .accessibilityLabel("Close")
+            .padding(8)
+        }
+    }
+
+    private func label(_ text: String) -> some View {
+        Text(text.uppercased()).font(.system(.caption, design: .monospaced).weight(.bold)).tracking(2)
+            .foregroundStyle(gold)
+    }
+
+    private func eventRow(_ event: LiveEvent) -> some View {
+        Button {
+            if let link = event.url { reading = link }
+        } label: {
+            HStack(alignment: .top, spacing: 14) {
+                VStack(spacing: 0) {
+                    Text(event.date.map(Self.dayNumber.string(from:)) ?? "–")
+                        .font(.system(size: 28, weight: .bold, design: design))
+                    Text((event.date.map(Self.weekday.string(from:)) ?? "").uppercased())
+                        .font(.system(.caption2, design: .monospaced).weight(.bold)).tracking(1)
+                }
+                .foregroundStyle(ground)
+                .frame(width: 56, height: 62)
+                .background(gold, in: RoundedRectangle(cornerRadius: corner, style: .continuous))
+                VStack(alignment: .leading, spacing: 4) {
+                    if let date = event.date, Self.clock.string(from: date) != "00:00" {
+                        Text(Self.clock.string(from: date)).font(.system(.caption, design: .monospaced).weight(.bold))
+                            .foregroundStyle(gold)
+                    }
+                    Text(event.title).font(.system(.headline, design: design)).foregroundStyle(ink)
+                        .multilineTextAlignment(.leading)
+                    if let note = event.note, !note.isEmpty {
+                        Text(note).font(.subheadline).foregroundStyle(ink.opacity(0.8))
+                            .multilineTextAlignment(.leading).lineLimit(4)
+                    }
+                }
+                Spacer(minLength: 0)
+                if event.url != nil {
+                    Image(systemName: "arrow.up.right").font(.system(size: 13, weight: .bold)).foregroundStyle(gold)
+                        .padding(.top, 4)
+                }
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(card, in: RoundedRectangle(cornerRadius: corner, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .disabled(event.url == nil)
+        .accessibilityElement(children: .combine)
+    }
+
+    private func regularRow(_ event: QuestEvent) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(event.when.uppercased()).font(.system(.caption, design: .monospaced).weight(.bold)).foregroundStyle(gold)
+            Text(event.title).font(.system(.headline, design: design)).foregroundStyle(ink)
+            Text(event.d).font(.subheadline).foregroundStyle(ink.opacity(0.8))
+        }
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(card, in: RoundedRectangle(cornerRadius: corner, style: .continuous))
+    }
+
+    private var empty: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("No dates listed yet.").font(.system(.headline, design: design)).foregroundStyle(ink)
+            Text("New ones land here and in the Events tab as soon as they're posted.")
+                .font(.subheadline).foregroundStyle(ink.opacity(0.8))
+            if let site = page?.links?.first, let url = site.link {
+                Button("Check \(site.title)") { reading = url }.buttonStyle(OutlineButton()).padding(.top, 4)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)
-        .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
+        .background(card, in: RoundedRectangle(cornerRadius: corner, style: .continuous))
     }
 }

@@ -93,6 +93,53 @@ class Events(unittest.TestCase):
         self.assertEqual(len(self.items()), 1)
         self.assertIn("failed", report["sources"]["list"])
 
+    def test_google_weekly_event_repeats_skips_exceptions_and_keeps_edits(self):
+        cal = (
+            "BEGIN:VCALENDAR\r\nBEGIN:VEVENT\r\nUID:jam@google.com\r\n"
+            "DTSTART;TZID=Europe/Budapest:20261029T200000\r\nRRULE:FREQ=WEEKLY;BYDAY=TH;COUNT=6\r\n"
+            "EXDATE;TZID=Europe/Budapest:20261112T200000\r\nSUMMARY:Kecske jam\r\n"
+            "DESCRIPTION:Tagoknak.<br>FB: <a href=\"https://www.facebook.com/events/9\">esemény</a>\r\n"
+            "END:VEVENT\r\n"
+            "BEGIN:VEVENT\r\nUID:jam@google.com\r\nRECURRENCE-ID;TZID=Europe/Budapest:20261119T200000\r\n"
+            "DTSTART;TZID=Europe/Budapest:20261119T210000\r\nSUMMARY:Kecske jam (late)\r\nEND:VEVENT\r\n"
+            "BEGIN:VEVENT\r\nUID:jam@google.com\r\nRECURRENCE-ID;TZID=Europe/Budapest:20261126T200000\r\n"
+            "DTSTART;TZID=Europe/Budapest:20261126T200000\r\nSTATUS:CANCELLED\r\nSUMMARY:Kecske jam\r\nEND:VEVENT\r\n"
+            "END:VCALENDAR\r\n"
+        )
+        self.write("", [{"venue": "Kerge", "spot": "kerge", "url": "https://x/basic.ics"}])
+        self.run_it(lambda url: cal)
+        got = [(e["start"], e["title"]) for e in self.items()]
+        self.assertEqual(got, [
+            ("2026-11-05T20:00+01:00", "Kecske jam"),
+            ("2026-11-19T21:00+01:00", "Kecske jam (late)"),
+            ("2026-12-03T20:00+01:00", "Kecske jam"),
+        ])
+        first = self.items()[0]
+        self.assertEqual(first["note"], "Tagoknak. FB: esemény")
+        self.assertEqual(first["link"], "https://www.facebook.com/events/9")
+        self.assertEqual(first["spot"], "kerge")
+
+    def test_monthly_by_weekday_and_horizon(self):
+        cal = ("BEGIN:VEVENT\r\nUID:m\r\nDTSTART:20260102T190000Z\r\nRRULE:FREQ=MONTHLY;BYDAY=1FR\r\n"
+               "SUMMARY:Első péntek\r\nEND:VEVENT\r\n")
+        starts = [e["start"][:10] for e in ce.parse_calendar(cal, "Kerge", now=NOW)]
+        self.assertIn("2026-11-06", starts)
+        self.assertIn("2026-12-04", starts)
+        self.assertLessEqual(max(starts), "2027-03-02")
+
+    def test_private_calendar_address_comes_from_a_secret(self):
+        self.write("", [{"venue": "Kerge", "spot": "kerge", "url_env": "TEST_KERGE_ICS"}])
+        report = self.run_it(lambda url: CAL)
+        self.assertIn("skipped", report["sources"]["Kerge"])
+        import os
+        os.environ["TEST_KERGE_ICS"] = "https://calendar.google.com/x/private-abc/basic.ics"
+        try:
+            seen = []
+            self.run_it(lambda url: seen.append(url) or CAL)
+            self.assertEqual(seen, ["https://calendar.google.com/x/private-abc/basic.ics"])
+        finally:
+            del os.environ["TEST_KERGE_ICS"]
+
 
 if __name__ == "__main__":
     unittest.main()

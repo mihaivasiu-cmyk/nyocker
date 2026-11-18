@@ -1,5 +1,16 @@
 {
  "version": 1,
- "updated": "2026-11-04T23:40:32Z",
- "items": []
+ "updated": "2026-11-18T15:37:53Z",
+ "items": [
+  {
+   "id": "c2f4e63a2504",
+   "title": "Example: gig night",
+   "venue": "Gólya",
+   "start": "2026-11-21T21:00+01:00",
+   "source": "list",
+   "spot": "golya",
+   "link": "https://www.facebook.com/events/000000000/",
+   "note": "Delete this row"
+  }
+ ]
 }

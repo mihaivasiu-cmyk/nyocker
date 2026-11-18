@@ -1,0 +1,24 @@
+{
+ "version": 1,
+ "updated": "2026-11-02T01:47:13Z",
+ "items": [
+  {
+   "id": "c02a19cc8003",
+   "title": "Terveet Kädet",
+   "venue": "Gólya",
+   "start": "2026-11-02T19:00+01:00",
+   "source": "list",
+   "spot": "golya",
+   "link": "https://magyarnarancs.hu/interaktiv/snoblesse-oblige-202644-280503"
+  },
+  {
+   "id": "591c59c9c8c9",
+   "title": "Egyenlő bérek, egyenlő bánásmód: kerekasztal-beszélgetés",
+   "venue": "Turbina Kulturális Központ",
+   "start": "2026-11-04T18:00+01:00",
+   "source": "list",
+   "link": "https://magyarnarancs.hu/interaktiv/snoblesse-oblige-202644-280503",
+   "note": "Vajdahunyad utca 4"
+  }
+ ]
+}

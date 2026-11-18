@@ -1,0 +1,1430 @@
+{
+ "anton": {
+  "colors": {
+   "brick": "#7A2E1A",
+   "deep": "#1A1530",
+   "gold": "#FF7A59",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "László and Ilona opened Anton in February 2020 and got famous for their baking before they even had a Facebook page."
+  },
+  "lines": [
+   {
+    "text": "Additive-free sourdough, laminated pastries and sweet and savoury buns."
+   },
+   {
+    "text": "Most cakes are made without sugar, except where the recipe can't do without."
+   },
+   {
+    "text": "Try the kanelbullar, the Swedish cinnamon buns."
+   },
+   {
+    "text": "Same owner as the Bageri micro-bakery near Parliament."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/hely/anton-coffee-bakery/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "BRÓDY SÁNDOR UTCA 23/A",
+  "sources": "We Love Budapest, Wanderlog",
+  "subtitle": "Coffee and its own sourdough",
+  "title": "Anton Coffee & Bakery"
+ },
+ "apricot": {
+  "colors": {
+   "brick": "#7A2E1A",
+   "deep": "#1A1530",
+   "gold": "#FF7A59",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A small specialty café in the Palace Quarter with its own Apricot Blend of Guatemalan, Colombian and Ethiopian beans."
+  },
+  "lines": [
+   {
+    "text": "Getting the blend right took almost half a year and 40 kg of coffee."
+   },
+   {
+    "text": "Espresso drinks, plus V60, Aeropress and cold brew."
+   },
+   {
+    "text": "Open Mon–Fri 7–17, Sat 8–16, closed Sunday."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/hely/apricot-coffee/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "BRÓDY SÁNDOR UTCA 17",
+  "sources": "We Love Budapest, Offbeat Budapest, Go Specialty Coffee",
+  "subtitle": "Specialty coffee, house blend",
+  "title": "Apricot Coffee"
+ },
+ "aurora": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A self-governing community house, gig room and pub that gave a home to dozens of civil groups. It closed on 29 March 2026, when the owner didn't renew the lease."
+  },
+  "lines": [
+   {
+    "text": "Opened in 2014 by the Marom Club Association, as a revival of the Sirály community space."
+   },
+   {
+    "text": "Housed groups such as the Roma Press Centre, Budapest Pride and the School of Public Life."
+   },
+   {
+    "text": "In 2017 the district withdrew its licence. The government office overturned that decision and Auróra reopened."
+   },
+   {
+    "text": "Its community built the Auróra Climate Garden on an old gravel car park, using only the city's green waste."
+   },
+   {
+    "text": "It said goodbye with a week-long farewell called Zárva Fesztivál, the Closed Festival, from 23 to 29 March 2026."
+   }
+  ],
+  "links": [
+   {
+    "title": "The farewell",
+    "url": "https://welovebudapest.com/cikk/2026/03/21/aurora-bezaras-zarva-fesztival/"
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "AURÓRA UTCA 11",
+  "sources": "We Love Budapest, HVG, XpatLoop, Front Line Defenders",
+  "subtitle": "2014–2026",
+  "title": "R.I.P. Auróra"
+ },
+ "blaha": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Rebuilding the square took 505 days and 3.68 billion forints."
+  },
+  "lines": [
+   {
+    "text": "It added 80 trees to the ten already there."
+   },
+   {
+    "text": "On opening day people took the square back with tea and frantic dancing."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "BLAHA LUJZA TÉR",
+  "sources": "BKK, Telex",
+  "subtitle": "10 DEC 2022",
+  "title": "Blaha Speedrun: 505 Days"
+ },
+ "brody": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Several taps and a terrace at the very start of Bródy Sándor utca, with the National Museum across the road."
+  },
+  "lines": [
+   {
+    "text": "The street started out as gardens outside the old city walls and was once called Brick Street."
+   },
+   {
+    "text": "It has carried writer Sándor Bródy's name since 1949."
+   },
+   {
+    "text": "Full of students doing important research into the taps."
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "BRÓDY SÁNDOR UTCA 2",
+  "sources": "Audiala",
+  "subtitle": "A beer institute by the Museum Garden",
+  "title": "Bródy Italintézet"
+ },
+ "corvinrip": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A rooftop terrace on the fifth floor of the old Corvin department store, open from May 2007."
+  },
+  "lines": [
+   {
+    "text": "The district closed it in 2018."
+   },
+   {
+    "text": "Game over, no continues."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "BLAHA LUJZA TÉR · DEPARTMENT STORE ROOF",
+  "sources": "Wikipedia HU, We Love Budapest",
+  "subtitle": "2007–2018",
+  "title": "R.I.P. Corvin Club"
+ },
+ "cozy": {
+  "colors": {
+   "brick": "#0F4D63",
+   "deep": "#1A1530",
+   "gold": "#4CC9F0",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Three old friends opened this café-meets-pottery studio in March 2025. Drink your coffee, then come back to make the cup."
+  },
+  "lines": [
+   {
+    "text": "Coffee from early morning until 2pm. Workshops take over after that."
+   },
+   {
+    "text": "Fresh mugs and bowls dry at the back before going into the in-house kiln."
+   },
+   {
+    "text": "A minute from Blaha Lujza tér."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/article/2025/07/18/where-to-make-pottery-and-drink-specialty-coffee-in-budapest-cozy-studio/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "VAS UTCA · NEXT TO BIHARY WATCHES",
+  "sources": "We Love Budapest",
+  "subtitle": "Ceramics workshop and specialty café",
+  "title": "Cozy Studio & Café"
+ },
+ "csarnok": {
+  "colors": {
+   "brick": "#7A2E1A",
+   "deep": "#1A1530",
+   "gold": "#FF7A59",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "One of five market halls opened together in 1897, the year the city shut its street markets and moved the traders indoors."
+  },
+  "lines": [
+   {
+    "text": "It's the everyday local market, not a show for tourists."
+   },
+   {
+    "text": "In 2012 the district named a whole new quarter after it: Csarnoknegyed."
+   },
+   {
+    "text": "Open Mon 6–16, Tue–Fri 6–18, Sat 6–13. Closed Sunday."
+   }
+  ],
+  "links": [
+   {
+    "title": "Market website",
+    "url": "https://piaconline.hu/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "RÁKÓCZI TÉR 7-9",
+  "sources": "HVG, piaconline.hu, OpenStreetMap, Time Out",
+  "subtitle": "Market hall since 1897",
+  "title": "Rákóczi téri vásárcsarnok"
+ },
+ "fecske": {
+  "colors": {
+   "brick": "#7A2E1A",
+   "deep": "#1A1530",
+   "gold": "#FF7A59",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A cheap, laid-back presszó with a retro look and a terrace, a stone's throw from the Szabó Ervin Library."
+  },
+  "lines": [
+   {
+    "text": "Weekday lunch menu at student prices."
+   },
+   {
+    "text": "Főfoto, the analogue photo café, lives upstairs."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://www.offbeatbudapest.com/places/fecske-presszo"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "MIKSZÁTH KÁLMÁN TÉR · BAROSS UTCA",
+  "sources": "Offbeat Budapest, We Love Budapest",
+  "subtitle": "Student HQ with a lunch menu",
+  "title": "Fecske"
+ },
+ "fofoto": {
+  "colors": {
+   "brick": "#0F4D63",
+   "deep": "#1A1530",
+   "gold": "#4CC9F0",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A former private flat behind Kálvin tér, turned into a refuge for analogue photography. Ring the bell like you're visiting a friend."
+  },
+  "lines": [
+   {
+    "text": "Opened in 2020 by János Krasznai and Gábor Zsigmond."
+   },
+   {
+    "text": "Sells film, slide projectors, photo books and cameras, and develops your rolls."
+   },
+   {
+    "text": "Shows Hungarian contemporary and classic photography."
+   },
+   {
+    "text": "The café side does sandwiches, pastries, coffee, beer and wine."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/article/2020/02/24/fofoto-transforms-a-flat-into-a-gallery-cafe-museum-and-analogue-lab-in-one/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "BAROSS UTCA · ABOVE FECSKE",
+  "sources": "We Love Budapest",
+  "subtitle": "Café, gallery, lab and photo shop",
+  "title": "Főfoto"
+ },
+ "fuvesz": {
+  "colors": {
+   "brick": "#34305E",
+   "deep": "#1A1530",
+   "gold": "#E6E3F6",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Founded in 1771 and on this spot since 1847: 3.5 hectares of garden and 2,000 m² of greenhouses hidden behind the blocks."
+  },
+  "lines": [
+   {
+    "text": "More than 8,000 plant species."
+   },
+   {
+    "text": "It's the garden from The Paul Street Boys. The novel is why the old name Füvészkert stuck."
+   },
+   {
+    "text": "Ticketed. Roughly 9–17 in summer and 9–16 in winter."
+   },
+   {
+    "text": "Look out for the spring sakura festival and the rare Victoria water-lily night openings."
+   }
+  ],
+  "links": [
+   {
+    "title": "Website",
+    "url": "https://www.fuveszkert.org/"
+   },
+   {
+    "title": "ELTE page",
+    "url": "https://www.elte.hu/fuveszkert"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "ILLÉS UTCA 25",
+  "sources": "ELTE, Time Out, Wikipedia",
+  "subtitle": "The country's oldest botanic garden",
+  "title": "Füvészkert"
+ },
+ "gizmo": {
+  "colors": {
+   "brick": "#1D5B2E",
+   "deep": "#1A1530",
+   "gold": "#5BE37D",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A small shop with a big rack of women's clothing."
+  },
+  "lines": [
+   {
+    "text": "We couldn't confirm recent opening hours, so check it's open before you make the trip."
+   },
+   {
+    "text": "Do not feed after midnight."
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "SOMOGYI BÉLA UTCA",
+  "subtitle": "Small shop, big rack",
+  "title": "Gizmo Vintage"
+ },
+ "golya": {
+  "colors": {
+   "brick": "#6E1F47",
+   "deep": "#1A1530",
+   "gold": "#FF5FA2",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Budapest's cooperative presszó: the people pouring your beer own the place. Bar, concert hall, rooftop and community house in one old industrial building."
+  },
+  "lines": [
+   {
+    "text": "It started in 2013 on Bókay János utca and moved here in 2019, after the old landlord sold up."
+   },
+   {
+    "text": "The new home is about 1,200 m², renovated DIY style by a crowd of volunteers."
+   },
+   {
+    "text": "The programme runs from gigs and drag shows to board-game nights and conferences."
+   },
+   {
+    "text": "It shares the building with its sibling, Kazán Community House."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/venue/golya-presszo-1"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "ORCZY ÚT 46-48",
+  "sources": "We Love Budapest, Spotted by Locals, Cooperative City",
+  "subtitle": "Cooperative pub, gig venue, community house",
+  "title": "Gólya"
+ },
+ "grund": {
+  "colors": {
+   "brick": "#6E1F47",
+   "deep": "#1A1530",
+   "gold": "#FF5FA2",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A sprawling, many-roomed pub around a courtyard with a tree. It works for daytime family drinks as much as late nights."
+  },
+  "lines": [
+   {
+    "text": "Kid-friendly by day, with a playground in the courtyard."
+   },
+   {
+    "text": "The building turned 150 in 2023, the same year as Budapest itself."
+   },
+   {
+    "text": "Hosts the Grund Piac producers' and craft market."
+   }
+  ],
+  "links": [
+   {
+    "title": "About the market",
+    "url": "https://welovebudapest.com/cikk/2023/3/23/gasztro-shopping-grund-termeloi-kezmuves-piac"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "NAGY TEMPLOM UTCA 30 · CORVIN",
+  "sources": "We Love Budapest, Budapest by Locals",
+  "subtitle": "A huge pub with a tree inside",
+  "title": "A Grund"
+ },
+ "grundkert": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "The Grund Kert community garden was cleared to make way for new Corvin Sétány housing."
+  },
+  "lines": [
+   {
+    "text": "HVG reported a huge hole where one of the district's most colourful corners had been."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "BÓKAY UTCA",
+  "sources": "HVG",
+  "subtitle": "JAN 2014",
+  "title": "The Vanishing Garden"
+ },
+ "hintalo": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Hintaló means rocking horse, and yes, there are rocking horses among the ruin-pub junk-shop decor. Five minutes from Blaha."
+  },
+  "lines": [
+   {
+    "text": "Two floors, Czech beer on tap and DJs on some nights, Wednesdays especially (says Lonely Planet)."
+   },
+   {
+    "text": "Bacsó Béla utca became a pedestrian street in 2022 and was fully renewed in 2024, so there's room outside."
+   },
+   {
+    "text": "A crowd of locals and expats in roughly equal measure."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/venue/hintalo-iszoda-1"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "BACSÓ BÉLA UTCA 15",
+  "sources": "We Love Budapest, Lonely Planet, jozsefvaros.hu",
+  "subtitle": "The rocking-horse bar",
+  "title": "Hintaló Iszoda"
+ },
+ "horvath": {
+  "colors": {
+   "brick": "#34305E",
+   "deep": "#1A1530",
+   "gold": "#E6E3F6",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Baross utca splits it into a church side and a school side. This is where Józsefváros does its seasonal celebrations."
+  },
+  "lines": [
+   {
+    "text": "Advent means Térvarázs: weekend concerts and family programmes."
+   },
+   {
+    "text": "A free 300 m² ice rink usually runs for about two months over winter."
+   },
+   {
+    "text": "In spring there's a craft and plant market."
+   },
+   {
+    "text": "The southern side is being redesigned after a resident survey that closed in January 2026."
+   }
+  ],
+  "links": [
+   {
+    "title": "Térvarázs",
+    "url": "https://jozsefvaros.hu/?p=185911"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "HORVÁTH MIHÁLY TÉR",
+  "sources": "jozsefvaros.hu",
+  "subtitle": "The district's party square",
+  "title": "Horváth Mihály tér"
+ },
+ "humana": {
+  "colors": {
+   "brick": "#1D5B2E",
+   "deep": "#1A1530",
+   "gold": "#5BE37D",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "One of the biggest vintage floors in the country. The entire stock is swapped every five weeks, with big sales before each change."
+  },
+  "lines": [
+   {
+    "text": "Near the end of a cycle, pieces can drop to a few hundred forints."
+   },
+   {
+    "text": "There's a sister shop at Astoria, on Károly körút."
+   },
+   {
+    "text": "Open daily 11–20, Sundays from 12."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/venue/humana-vintage-butik-jozsef-korut-1/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "JÓZSEF KÖRÚT 74",
+  "sources": "We Love Budapest, XpatLoop",
+  "subtitle": "Vintage on a five-week clock",
+  "title": "Humana Vintage"
+ },
+ "isbn": {
+  "colors": {
+   "brick": "#0F4D63",
+   "deep": "#1A1530",
+   "gold": "#4CC9F0",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "The art bookshop that started on Víg utca outgrew its room after six and a half years, moved to Baross utca and gained a plus sign."
+  },
+  "lines": [
+   {
+    "text": "Founded by Beáta Istvánkó, who began it as a one-woman company."
+   },
+   {
+    "text": "Stocks the art books, catalogues and zines ordinary bookshops never get."
+   },
+   {
+    "text": "Has a screening room dedicated only to video works."
+   },
+   {
+    "text": "In autumn 2026 it showed ten years of Budapest Zines' riso printing."
+   }
+  ],
+  "links": [
+   {
+    "title": "Website",
+    "url": "https://www.isbnbooks.hu/en/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "BAROSS UTCA 42",
+  "sources": "Lampoon, YKRA, Exindex, We Love Budapest, Telekom Spots",
+  "subtitle": "Art bookshop, gallery and video room",
+  "title": "ISBN+"
+ },
+ "kazan": {
+  "colors": {
+   "brick": "#0F4D63",
+   "deep": "#1A1530",
+   "gold": "#4CC9F0",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Gólya's sibling next door, run by SZAKI, the Alliance for Community Property Development. Kazán means boiler house."
+  },
+  "lines": [
+   {
+    "text": "The building is a formerly abandoned transport manufacturing site, renovated with volunteers."
+   },
+   {
+    "text": "Social and cultural organisations share the space, and the rent stays affordable thanks to community ownership."
+   },
+   {
+    "text": "Runs the Kazán Energy Community, a co-owned local energy project."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://cooperativecity.org/kazan-energy-community-budapest-community-energy-rooted-in-solidarity-and-co-ownership/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "ORCZY ÚT 46-48",
+  "sources": "Cooperative City, Eastern Daze",
+  "subtitle": "Community house with its own power",
+  "title": "Kazán Közösségi Ház"
+ },
+ "keleti": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "No joke on this one."
+  },
+  "lines": [
+   {
+    "text": "After days stranded outside a closed station, about a thousand people, most of them Syrian, set off from here on foot for Vienna."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "BAROSS TÉR · KELETI",
+  "sources": "Euronews, Middle East Eye",
+  "subtitle": "4 SEPT 2015",
+  "title": "Keleti, September 2015"
+ },
+ "kerepesi": {
+  "colors": {
+   "brick": "#34305E",
+   "deep": "#1A1530",
+   "gold": "#E6E3F6",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "The Fiumei Road cemetery, once called Kerepesi, covers 56 hectares and is known for its plants and wildlife as much as its tombs."
+  },
+  "lines": [
+   {
+    "text": "Run by the National Heritage Institute (NÖRI) since 2016. Burials still take place here."
+   },
+   {
+    "text": "QR codes on the major sculptures and the FiumeiGuide app tell you whose grave you're looking at."
+   },
+   {
+    "text": "Mausoleums can only be visited by appointment, with a guide."
+   }
+  ],
+  "links": [
+   {
+    "title": "Official site",
+    "url": "https://fiumeiutisirkert.nori.gov.hu/en/home"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "FIUMEI ÚT 16-18",
+  "sources": "Nemzeti Örökség Intézete, VG, We Love Budapest",
+  "subtitle": "National graveyard, 56 hectares",
+  "title": "Fiumei úti sírkert"
+ },
+ "kerge": {
+  "art": [
+   {
+    "afterLine": 1,
+    "image": "underbar",
+    "leading": false,
+    "tilt": 7
+   },
+   {
+    "afterLine": 4,
+    "image": "so",
+    "leading": true,
+    "tilt": -6
+   }
+  ],
+  "closing": {
+   "english": "Break a single line of this sacred decree and you'll be chased out.",
+   "note": "Kergettetve: chased off, the Kerge way.",
+   "text": "Mely esetben eme szent rendelet egyetlen eleme meg lenne szege, el leszel kergettetve!"
+  },
+  "colors": {
+   "brick": "#9E3B1A",
+   "deep": "#2B140D",
+   "gold": "#E0A030",
+   "paper": "#E8DCC0"
+  },
+  "hero": "kerge-hero",
+  "intro": {
+   "english": "Goat master! Come on in and make yourself at home. This is no booze pasture: it's the Kerge Society's sanctuary.",
+   "text": "Mekkmester! Gyere beljebb, leld kedved eme helyen mely nem egy szeszlegelde, de Kerge Egylet kegyhelye."
+  },
+  "lines": [
+   {
+    "english": "Plenty of organised nights and mornings to enjoy, but you need to be a registered member. Put your name down and walk right in.",
+    "text": "Rengeteg szervezett estben s reggelben lelheted kedved, de ehhez neked Kerge Egylet feljegyzett egyede kell lenned, nevedet jegyeztesd fel, s mehetsz befele."
+   },
+   {
+    "english": "One floor above you, decent folk may be drifting off to sleep right now. Let's not get reported. No hooliganism, turn your music down, or wander a little further off if inside isn't your thing.",
+    "text": "Ne feledd, fejed felett egy emelettel rendes emberek eme percekben szenderedhetnek el. Nem kellene ezek feljelentsenek… Ne fenegyerekeskedj, zeneszerkezetedet tekerd lejjebb, de elmehetsz egy cseppet messzebre mely esetben neked bent nem tetszene."
+   },
+   {
+    "english": "Rolled one up? Find the spot that's meant for it.",
+    "text": "Megtekergetett dekkel kezedben lelj egy helyet mely erre rendeltetett."
+   },
+   {
+    "english": "Like the cute cabinets? The billowing curtains? Don't wreck them, love them. They matter. (No mindless goat arranged all this.)",
+    "text": "Tetszenek eme csecse szekreterek? Esetleg eme fellengetett leplek? Ne cseszd el ezeket, szeretgesd meg ezeket, mert ezek szerepe elengedhetetlen (nem egy eszetlen kecske rendezte ezt be)."
+   },
+   {
+    "english": "There'll be nice people inside, so don't be unpleasant either. No playing Batman. Blend in instead.",
+    "text": "Kedves emberek lesznek bent, neked sem kellene kellemetlenkedned. Ne Betmenkedj, elehelyett elegyedj el."
+   },
+   {
+    "english": "Need a hand? Seek out a Kerge insider.",
+    "text": "Kellene neked esetleg segedelem? Keress keserveddel egy Kerge-bennfentest!"
+   }
+  ],
+  "note": "Written in eszperente, the Hungarian word game where every single vowel is an e.",
+  "numbered": true,
+  "place": "ALFÖLDI UTCA 2 · JÓZSEFVÁROS",
+  "subtitle": "The Kerge Society's decree",
+  "title": "Kerge Egylet Rendelete"
+ },
+ "kiskina": {
+  "colors": {
+   "brick": "#7A2E1A",
+   "deep": "#1A1530",
+   "gold": "#FF7A59",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Before the Four Tigers market was cleared, traders had already started moving across the road into the old Ganz-MÁVAG factory halls. They're still there."
+  },
+  "lines": [
+   {
+    "text": "A maze of shops in huge former heavy-industry halls."
+   },
+   {
+    "text": "Small kitchens hide between the shops. Ask the people who work there where to eat."
+   },
+   {
+    "text": "Tram 28 from Blaha Lujza tér runs along Kőbányai út."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/cikk/2023/04/19/latnivalok-es-kultura-pesten-innen-budan-tul-podcast-kinai-negyed-kiskina/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "KŐBÁNYAI ÚT · GANZ-MÁVAG SITE",
+  "sources": "We Love Budapest, Budapest Times",
+  "subtitle": "Little China",
+  "title": "Kiskína"
+ },
+ "kislumen": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "The original Lumen: a small café and photo gallery with one of the most fought-over terraces in the district."
+  },
+  "lines": [
+   {
+    "text": "It began as a café-gallery promoting contemporary photography, with a new exhibition every month."
+   },
+   {
+    "text": "Students by day. On summer evenings the terrace is close to impossible to get a seat on."
+   },
+   {
+    "text": "The square is named after writer Kálmán Mikszáth, who lived here. His limestone statue went up in 1960."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/venue/kis-lumen-1/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "MIKSZÁTH KÁLMÁN TÉR 2",
+  "sources": "We Love Budapest, Just Budapest",
+  "subtitle": "Where the Lumen story began",
+  "title": "Kis Lumen"
+ },
+ "kk": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "The cellar pub students just call KK, inside ELTE's humanities campus. You don't need a student card, just the stairs."
+  },
+  "lines": [
+   {
+    "text": "Open to everyone, whether you study humanities, law or nothing at all."
+   },
+   {
+    "text": "Live music turns up regularly, alongside DJ nights."
+   },
+   {
+    "text": "In summer its little sibling, the TreffOrt Kert terrace, opens in the courtyard. Heavy rain sends everyone back down to the cellar."
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "MÚZEUM KÖRÚT 4 · TREFORT KERT",
+  "sources": "We Love Budapest, Eduline, Funzine",
+  "subtitle": "University cellar pub, open to all",
+  "title": "Könyvtár Klub"
+ },
+ "konfekcio": {
+  "colors": {
+   "brick": "#1D5B2E",
+   "deep": "#1A1530",
+   "gold": "#5BE37D",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Art historian and curator Kata Oltai's shop behind the Rákóczi tér market: animal prints, statement pieces and gloriously aimless clothes."
+  },
+  "lines": [
+   {
+    "text": "It started in 2016 in a 16 m² room on Víg utca."
+   },
+   {
+    "text": "Every piece is one of a kind, so the stock changes daily."
+   },
+   {
+    "text": "Open Wed–Fri 15–19 and Sat 14–17. Plan ahead."
+   },
+   {
+    "text": "They often sell straight from Instagram and Facebook messages."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/article/2016/3/25/trash-is-high-fashion-at-budapest-s-tiny-konfekcio-boutique"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "JÓZSEF UTCA 16",
+  "sources": "We Love Budapest, Time Out",
+  "subtitle": "Trash is high fashion",
+  "title": "Konfekció"
+ },
+ "kraken": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Step inside and it's the year 2316: a rebel saloon where the staff play characters and the beer list is Hungarian craft."
+  },
+  "lines": [
+   {
+    "text": "Opened in autumn 2016 as the city's first steampunk pub."
+   },
+   {
+    "text": "Most of the interior was made by hand. Cogwheels over circuit boards."
+   },
+   {
+    "text": "The kitchen leans British Isles: black pudding, haggis and pâté."
+   },
+   {
+    "text": "Runs craft beer tastings with a live blues show."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read the review",
+    "url": "https://xpatloop.com/channels/2017/01/restaurant-review--krak-n-town-steampunk-saloon-budapest.html"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "JÓZSEF KÖRÚT 31/A",
+  "sources": "XpatLoop, Daily News Hungary, Budapest by Locals",
+  "subtitle": "Budapest's first steampunk saloon",
+  "title": "Krak'n Town"
+ },
+ "kupsus": {
+  "colors": {
+   "brick": "#0F4D63",
+   "deep": "#1A1530",
+   "gold": "#4CC9F0",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Finnish entrepreneur Ari Kupsus opened this gallery in 2009: contemporary art hung among early 19th-century antiques."
+  },
+  "lines": [
+   {
+    "text": "A new exhibition roughly every month."
+   },
+   {
+    "text": "Funds scholarships for Academy of Fine Arts students, and one each year gets a debut solo show."
+   },
+   {
+    "text": "Neighbours on the street include Ani Molnár Gallery and Doxa."
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "BRÓDY SÁNDOR UTCA 23/B",
+  "sources": "XpatLoop, Rolling in Budapest, HVG",
+  "subtitle": "New paintings, old furniture",
+  "title": "Ari Kupsus Galéria"
+ },
+ "kv": {
+  "colors": {
+   "brick": "#7A2E1A",
+   "deep": "#1A1530",
+   "gold": "#FF7A59",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Barbi and Marci opened it in autumn 2025 on a corner Barbi spotted in an ad. The name was decided long before the place was."
+  },
+  "lines": [
+   {
+    "text": "Fresh sandwiches, cinnamon and cardamom buns, and pastries from Ide Süss."
+   },
+   {
+    "text": "Evenings bring longer hours, mood lighting, short drinks and wine."
+   },
+   {
+    "text": "A small terrace on the Kőfaragó utca side."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/hely/kv-the-coffee-shop/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "VAS UTCA & KŐFARAGÓ UTCA",
+  "sources": "We Love Budapest",
+  "subtitle": "Coffee by day, bar by night",
+  "title": "kv the coffee shop"
+ },
+ "lumen": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "The big Lumen: coffee and breakfast by day, Hungarian craft beer and wine by night, and live music in the back room."
+  },
+  "lines": [
+   {
+    "text": "The Lumen story started on Mikszáth tér. This bigger room opened in 2017, when the square got too small for its crowd."
+   },
+   {
+    "text": "Jazz is a regular guest: free-improvisation nights and Budapest Jazzfest gigs have both played here."
+   },
+   {
+    "text": "A full kitchen, so the plants aren't the only thing being fed."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/en/article/2018/03/21/big-new-lumen-lures-with-fine-coffee-and-live-music/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "HORÁNSZKY UTCA 5 · PALOTANEGYED",
+  "sources": "We Love Budapest, Offbeat Budapest, JazzNearYou",
+  "subtitle": "Café, bar and a tiny gig room",
+  "title": "Lumen"
+ },
+ "matyas": {
+  "colors": {
+   "brick": "#34305E",
+   "deep": "#1A1530",
+   "gold": "#E6E3F6",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Once home to Jewish craftsmen and Roma musician families, the square went from run-down to lively after a renewal."
+  },
+  "lines": [
+   {
+    "text": "First marked on an 1830 map as Frühlingsfeld (Tavaszmező). It has been Mátyás tér since 1874."
+   },
+   {
+    "text": "In the 1838 flood it stood under as much as three metres of water."
+   },
+   {
+    "text": "Writer Iván Mándy loved it, and film crews still come to shoot."
+   },
+   {
+    "text": "Stage of the Night of Gypsy Musicians."
+   }
+  ],
+  "links": [
+   {
+    "title": "The square's story",
+    "url": "https://welovebudapest.com/cikk/2024/02/08/latnivalok-es-kultura-matyas-ter-tortenete-jozsefvaros-viii-kerulet/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "MÁTYÁS TÉR · MAGDOLNA QUARTER",
+  "sources": "We Love Budapest, Kristin Faurest: Ten Spaces, jozsefvaros.hu",
+  "subtitle": "Heart of the Magdolna Quarter",
+  "title": "Mátyás tér"
+ },
+ "museum": {
+  "colors": {
+   "brick": "#0F4D63",
+   "deep": "#1A1530",
+   "gold": "#4CC9F0",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Józsefváros never had a local history collection of its own until this museum opened in 2024, in the old Józsefvárosi Galéria rooms."
+  },
+  "lines": [
+   {
+    "text": "The permanent show tells the district through objects and personal stories, not a timeline."
+   },
+   {
+    "text": "Its 38 topics were built from items and memories donated by residents."
+   },
+   {
+    "text": "Now and then it turns back into the old Jókai Café for Gypsy Music Café evenings."
+   },
+   {
+    "text": "Open Tue–Wed and Sat 10–18, Thu–Fri 13–19. Check before you go."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/hely/jozsefvarosi-muzeum/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "JÓZSEF KÖRÚT 70",
+  "sources": "We Love Budapest, Budapest Times, jozsefvaros.hu",
+  "subtitle": "The district finally has a museum",
+  "title": "Józsefvárosi Múzeum"
+ },
+ "oldgolya": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Rising rents pushed Gólya out of its old pub on Bókay János utca."
+  },
+  "lines": [
+   {
+    "text": "It crowdfunded a building of its own on Orczy út."
+   },
+   {
+    "text": "Volunteers did much of the renovation."
+   },
+   {
+    "text": "Gentrification: 1. Storks: still flying."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "BÓKAY JÁNOS UTCA",
+  "sources": "HVG, Index, Wikipedia HU, We Love Budapest",
+  "subtitle": "2018–2019",
+  "title": "The Great Stork Migration"
+ },
+ "prater": {
+  "colors": {
+   "brick": "#1D5B2E",
+   "deep": "#1A1530",
+   "gold": "#5BE37D",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A jumble of decades: old theatre gowns hang next to belts and scarves, with a second room full of everyday dresses."
+  },
+  "lines": [
+   {
+    "text": "The owner, Ibolya Blázsev, has dealt in unusual clothes for decades."
+   },
+   {
+    "text": "Film and costume people shop here."
+   },
+   {
+    "text": "Good hunting ground for jewellery and 50s and 60s dresses."
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "PRÁTER UTCA 9",
+  "sources": "XpatLoop, We Love Budapest, Lufthansa, Wanderlog",
+  "subtitle": "Two shops, one owner",
+  "title": "Vintage Shop Práter"
+ },
+ "raid": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Police searched Auróra for 14 hours and detained 15 people."
+  },
+  "lines": [
+   {
+    "text": "They also seized industrial hemp grown for a sustainability programme."
+   },
+   {
+    "text": "A closure order followed in 2018. The place opened the next day anyway."
+   },
+   {
+    "text": "In 2019 the police turned up again, as surprise guests at a fundraiser."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "AURÓRA UTCA 11",
+  "sources": "444.hu, Global Voices",
+  "subtitle": "JUNE 2017",
+  "title": "The 14-Hour Boss Fight"
+ },
+ "sinkhole": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A parked car dropped into a pit in the road about 2.5 m wide and 6–7 m long."
+  },
+  "lines": [
+   {
+    "text": "The street had already been dug up again and again for utility works."
+   },
+   {
+    "text": "By 2016, residents described it as a street under siege."
+   },
+   {
+    "text": "Advice still stands: do not park on this tile."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "KARÁCSONY SÁNDOR UTCA",
+  "sources": "HVG, Index",
+  "subtitle": "18 NOV 2013",
+  "title": "The Street That Ate A Car"
+ },
+ "susuka": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "It looks puritan when it opens in the early afternoon. As the evening goes on, the sobriety wears off and the place fills up."
+  },
+  "lines": [
+   {
+    "text": "A student favourite with reasonable prices."
+   },
+   {
+    "text": "Openly LGBTQ-friendly."
+   },
+   {
+    "text": "Deep in the Magdolna Quarter, a short walk from Teleki tér."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/hely/susuka/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "NAGY FUVAROS UTCA 12",
+  "sources": "We Love Budapest, Intravel",
+  "subtitle": "The dorm club that forgot to close",
+  "title": "Susuka"
+ },
+ "szabo": {
+  "colors": {
+   "brick": "#34305E",
+   "deep": "#1A1530",
+   "gold": "#E6E3F6",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "The central branch of Budapest's biggest library network sits in the neo-baroque Wenckheim Palace, finished in 1889."
+  },
+  "lines": [
+   {
+    "text": "The city bought the palace in 1927. After four years of conversion, the library opened here on 21 April 1931."
+   },
+   {
+    "text": "The reading rooms keep the palace's character, from a gold room to an old smoking room with a spiral staircase."
+   },
+   {
+    "text": "János Fadrusz's sculpted miners hold up the entrance."
+   }
+  ],
+  "links": [
+   {
+    "title": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Metropolitan_Ervin_Szab%C3%B3_Library"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "SZABÓ ERVIN TÉR 1",
+  "sources": "Wikipedia, We Love Budapest",
+  "subtitle": "A library in a palace",
+  "title": "Szabó Ervin Library"
+ },
+ "teleki": {
+  "colors": {
+   "brick": "#1D5B2E",
+   "deep": "#1A1530",
+   "gold": "#5BE37D",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Teleki tér held the city's official junk market from 1897 to 1950. Today a renewed market hall runs the Teleki Zsibi community flea market."
+  },
+  "lines": [
+   {
+    "text": "Zsibi days bring clothes, homeware, electronics, books and records, with music and food stalls."
+   },
+   {
+    "text": "2026 editions so far: 16 May and 4 July."
+   },
+   {
+    "text": "Market hall open Mon 7–16, Tue–Fri 7–17, Sat 6–14."
+   },
+   {
+    "text": "The park on the square was renovated together with residents, who formed an association to look after it."
+   }
+  ],
+  "links": [
+   {
+    "title": "Latest Zsibi",
+    "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/06/summer-treasure-hunt-at-teleki-market/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "TELEKI LÁSZLÓ TÉR 11",
+  "sources": "jozsefvaros.hu, We Love Budapest, UNA",
+  "subtitle": "Market hall and community flea market",
+  "title": "Teleki téri piac + Zsibi"
+ },
+ "tigris": {
+  "colors": {
+   "brick": "#3A0F0A",
+   "deep": "#1A1530",
+   "gold": "#E8341C",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A 39,000 m² container market, running since 1993, with more than 2,000 stall tenants at its peak."
+  },
+  "lines": [
+   {
+    "text": "Bailiffs and police cleared it."
+   },
+   {
+    "text": "Traders crossed the road into the old Ganz-MÁVAG halls, and the game carried on. See Kiskína."
+   }
+  ],
+  "listTitle": "What happened",
+  "numbered": false,
+  "place": "KŐBÁNYAI ÚT",
+  "sources": "444.hu, Index, Pénzcentrum",
+  "subtitle": "16 JUNE 2014",
+  "title": "Level Cleared: Négy Tigris"
+ },
+ "typo": {
+  "colors": {
+   "brick": "#1D5B2E",
+   "deep": "#1A1530",
+   "gold": "#5BE37D",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "Typo began on a gallery level under the old Corvin department store, sold from a warehouse for a while, then settled on Krúdy utca. Since winter 2025 it's called Momoko Vintage."
+  },
+  "lines": [
+   {
+    "text": "Curated second hand with structure, for people who find chaotic thrift shops overwhelming."
+   },
+   {
+    "text": "Men's and women's collections with good labels."
+   },
+   {
+    "text": "Seasonal sales are worth watching for."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/hely/typo-showroom/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "KRÚDY GYULA UTCA",
+  "sources": "We Love Budapest, Time Out",
+  "subtitle": "Formerly Typo Showroom",
+  "title": "Momoko Vintage"
+ },
+ "zsir": {
+  "colors": {
+   "brick": "#6B4A00",
+   "deep": "#1A1530",
+   "gold": "#F8B800",
+   "paper": "#F3EBD8"
+  },
+  "intro": {
+   "text": "A basement pub on the corner of Kiss József utca and Népszínház utca. Spot the big ZSÍR sign in the gloom, then go down."
+  },
+  "lines": [
+   {
+    "text": "New owners opened it in 2022, in the space that used to be Hordo."
+   },
+   {
+    "text": "Cheap drinks, a properly mixed crowd and zero interest in pretending."
+   },
+   {
+    "text": "The heart of the Népszínház utca sidewalk festival, with bands playing right outside the door."
+   }
+  ],
+  "links": [
+   {
+    "title": "Read more",
+    "url": "https://welovebudapest.com/cikk/2024/06/17/ejszakai-elet-zsir-kocsma-fovarosi-kulipintyo-nepszinhaz-utca-jozsefvaros/"
+   }
+  ],
+  "listTitle": "Good to know",
+  "numbered": false,
+  "place": "KISS JÓZSEF UTCA · NÉPSZÍNHÁZ UTCA",
+  "sources": "We Love Budapest, HVG, Wanderlog",
+  "subtitle": "Fővárosi Kulipintyó: the capital's shack",
+  "title": "Zsír"
+ }
+}

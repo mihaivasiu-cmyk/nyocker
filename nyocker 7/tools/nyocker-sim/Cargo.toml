@@ -1,0 +1,8 @@
+[package]
+name = "nyocker-sim"
+version = "0.1.0"
+edition = "2021"
+description = "Build Nyócker and run it in the iOS Simulator from the terminal"
+publish = false
+
+[dependencies]

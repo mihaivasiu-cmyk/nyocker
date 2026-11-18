@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nyócker</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+<script src="vendor/leaflet/leaflet.js"></script>
+</head>
+<body>
+<div id="stage">
+<!-- One phone-sized screen, laid out like the iOS app: start screen, then four tabs. -->
+<div class="start" id="start">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="start-copy">
+    <div class="phase" id="phase"></div>
+    <div class="big-title">Nyócker</div>
+    <div class="tagline">the guide the district never approved</div>
+  </div>
+  <div class="start-foot">
+    <button class="btn primary" id="go">Press start</button>
+    <div class="tally" id="tally"></div>
+  </div>
+</div>
+
+<div class="app" id="app" hidden>
+  <section class="screen" id="screen-map">
+    <div id="map"></div>
+    <header class="maphead">
+      <div class="row"><div class="logo">Nyócker</div><div class="count" id="count"></div></div>
+      <div class="chips" id="chips"></div>
+    </header>
+    <button class="btn listbtn" id="listbtn">☰ List view</button>
+    <div class="card" id="card" hidden></div>
+  </section>
+  <section class="screen scroll" id="screen-events" hidden></section>
+  <section class="screen scroll" id="screen-news" hidden></section>
+  <section class="screen scroll" id="screen-radio" hidden></section>
+
+  <nav class="tabbar" id="tabbar">
+    <button data-tab="map" class="on"><svg viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Zm0 2.2 6 2v11.6l-6-2V6.2Z"/></svg>Map</button>
+    <button data-tab="events"><svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2Zm12 7H5v10h14V9Z"/></svg>Events</button>
+    <button data-tab="news"><svg viewBox="0 0 24 24"><path d="M3 4h14v15a1 1 0 0 0 1 1H5a2 2 0 0 1-2-2V4Zm16 4h2v10a2 2 0 0 1-2 2V8ZM6 7v4h8V7H6Zm0 6v1.5h8V13H6Zm0 3v1.5h8V16H6Z"/></svg>News</button>
+    <button data-tab="radio"><svg viewBox="0 0 24 24"><path d="M5 8 17 3l.7 1.8L9.6 8H20a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1Zm11 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM6 12v2h5v-2H6Zm0 4v2h5v-2H6Z"/></svg>Radio</button>
+  </nav>
+
+  <div class="sheet" id="sheet" hidden><div class="sheet-body" id="sheetbody"></div></div>
+</div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

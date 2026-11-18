@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Nyócker",
+  "mainBinaryName": "nyocker",
+  "version": "1.0.0",
+  "identifier": "com.mihaivasiu.nyocker.desktop",
+  "build": {
+    "frontendDist": "../web"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Nyócker",
+        "width": 393,
+        "height": 852,
+        "minWidth": 240,
+        "minHeight": 520,
+        "backgroundColor": "#100E26"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Travel",
+    "shortDescription": "The Józsefváros quest map",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "11.0"
+    }
+  }
+}

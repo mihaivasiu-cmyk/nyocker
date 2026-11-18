@@ -1,0 +1,33 @@
+name: TestFlight
+
+# Run from the Actions tab (Run workflow), or push a tag like v1.0-4.
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+jobs:
+  upload:
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pick Xcode 26
+        run: |
+          sudo xcode-select -s "$(ls -d /Applications/Xcode_26*.app | grep -v beta | sort -V | tail -1)"
+          xcodebuild -version
+      - name: App Store Connect key
+        env:
+          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+        run: |
+          mkdir -p ~/.appstoreconnect
+          printf '%s' "$ASC_KEY_P8" > ~/.appstoreconnect/AuthKey.p8
+      - name: Archive and upload
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_PATH: ~/.appstoreconnect/AuthKey.p8
+          BUILD_NUMBER: ${{ github.run_number }}0${{ github.run_attempt }}
+        run: |
+          export ASC_KEY_PATH="$HOME/.appstoreconnect/AuthKey.p8"
+          tools/testflight.sh

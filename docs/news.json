@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-18T11:42:28Z",
+ "updated": "2026-11-18T14:06:41Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,13 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "ac80997af581",
+   "title": "A Szociális Munka napja 2026- átadtuk díjainkat",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/a-szocialis-munka-napja-atadtuk-dijainkat/",
+   "date": "2026-11-18T12:43:19Z"
   },
   {
    "id": "eae694f2aa3a",
@@ -414,13 +421,6 @@
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/otthon/hirdetotabla/kozteruleti-lezarasok/2026/10/betonozasi-munkak-a-horanszky-utca-16-18-elott-2026-november-2-6-kozott/",
    "date": "2026-10-28T15:37:09Z"
-  },
-  {
-   "id": "db43be336a01",
-   "title": "Pályaválasztó nyílt délután a Kesztyűgyárban hetedik és nyolcadik osztályosoknak",
-   "source": "Józsefváros",
-   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/10/palyavalaszto-nyilt-delutan-a-kesztyugyarban-hetedik-es-nyolcadik-osztalyosoknak/",
-   "date": "2026-10-28T14:27:46Z"
   }
  ]
 }

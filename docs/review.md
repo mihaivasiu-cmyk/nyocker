@@ -4,6 +4,7 @@ Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
 - [ ] 436 ötletből 53 maradt versenyben: így lehet szavazni a dunakeszi közösségi költségvetésről — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/436-otletbol-53-maradt-versenyben-igy-lehet-szavazni-a-dunakeszi-kozossegi-koltsegvetesrol/> `97bc13aad700`
+- [ ] Házibulin verte eszméletlenre a vendéglátóját, aztán az autójával lépett le: rács mögé kerülhet a zuglói támadó — budapestkornyeke.hu (2026-11-17) <https://budapestkornyeke.hu/hazibulin-verte-eszmeletlenre-a-vendeglatojat-aztan-az-autojaval-lepett-le-racs-moge-kerulhet-a-zugloi-tamado/> `b08190a5cfde`
 - [ ] Több mint 800 méternyi földút újul meg Budakalászon, 14 helyen épül esővíz-elvezető — budapestkornyeke.hu (2026-11-17) <https://budapestkornyeke.hu/tobb-mint-800-meternyi-foldut-ujul-meg-budakalaszon-14-helyen-epul-esoviz-elvezeto/> `50f81653be2c`
 - [ ] Új Munka Törvénykönyvét és a „rabszolgatörvény” eltörlését követelik közéleti szereplők — Index (2026-11-17) <https://index.hu/belfold/2026/11/17/munka-torvenykonyve-rabszolgatorveny-munkavallaloi-jogok-koveteles/> `ba268d657f59`
 - [ ] Krasznahorkai László és Schiff András is Budapest díszpolgára lett, posztumusz Sebő Ferenc is megkapta a címet — budapestkornyeke.hu (2026-11-17) <https://budapestkornyeke.hu/krasznahorkai-laszlo-es-schiff-andras-is-budapest-diszpolgara-lett-posztumusz-sebo-ferenc-is-megkapta-a-cimet/> `5ee1064ea3a3`

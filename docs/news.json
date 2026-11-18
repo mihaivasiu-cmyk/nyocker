@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-17T16:00:15Z",
+ "updated": "2026-11-18T11:42:28Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,13 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "eae694f2aa3a",
+   "title": "Cigányok ideje van?",
+   "source": "Józsefváros Újság",
+   "url": "https://jozsefvarosujsag.hu/ciganyok-ideje-van/",
+   "date": "2026-11-18T02:19:00Z"
   },
   {
    "id": "79c84e055b8f",
@@ -414,13 +421,6 @@
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/10/palyavalaszto-nyilt-delutan-a-kesztyugyarban-hetedik-es-nyolcadik-osztalyosoknak/",
    "date": "2026-10-28T14:27:46Z"
-  },
-  {
-   "id": "e3a4599c15fc",
-   "title": "Programok a Józsefvárosi Idősek Klubjaiban",
-   "source": "Józsefváros",
-   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/10/programok-a-jozsefvarosi-idosek-klubjaiban-2/",
-   "date": "2026-10-28T14:02:54Z"
   }
  ]
 }

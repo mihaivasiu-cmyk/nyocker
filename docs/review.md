@@ -3,9 +3,11 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Pénzt kaphatnak a biatorbágyi civil szervezetek, december 10-ig lehet pályázni — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/penzt-kaphatnak-a-biatorbagyi-civil-szervezetek-december-10-ig-lehet-palyazni/> `1babb5d5f863`
 - [ ] 436 ötletből 53 maradt versenyben: így lehet szavazni a dunakeszi közösségi költségvetésről — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/436-otletbol-53-maradt-versenyben-igy-lehet-szavazni-a-dunakeszi-kozossegi-koltsegvetesrol/> `97bc13aad700`
 - [ ] Vasárnapig küldhetnek ötletet a szentendreiek, városrészenként 15 millió forintról dönthetnek — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/vasarnapig-kuldhetnek-otletet-a-szentendreiek-varosreszenkent-15-millio-forintrol-donthetnek/> `362db39117e9`
 - [ ] Kávé, süti és egy kis alkotás – Kerámiafestő kávézó nyílt a Palotanegyedben — We Love Budapest (2026-11-18) <https://welovebudapest.com/cikk/2026/11/18/keramikcafe-kreativ-kavezo-budapest-palotanegyed-jozsefvaros/> `da642fdca425`
+- [ ] Két hétvégén nem jár az S12-es Budapestről, lassabban érnek a fővárosba az S10-es vonatok — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/ket-hetvegen-nem-jar-az-s12-es-budapestrol-lassabban-ernek-a-fovarosba-az-s10-es-vonatok/> `4867fed1cc0c`
 - [ ] Házibulin verte eszméletlenre a vendéglátóját, aztán az autójával lépett le: rács mögé kerülhet a zuglói támadó — budapestkornyeke.hu (2026-11-17) <https://budapestkornyeke.hu/hazibulin-verte-eszmeletlenre-a-vendeglatojat-aztan-az-autojaval-lepett-le-racs-moge-kerulhet-a-zugloi-tamado/> `b08190a5cfde`
 - [ ] Több mint 800 méternyi földút újul meg Budakalászon, 14 helyen épül esővíz-elvezető — budapestkornyeke.hu (2026-11-17) <https://budapestkornyeke.hu/tobb-mint-800-meternyi-foldut-ujul-meg-budakalaszon-14-helyen-epul-esoviz-elvezeto/> `50f81653be2c`
 - [ ] Új Munka Törvénykönyvét és a „rabszolgatörvény” eltörlését követelik közéleti szereplők — Index (2026-11-17) <https://index.hu/belfold/2026/11/17/munka-torvenykonyve-rabszolgatorveny-munkavallaloi-jogok-koveteles/> `ba268d657f59`

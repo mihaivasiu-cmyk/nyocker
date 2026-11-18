@@ -125,3 +125,81 @@ struct EventsScreen: View {
         .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
     }
 }
+
+/// One spot's dates: from the live feed and the regulars in content.json.
+/// Shown by the Events button when a spot has no programme page of its own.
+struct SpotEventsSheet: View {
+    @EnvironmentObject private var feed: EventStore
+    @Environment(\.theme) private var theme
+    @Environment(\.dismiss) private var dismiss
+    @State private var reading: URL?
+    let spot: Spot
+
+    private var live: [LiveEvent] {
+        let today = Calendar.current.startOfDay(for: Date())
+        return feed.feed.items.filter { $0.spot == spot.id && ($0.date.map { $0 >= today } ?? false) }
+    }
+
+    private var regulars: [QuestEvent] { Content.shared.events.filter { $0.spot == spot.id } }
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack(alignment: .top) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("EVENTS").font(.caption.weight(.heavy)).tracking(1.5).foregroundStyle(theme.accent)
+                        Text(spot.n).font(.title2.weight(.bold)).foregroundStyle(theme.text)
+                        Text(spot.a).font(.subheadline).foregroundStyle(theme.muted)
+                    }
+                    Spacer()
+                    Button { dismiss() } label: {
+                        Image(systemName: "xmark").font(.system(size: 15, weight: .bold)).foregroundStyle(theme.text)
+                            .frame(width: 36, height: 36).background(theme.raised, in: Circle())
+                            .frame(width: 44, height: 44)
+                    }
+                    .accessibilityLabel("Close")
+                }
+                ForEach(live) { event in
+                    row(pill: event.when, colour: theme.fill, title: event.title, detail: event.note, link: event.url)
+                }
+                ForEach(regulars) { event in
+                    row(pill: event.when, colour: Color(css: event.color), title: event.title, detail: event.d, link: nil)
+                }
+                if live.isEmpty && regulars.isEmpty {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("No dates listed here yet.").font(.headline).foregroundStyle(theme.text)
+                        Text("New ones land on the Quest board as soon as they're posted.")
+                            .font(.subheadline).foregroundStyle(theme.muted)
+                        if let site = spot.discoverPage?.links?.first, let url = site.link {
+                            Button("Check \(site.title)") { reading = url }.buttonStyle(OutlineButton()).padding(.top, 4)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(16)
+                    .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
+                }
+            }
+            .padding(16)
+        }
+        .background(theme.bg.ignoresSafeArea())
+        .sheet(item: $reading) { WebPage(url: $0).ignoresSafeArea() }
+    }
+
+    private func row(pill: String, colour: Color, title: String, detail: String?, link: URL?) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(pill).font(.caption.weight(.bold)).foregroundStyle(Color.ink)
+                .padding(.horizontal, 9).padding(.vertical, 3)
+                .background(colour, in: Capsule())
+            Text(title).font(.title3.weight(.bold)).foregroundStyle(theme.text).padding(.top, 4)
+            if let detail {
+                Text(detail).font(.subheadline).foregroundStyle(theme.text)
+            }
+            if let link {
+                Button("Details") { reading = link }.buttonStyle(OutlineButton()).padding(.top, 6)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(16)
+        .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
+    }
+}

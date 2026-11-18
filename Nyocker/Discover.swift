@@ -109,6 +109,9 @@ struct DiscoverScreen: View {
     let spot: Spot
     let directions: () -> Void
     @State private var reading: URL?
+    @State private var listing = false
+    @EnvironmentObject private var eventFeed: EventStore
+    @Environment(\.theme) private var theme
 
     private var look: DiscoverPage.Style { page.look }
     private var paper: Color { Color(css: page.colors.paper) }
@@ -165,6 +168,9 @@ struct DiscoverScreen: View {
             .padding(.trailing, 10).padding(.top, 10)
         }
         .sheet(item: $reading) { WebPage(url: $0).ignoresSafeArea() }
+        .sheet(isPresented: $listing) {
+            SpotEventsSheet(spot: spot).environmentObject(eventFeed).environment(\.theme, theme)
+        }
     }
 
     /// The venue's own logo when it publishes one, otherwise its category sign.
@@ -331,10 +337,10 @@ struct DiscoverScreen: View {
                     Label("Directions", systemImage: "figure.walk")
                 }
                 .buttonStyle(BrandButton(fill: paper, ink: deep, radius: radius))
-                if let link = spot.eventsLink {
-                    Button { reading = link } label: { Label("Events", systemImage: "calendar") }
-                        .buttonStyle(BrandButton(fill: deep, ink: paper, radius: radius))
-                }
+                Button {
+                    if let link = spot.eventsLink { reading = link } else { listing = true }
+                } label: { Label("Events", systemImage: "calendar") }
+                    .buttonStyle(BrandButton(fill: deep, ink: paper, radius: radius))
             }
             ForEach(page.links ?? []) { item in
                 if let url = item.link {

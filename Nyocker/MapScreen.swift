@@ -4,6 +4,7 @@ import SwiftUI
 
 struct MapScreen: View {
     @EnvironmentObject private var progress: Progress
+    @EnvironmentObject private var eventFeed: EventStore
     @Environment(\.theme) private var theme
     @Binding var selected: Spot?
     @State private var filter: Category?
@@ -12,11 +13,21 @@ struct MapScreen: View {
     @State private var trip: Trip?
     @State private var discovering: Spot?
     @State private var events: URL?
+    @State private var spotEvents: Spot?
     private let spots = Content.shared.spots
     private let location = CLLocationManager()
 
     private var visible: [Spot] {
         filter.map { f in spots.filter { $0.category == f } } ?? spots
+    }
+
+    /// The venue's own programme page if it has one, else its dates from the feeds.
+    private func openEvents(_ spot: Spot) {
+        if let link = spot.eventsLink {
+            events = link
+        } else {
+            spotEvents = spot
+        }
     }
 
     var body: some View {
@@ -34,7 +45,7 @@ struct MapScreen: View {
             if let spot = selected {
                 SpotCard(spot: spot, close: { selected = nil }, directions: { walk(to: spot) },
                          discover: spot.discoverPage == nil ? nil : { discovering = spot },
-                         events: spot.eventsLink.map { link -> () -> Void in { events = link } })
+                         events: { openEvents(spot) })
                     .transition(.move(edge: .bottom))
             } else if let trip {
                 RouteBar(trip: trip, end: { self.trip = nil }, open: { openInMaps(trip.spot) })
@@ -61,6 +72,9 @@ struct MapScreen: View {
             focus = MapFocus(token: focus.token + 1, spot: spot)
         }
         .sheet(item: $events) { WebPage(url: $0).ignoresSafeArea() }
+        .sheet(item: $spotEvents) { spot in
+            SpotEventsSheet(spot: spot).environmentObject(eventFeed).environment(\.theme, theme)
+        }
         .sheet(item: $discovering) { spot in
             if let page = spot.discoverPage {
                 DiscoverScreen(page: page, spot: spot) {
@@ -69,6 +83,7 @@ struct MapScreen: View {
                     // Let the sheet finish closing before the map moves.
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { walk(to: spot) }
                 }
+                .environmentObject(eventFeed).environment(\.theme, theme)
             }
         }
         .sheet(isPresented: $showList) {

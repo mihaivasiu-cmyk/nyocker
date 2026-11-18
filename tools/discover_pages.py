@@ -538,15 +538,39 @@ for pid, (colors, style) in STYLES.items():
         colors["mark"] = colors["brick"] if contrast(colors["brick"], colors["paper"]) >= 3 else colors["deep"]
     pages[pid]["colors"] = colors
     pages[pid]["style"] = style
-for pid, extra in FEATURED.items():
-    page_ = pages[pid]
+STREET_WORDS = {"utca", "tér", "út", "körút", "kert", "negyed", "sétány", "site", "and", "above", "next", "to", "the", "of"}
+
+
+def address(place):
+    """ "BRÓDY SÁNDOR UTCA 2" -> "Bródy Sándor utca 2" """
+    words = place.lower().split(" ")
+    out = " ".join(w if w in STREET_WORDS or not w[:1].isalpha() else w[:1].upper() + w[1:] for w in words)
+    return out.replace("Ganz-mávag", "Ganz-MÁVAG")
+
+
+# Every other page gets the same build: a hero from tools/make_heroes.py, numbered facts
+# and a closing stamp with the spot's name and address.
+LORE_IDS = {"sinkhole", "raid", "aurora", "tigris", "corvinrip", "blaha", "oldgolya", "grundkert", "keleti"}
+for pid, page_ in pages.items():
+    if pid == "kerge":
+        continue
     page_["hero"] = f"{pid}-hero"
     page_["numbered"] = True
-    page_["closing"] = extra["closing"]
     page_["style"].pop("logo", None)
     page_["style"]["pattern"] = "none"  # the hero runs straight into a plain page
-    title, url = extra["site"]
-    page_["links"] = [link(title, url)] + page_.get("links", [])
+    extra = FEATURED.get(pid)
+    if extra:
+        page_["closing"] = extra["closing"]
+        title, url = extra["site"]
+        page_["links"] = [link(title, url)] + page_.get("links", [])
+    elif pid == "keleti":
+        page_["closing"] = {"text": "Keleti, 4 September 2015."}
+    elif pid in LORE_IDS:
+        page_["closing"] = {"text": "Legend logged.", "english": page_["subtitle"],
+                            "note": "Józsefváros lore, from the sources below."}
+    else:
+        page_["closing"] = {"text": page_["title"], "english": address(page_["place"]),
+                            "note": "Found it? Mark it on the map."}
 kerge = pages["kerge"]
 kerge["colors"].update(text=kerge["colors"]["paper"])
 

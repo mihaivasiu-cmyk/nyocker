@@ -18,7 +18,8 @@ const CAT = Object.fromEntries(CATS.map(([id, title, hex, sym]) => [id, { title,
 const TAG = { lore: "LORE", bar: "BAR", club: "CLUB", art: "ART SPACE", eat: "EATS", thrift: "SECOND HAND", local: "LOCAL" };
 /** Venue art shipped with the app, by the asset name content.json uses. */
 const ART = { "kerge-pin": "data/kerge-pin.png", "kerge-hero": "data/kerge-hero.jpg", underbar: "data/underbar.png", so: "data/so.png" };
-for (const id of ["hintalo", "lumen", "golya", "grund", "fecske"]) ART[`${id}-hero`] = `data/${id}-hero.jpg`;
+// Every other Discover hero is copied in by build.rs as data/<id>-hero.jpg.
+const heroImage = (name) => ART[name] || (/^[a-z0-9]+-hero$/.test(name) ? `data/${name}.jpg` : null);
 
 /* ---------- Time of day: the same eight phases and palettes as Theme.swift ---------- */
 
@@ -269,10 +270,10 @@ function drawCard() {
       <button class="btn primary${isFound ? " done" : ""}" id="cfound">${isFound ? "Found it" : "Mark as found"}</button>
       <button class="btn outline" id="cwalk">🚶 Directions</button>
     </div>
-    ${page || https(s.events) ? `<div class="btns">
+    <div class="btns">
       ${page ? `<button class="btn brand" id="cdisc" style="--brand-bg:${esc(page.colors.brick)};--brand-ink:${esc(page.colors.text || page.colors.paper)}">✨ Discover</button>` : ""}
-      ${https(s.events) ? '<button class="btn raised" id="cevts">📅 Events</button>' : ""}
-    </div>` : ""}`;
+      <button class="btn raised" id="cevts">📅 Events</button>
+    </div>`;
   $("cclose").onclick = () => select(null);
   $("cfound").onclick = () => {
     isFound ? found.delete(s.id) : found.add(s.id);
@@ -281,7 +282,7 @@ function drawCard() {
   };
   $("cwalk").onclick = () => walk(s);
   if ($("cdisc")) $("cdisc").onclick = () => showDiscover(s);
-  if ($("cevts")) $("cevts").onclick = () => openWeb(`${s.n} · Events`, s.events);
+  $("cevts").onclick = () => openEvents(s);
 }
 
 $("listbtn").onclick = () => {
@@ -392,7 +393,7 @@ function showDiscover(spot) {
   const links = (page.links || []).filter((l) => https(l.url));
   const body = openSheet(`<div class="sheet-scroll disc ${classes}" style="${esc(vars)}">
     <button class="close" id="dclose" aria-label="Close">✕</button>
-    ${page.hero && ART[page.hero] ? `<img class="hero" src="${ART[page.hero]}" alt="${esc(spot.n)} logo">`
+    ${page.hero && heroImage(page.hero) ? `<img class="hero" src="${heroImage(page.hero)}" alt="${esc(spot.n)}">`
       : `${logo}<div class="badge" aria-hidden="true"${logo ? " hidden" : ""}><i style="color:${esc(c.deep)}">${cat.sym}</i></div>`}
     <div class="body">
       <div class="head">
@@ -410,7 +411,7 @@ function showDiscover(spot) {
         ${page.closing.note ? `<div class="tiny">${esc(page.closing.note)}</div>` : ""}</div>` : ""}
       <div>
         <div class="btns"><button class="btn d-paper" id="dwalk">🚶 Directions</button>
-          ${https(spot.events) ? '<button class="btn d-deep" id="devts">📅 Events</button>' : ""}</div>
+          <button class="btn d-deep" id="devts">📅 Events</button></div>
         ${links.map((l, i) => `<div class="btns"><button class="btn d-gold" data-link="${i}">↗ ${esc(l.title)}</button></div>`).join("")}
       </div>
       ${page.sources ? `<div class="sources">Sources: ${esc(page.sources)}</div>` : ""}
@@ -419,7 +420,7 @@ function showDiscover(spot) {
   // No logo yet (not mirrored, or offline): show the category sign instead.
   body.querySelector(".logo img")?.addEventListener("error", () => { body.querySelector(".logo").remove(); body.querySelector(".badge").hidden = false; });
   body.querySelector("#dwalk").onclick = () => { closeSheet(); walk(spot); };
-  body.querySelector("#devts")?.addEventListener("click", () => openWeb(`${spot.n} · Events`, spot.events));
+  body.querySelector("#devts").addEventListener("click", () => openEvents(spot));
   body.querySelectorAll("[data-link]").forEach((b) => { const l = links[b.dataset.link]; b.onclick = () => openWeb(l.title, l.url); });
 }
 
@@ -480,6 +481,31 @@ async function drawEvents() {
     const id = b.dataset.going; going.has(id) ? going.delete(id) : going.add(id); store.set("going", [...going]); drawEvents(); }; });
   root.querySelectorAll("[data-open]").forEach((b) => { b.onclick = () => openWeb(b.dataset.title, b.dataset.open); });
   root.querySelectorAll("[data-spot]").forEach((b) => { b.onclick = () => showOnMap(b.dataset.spot); });
+}
+
+/** A spot's programme page if it has one, else its dates from the feeds (SpotEventsSheet in Swift). */
+async function openEvents(spot) {
+  if (https(spot.events)) return openWeb(`${spot.n} · Events`, spot.events);
+  const live = await feed("events");
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const dated = live.items.filter((e) => e.spot === spot.id && new Date(e.start) >= today);
+  const regulars = content.events.filter((e) => e.spot === spot.id);
+  const site = (pages[spot.discover]?.links || []).find((l) => https(l.url));
+  const row = (pill, colour, name, detail, link) => `<div class="item"><span class="pill" style="background:${esc(colour)}">${esc(pill)}</span>
+    <h3>${esc(name)}</h3>${detail ? `<div class="detail">${esc(detail)}</div>` : ""}
+    ${https(link) ? `<div class="btns"><button class="btn outline" data-open="${esc(link)}" data-title="${esc(name)}">Details</button></div>` : ""}</div>`;
+  const body = openSheet(`<div class="sheet-scroll" style="padding:16px">
+    <button class="close" id="eclose" aria-label="Close" style="float:right">✕</button>
+    <div class="label" style="color:var(--accent);font-weight:800;letter-spacing:1.5px;font-size:12px">EVENTS</div>
+    <h2 style="margin:4px 0">${esc(spot.n)}</h2><div class="fine" style="margin-bottom:14px">${esc(spot.a)}</div>
+    ${dated.map((e) => row(fmtWhen(e.start), "var(--fill)", e.title, e.note, e.link)).join("")}
+    ${regulars.map((e) => row(e.when, e.color, e.title, e.d, null)).join("")}
+    ${dated.length || regulars.length ? "" : `<div class="item"><h3>No dates listed here yet.</h3>
+      <div class="detail">New ones land on the Quest board as soon as they're posted.</div>
+      ${site ? `<div class="btns"><button class="btn outline" data-open="${esc(site.url)}" data-title="${esc(site.title)}">Check ${esc(site.title)}</button></div>` : ""}</div>`}
+  </div>`);
+  body.querySelector("#eclose").onclick = closeSheet;
+  body.querySelectorAll("[data-open]").forEach((b) => { b.onclick = () => openWeb(b.dataset.title, b.dataset.open); });
 }
 
 async function drawNews() {

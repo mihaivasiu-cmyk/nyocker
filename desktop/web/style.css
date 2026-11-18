@@ -171,3 +171,15 @@ body.dark .leaflet-tile-pane { filter: invert(1) hue-rotate(200deg) brightness(.
 .disc .logo.square { border-radius: min(var(--d-r, 6px), 18px); }
 .disc .logo.wide { width: 240px; height: 110px; padding: 18px; border-radius: min(var(--d-r, 6px), 18px); }
 .disc .logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+/* Events agenda (AgendaRow in Swift) */
+.arow { position: relative; }
+.arow::before { content: ""; position: absolute; left: 0; top: 14px; bottom: 14px; width: 4px; border-radius: 2px; background: var(--arow); }
+.ahead { display: flex; gap: 14px; align-items: flex-start; width: 100%; background: none; border: 0; padding: 0; color: inherit; text-align: left; font: inherit; cursor: pointer; }
+.ahead:disabled { cursor: default; }
+.athumb { flex: none; width: 60px; height: 60px; border-radius: 12px; object-fit: cover; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; color: var(--ink); }
+.atext { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.awhen { font-size: 12px; font-weight: 800; letter-spacing: 1px; color: var(--accent); }
+.atext b { font-size: 17px; }
+.avenue, .anote { font-size: 14px; color: var(--muted); }
+.anote { font-size: 13px; }

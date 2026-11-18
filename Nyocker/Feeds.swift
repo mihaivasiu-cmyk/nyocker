@@ -45,6 +45,22 @@ struct EventsScreen: View {
         return events.feed.items.filter { $0.date.map { $0 >= today } ?? false }
     }
 
+    /// Upcoming dates in three groups, in Budapest time: today, the next six days, later.
+    private var agenda: [AgendaDay] {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(identifier: "Europe/Budapest") ?? .current
+        let today = calendar.startOfDay(for: Date())
+        let tomorrow = calendar.date(byAdding: .day, value: 1, to: today) ?? today
+        let nextWeek = calendar.date(byAdding: .day, value: 7, to: today) ?? today
+        let sorted = upcoming.sorted { ($0.date ?? .distantFuture) < ($1.date ?? .distantFuture) }
+        let groups = [
+            AgendaDay(title: "Today", events: sorted.filter { ($0.date ?? .distantFuture) < tomorrow }),
+            AgendaDay(title: "This week", events: sorted.filter { ($0.date ?? .distantFuture) >= tomorrow && ($0.date ?? .distantFuture) < nextWeek }),
+            AgendaDay(title: "Later", events: sorted.filter { ($0.date ?? .distantFuture) >= nextWeek }),
+        ]
+        return groups.filter { !$0.events.isEmpty }
+    }
+
     private var status: String {
         events.offline ? "Offline. Showing saved events." : "Real dates from around the district."
     }
@@ -70,15 +86,18 @@ struct EventsScreen: View {
                 }
 
                 if upcoming.isEmpty {
-                    Text("No dated events right now. New ones land here as soon as they're posted.")
+                    Text("No dated events right now. New ones land here, by date, as soon as they're posted.")
                         .font(.subheadline).foregroundStyle(theme.muted)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(16)
                         .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
                 }
-                ForEach(upcoming) { event in
-                    card(pill: event.when, pillColor: theme.fill, title: event.title, place: event.venue,
-                         detail: event.note, id: event.id, spot: event.spot, link: event.url)
+                ForEach(agenda) { day in
+                    Text(day.title).font(.title3.weight(.bold)).foregroundStyle(theme.text)
+                        .frame(maxWidth: .infinity, alignment: .leading).padding(.top, 6)
+                    ForEach(day.events) { event in
+                        AgendaRow(event: event, today: day.title == "Today", showOnMap: showOnMap)
+                    }
                 }
 
                 Text("Regulars").font(.title3.weight(.bold)).foregroundStyle(theme.text)
@@ -123,6 +142,104 @@ struct EventsScreen: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)
         .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
+    }
+}
+
+struct AgendaDay: Identifiable {
+    let title: String
+    let events: [LiveEvent]
+
+    var id: String { title }
+}
+
+/// One dated event on the agenda: the venue's own art and colour, tapping through to its spot.
+struct AgendaRow: View {
+    @EnvironmentObject private var progress: Progress
+    @Environment(\.theme) private var theme
+    @State private var reading: URL?
+    let event: LiveEvent
+    let today: Bool
+    let showOnMap: (Spot) -> Void
+
+    private var spot: Spot? { event.spot.flatMap { id in Content.shared.spots.first { $0.id == id } } }
+    private var colour: Color {
+        spot?.discoverPage.map { Color(css: $0.colors.brick) } ?? spot?.category.color ?? theme.raised
+    }
+
+    private static let clock: DateFormatter = {
+        let format = DateFormatter()
+        format.locale = Locale(identifier: "en_GB")
+        format.timeZone = TimeZone(identifier: "Europe/Budapest")
+        format.dateFormat = "HH:mm"
+        return format
+    }()
+
+    private var when: String { today ? event.date.map(Self.clock.string(from:)) ?? event.when : event.when }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Button {
+                if let spot { showOnMap(spot) }
+            } label: {
+                HStack(alignment: .top, spacing: 14) {
+                    thumbnail
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(when.uppercased()).font(.caption.weight(.heavy)).tracking(1)
+                            .foregroundStyle(theme.accent)
+                        Text(event.title).font(.headline).foregroundStyle(theme.text)
+                            .multilineTextAlignment(.leading)
+                        HStack(spacing: 4) {
+                            Text(event.venue).font(.subheadline).foregroundStyle(theme.muted)
+                            if spot != nil {
+                                Image(systemName: "chevron.right").font(.caption.weight(.bold)).foregroundStyle(theme.muted)
+                            }
+                        }
+                        if let note = event.note {
+                            Text(note).font(.footnote).foregroundStyle(theme.muted).padding(.top, 2)
+                        }
+                    }
+                    Spacer(minLength: 0)
+                }
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .disabled(spot == nil)
+            .accessibilityHint(spot == nil ? "" : "Shows \(event.venue) on the map")
+            HStack(spacing: 10) {
+                Button(progress.going.contains(event.id) ? "You're in" : "I'm in") {
+                    progress.toggle(event.id, in: \.going)
+                }
+                .buttonStyle(PrimaryButton(fill: progress.going.contains(event.id) ? .mint : nil))
+                if let link = event.url {
+                    Button("Event page") { reading = link }.buttonStyle(OutlineButton())
+                }
+            }
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
+        .overlay(alignment: .leading) {
+            // The map pin's colour, so the agenda and the map read the same.
+            RoundedRectangle(cornerRadius: 2).fill(spot?.category.color ?? theme.line).frame(width: 4).padding(.vertical, 14)
+        }
+        .sheet(item: $reading) { WebPage(url: $0).ignoresSafeArea() }
+    }
+
+    /// The spot's Discover hero, cropped square; a category sign if the event has no spot.
+    @ViewBuilder private var thumbnail: some View {
+        if let hero = spot?.discoverPage?.hero {
+            Image(hero).resizable().scaledToFill()
+                .frame(width: 60, height: 60).clipped()
+                .background(colour)
+                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                .accessibilityHidden(true)
+        } else {
+            Image(systemName: spot?.category.symbol ?? "calendar").font(.system(size: 24, weight: .bold))
+                .foregroundStyle(Color.ink)
+                .frame(width: 60, height: 60)
+                .background(spot?.category.color ?? theme.fill, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                .accessibilityHidden(true)
+        }
     }
 }
 

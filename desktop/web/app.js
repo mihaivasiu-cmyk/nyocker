@@ -471,8 +471,8 @@ async function drawEvents() {
       ${content.spots.some((s) => s.id === spot) ? `<button class="btn outline" data-spot="${esc(spot)}">On map</button>` : ""}</div></div>`;
   };
   $("screen-events").innerHTML = title("Quest board", live.live ? "Real dates from around the district." : "Offline. Showing saved events.", "erefresh")
-    + (upcoming.length ? "" : `<div class="item fine" style="font-size:15px">No dated events right now. New ones land here as soon as they're posted.</div>`)
-    + upcoming.map((e) => card(e.id, fmtWhen(e.start), "var(--fill)", e.title, e.venue, e.note, e.spot, e.link)).join("")
+    + (upcoming.length ? "" : `<div class="item fine" style="font-size:15px">No dated events right now. New ones land here, by date, as soon as they're posted.</div>`)
+    + agenda(upcoming)
     + `<div class="subhead">Regulars</div>`
     + content.events.map((e) => card(e.id, e.when, e.color, e.title, e.place, e.d, e.spot, null)).join("");
   const root = $("screen-events");
@@ -481,6 +481,32 @@ async function drawEvents() {
     const id = b.dataset.going; going.has(id) ? going.delete(id) : going.add(id); store.set("going", [...going]); drawEvents(); }; });
   root.querySelectorAll("[data-open]").forEach((b) => { b.onclick = () => openWeb(b.dataset.title, b.dataset.open); });
   root.querySelectorAll("[data-spot]").forEach((b) => { b.onclick = () => showOnMap(b.dataset.spot); });
+}
+
+/** Dated events grouped Today / This week / Later (Budapest time), each with its venue's art and colour. */
+function agenda(events) {
+  const day = (d) => new Date(d).toLocaleDateString("en-CA", { timeZone: "Europe/Budapest" });
+  const today = day(Date.now()), week = day(Date.now() + 6 * 864e5);
+  const sorted = [...events].sort((a, b) => new Date(a.start) - new Date(b.start));
+  const groups = [["Today", sorted.filter((e) => day(e.start) === today)],
+    ["This week", sorted.filter((e) => day(e.start) > today && day(e.start) <= week)],
+    ["Later", sorted.filter((e) => day(e.start) > week)]];
+  const clock = (iso) => new Date(iso).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Budapest" });
+  const row = (e, isToday) => {
+    const spot = content.spots.find((s) => s.id === e.spot), page = spot && pages[spot.discover];
+    const cat = spot ? CAT[spot.c] || CAT.local : null, colour = page ? page.colors.brick : cat ? cat.hex : "var(--raised)";
+    const hero = page?.hero && heroImage(page.hero), isIn = going.has(e.id);
+    const thumb = hero ? `<img class="athumb" src="${hero}" alt="" style="background:${esc(colour)}">`
+      : `<div class="athumb" style="background:${esc(cat ? cat.hex : "var(--fill)")}">${cat ? cat.sym : "📅"}</div>`;
+    return `<div class="item arow" style="--arow:${esc(cat ? cat.hex : "var(--line)")}">
+      <button class="ahead" ${spot ? `data-spot="${esc(spot.id)}"` : "disabled"}>${thumb}
+        <span class="atext"><span class="awhen">${esc((isToday ? clock(e.start) : fmtWhen(e.start)).toUpperCase())}</span>
+        <b>${esc(e.title)}</b><span class="avenue">${esc(e.venue)}${spot ? " ›" : ""}</span>${e.note ? `<span class="anote">${esc(e.note)}</span>` : ""}</span></button>
+      <div class="btns"><button class="btn primary${isIn ? " done" : ""}" data-going="${esc(e.id)}">${isIn ? "You're in" : "I'm in"}</button>
+      ${https(e.link) ? `<button class="btn outline" data-open="${esc(e.link)}" data-title="${esc(e.title)}">Event page</button>` : ""}</div></div>`;
+  };
+  return groups.filter(([, list]) => list.length)
+    .map(([title, list]) => `<div class="subhead">${title}</div>` + list.map((e) => row(e, title === "Today")).join("")).join("");
 }
 
 /** A spot's programme page if it has one, else its dates from the feeds (SpotEventsSheet in Swift). */

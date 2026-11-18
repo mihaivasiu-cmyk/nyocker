@@ -21,7 +21,7 @@ if [ "$major" -lt 26 ]; then
 fi
 
 rm -rf "$OUT" && mkdir -p "$OUT"
-echo "▸ Archiving build $BUILD_NUMBER…"
+echo "▸ Archiving build ${BUILD_NUMBER}…"
 xcodebuild -project Nyocker.xcodeproj -scheme Nyocker -configuration Release \
   -destination 'generic/platform=iOS' -archivePath "$OUT/Nyocker.xcarchive" \
   CURRENT_PROJECT_VERSION="$BUILD_NUMBER" "${AUTH[@]}" -quiet archive
@@ -30,4 +30,4 @@ echo "▸ Uploading to App Store Connect…"
 xcodebuild -exportArchive -archivePath "$OUT/Nyocker.xcarchive" \
   -exportOptionsPlist ExportOptions.plist -exportPath "$OUT" "${AUTH[@]}"
 
-echo "✓ Uploaded build $BUILD_NUMBER. It shows up in App Store Connect → TestFlight after processing (5–30 min)."
+echo "✓ Uploaded build ${BUILD_NUMBER}. It shows up in App Store Connect → TestFlight after processing (5–30 min)."

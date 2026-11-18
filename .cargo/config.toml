@@ -1,0 +1,5 @@
+[alias]
+# `cargo sim` from the repo root builds the iOS app and runs it in the Simulator.
+sim = "run --quiet --release --manifest-path tools/nyocker-sim/Cargo.toml --"
+# `cargo desktop` opens the Tauri desktop app (desktop/).
+desktop = "run --release --manifest-path desktop/src-tauri/Cargo.toml"

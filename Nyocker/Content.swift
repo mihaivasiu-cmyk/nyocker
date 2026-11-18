@@ -13,8 +13,16 @@ struct Spot: Decodable, Identifiable, Hashable {
     let when: String?
     let src: String?
     let old: Bool?
+    /// Asset name of the venue's own pin art, drawn instead of the category symbol.
+    let icon: String?
+    /// The venue's programme, opened inside the app.
+    let events: String?
+    /// Key of a page in `DiscoverPage.all`.
+    let discover: String?
 
     var category: Category { Category(rawValue: c) ?? .local }
+    var eventsLink: URL? { events.flatMap(URL.init(string:)).flatMap { $0.scheme == "https" ? $0 : nil } }
+    var discoverPage: DiscoverPage? { discover.flatMap { DiscoverPage.all[$0] } }
     var coordinate: CLLocationCoordinate2D { .init(latitude: lat, longitude: lon) }
     var tag: String { when.map { "LORE / \($0)" } ?? category.tag }
 }

@@ -9,6 +9,9 @@ struct MapScreen: View {
     @State private var filter: Category?
     @State private var showList = false
     @State private var focus = MapFocus(token: 0, spot: nil)
+    @State private var trip: Trip?
+    @State private var discovering: Spot?
+    @State private var events: URL?
     private let spots = Content.shared.spots
     private let location = CLLocationManager()
 
@@ -19,6 +22,7 @@ struct MapScreen: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             NyockerMap(spots: visible, found: progress.found, selected: $selected, focus: focus,
+                       route: trip?.route, routeColor: UIColor(theme.accent),
                        style: theme.scheme == .dark ? .dark : .light)
                 .ignoresSafeArea(edges: .top)
 
@@ -28,7 +32,12 @@ struct MapScreen: View {
             }
 
             if let spot = selected {
-                SpotCard(spot: spot) { selected = nil }
+                SpotCard(spot: spot, close: { selected = nil }, directions: { walk(to: spot) },
+                         discover: spot.discoverPage == nil ? nil : { discovering = spot },
+                         events: spot.eventsLink.map { link -> () -> Void in { events = link } })
+                    .transition(.move(edge: .bottom))
+            } else if let trip {
+                RouteBar(trip: trip, end: { self.trip = nil }, open: { openInMaps(trip.spot) })
                     .transition(.move(edge: .bottom))
             } else {
                 HStack {
@@ -44,11 +53,23 @@ struct MapScreen: View {
             }
         }
         .animation(.easeOut(duration: 0.22), value: selected?.id)
+        .animation(.easeOut(duration: 0.22), value: trip)
         .onAppear { location.requestWhenInUseAuthorization() }
         .onChange(of: selected) { spot in
             guard let spot else { return }
             if let filter, filter != spot.category { self.filter = nil }
             focus = MapFocus(token: focus.token + 1, spot: spot)
+        }
+        .sheet(item: $events) { WebPage(url: $0).ignoresSafeArea() }
+        .sheet(item: $discovering) { spot in
+            if let page = spot.discoverPage {
+                DiscoverScreen(page: page, spot: spot) {
+                    discovering = nil
+                    selected = nil
+                    // Let the sheet finish closing before the map moves.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { walk(to: spot) }
+                }
+            }
         }
         .sheet(isPresented: $showList) {
             SpotList(spots: visible, title: filter?.title ?? "All spots") { spot in
@@ -83,6 +104,42 @@ struct MapScreen: View {
         .background(theme.bg.opacity(0.95).ignoresSafeArea(edges: .top))
     }
 
+    /// Asks Apple for a walking route from here and draws it on our own map.
+    private func walk(to spot: Spot) {
+        let status = location.authorizationStatus
+        guard status == .authorizedWhenInUse || status == .authorizedAlways else {
+            if status == .notDetermined { location.requestWhenInUseAuthorization() }
+            selected = nil
+            trip = Trip(spot: spot, route: nil,
+                        note: status == .notDetermined
+                            ? "Allow location, then tap Directions again."
+                            : "Turn on location for Nyócker in Settings to get walking directions here.")
+            return
+        }
+        selected = nil
+        trip = Trip(spot: spot, route: nil, note: nil)
+        let request = MKDirections.Request()
+        request.source = .forCurrentLocation()
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: spot.coordinate))
+        request.transportType = .walking
+        MKDirections(request: request).calculate { response, _ in
+            DispatchQueue.main.async {
+                guard trip?.spot.id == spot.id else { return }
+                if let route = response?.routes.first {
+                    trip = Trip(spot: spot, route: route, note: nil)
+                } else {
+                    trip = Trip(spot: spot, route: nil, note: "No walking route from where you are.")
+                }
+            }
+        }
+    }
+
+    private func openInMaps(_ spot: Spot) {
+        let item = MKMapItem(placemark: MKPlacemark(coordinate: spot.coordinate))
+        item.name = spot.n
+        item.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
+    }
+
     private func pick(_ category: Category?) {
         filter = category
         selected = nil
@@ -100,6 +157,57 @@ struct MapScreen: View {
             .foregroundStyle(on ? theme.bg : theme.text)
         }
         .accessibilityAddTraits(on ? .isSelected : [])
+    }
+}
+
+/// A walk to a spot: the route once Apple has worked it out, or why there isn't one.
+struct Trip: Equatable {
+    let spot: Spot
+    let route: MKRoute?
+    let note: String?
+
+    static func == (a: Trip, b: Trip) -> Bool {
+        a.spot.id == b.spot.id && a.route === b.route && a.note == b.note
+    }
+}
+
+struct RouteBar: View {
+    @Environment(\.theme) private var theme
+    let trip: Trip
+    let end: () -> Void
+    let open: () -> Void
+
+    private var summary: String {
+        guard let route = trip.route else { return trip.note ?? "Finding a walking route…" }
+        let minutes = max(1, Int((route.expectedTravelTime / 60).rounded()))
+        let distance = MKDistanceFormatter()
+        distance.unitStyle = .abbreviated
+        return "\(minutes) min walk · \(distance.string(fromDistance: route.distance))"
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 12) {
+                Image(systemName: "figure.walk").font(.system(size: 20, weight: .bold)).foregroundStyle(Color.ink)
+                    .frame(width: 40, height: 40).background(theme.accent, in: Circle())
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("To \(trip.spot.n)").font(.caption.weight(.bold)).foregroundStyle(theme.muted)
+                    Text(summary).font(.headline).foregroundStyle(theme.text)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 0)
+                if trip.route == nil && trip.note == nil { ProgressView() }
+            }
+            HStack(spacing: 10) {
+                Button("End", action: end).buttonStyle(OutlineButton())
+                Button(action: open) { Label("Apple Maps", systemImage: "arrow.up.right") }
+                    .buttonStyle(PrimaryButton())
+            }
+        }
+        .padding(.horizontal, 18).padding(.vertical, 14)
+        .background(theme.surface.clipShape(RoundedRectangle(cornerRadius: 20))
+            .shadow(color: .black.opacity(0.28), radius: 14, y: -4))
+        .padding(.horizontal, 8).padding(.bottom, 8)
     }
 }
 
@@ -124,6 +232,8 @@ struct NyockerMap: UIViewRepresentable {
     let found: Set<String>
     @Binding var selected: Spot?
     let focus: MapFocus
+    let route: MKRoute?
+    let routeColor: UIColor
     let style: UIUserInterfaceStyle
 
     private static let district = MKCoordinateRegion(
@@ -161,6 +271,16 @@ struct NyockerMap: UIViewRepresentable {
         map.overrideUserInterfaceStyle = style
         coordinator.sync(map)
 
+        if coordinator.route !== route {
+            coordinator.route = route
+            map.removeOverlays(map.overlays)
+            if let route {
+                map.addOverlay(route.polyline, level: .aboveRoads)
+                map.setVisibleMapRect(route.polyline.boundingMapRect,
+                                      edgePadding: UIEdgeInsets(top: 150, left: 50, bottom: 220, right: 50), animated: true)
+            }
+        }
+
         if coordinator.lastFocus != focus.token {
             coordinator.lastFocus = focus.token
             if let spot = focus.spot {
@@ -175,6 +295,7 @@ struct NyockerMap: UIViewRepresentable {
     final class Coordinator: NSObject, MKMapViewDelegate {
         var parent: NyockerMap
         var lastFocus = 0
+        var route: MKRoute?
         private var shown: [String: SpotAnnotation] = [:]
 
         init(_ parent: NyockerMap) {
@@ -208,8 +329,19 @@ struct NyockerMap: UIViewRepresentable {
             let spot = annotation.spot
             let big = parent.selected?.id == spot.id
             view.image = PinImage.make(category: spot.category, found: parent.found.contains(spot.id), big: big,
-                                       outline: parent.style == .dark ? 0x100E26 : 0xFFFFFF)
+                                       outline: parent.style == .dark ? 0x100E26 : 0xFFFFFF, icon: spot.icon)
             view.zPriority = big ? .max : .defaultUnselected
+        }
+
+        /// Dotted, like footsteps, in the accent of the hour.
+        func mapView(_ map: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            guard let line = overlay as? MKPolyline else { return MKOverlayRenderer(overlay: overlay) }
+            let renderer = MKPolylineRenderer(polyline: line)
+            renderer.strokeColor = parent.routeColor
+            renderer.lineWidth = 7
+            renderer.lineCap = .round
+            renderer.lineDashPattern = [0, 13]
+            return renderer
         }
 
         func mapView(_ map: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -243,9 +375,15 @@ struct NyockerMap: UIViewRepresentable {
 enum PinImage {
     private static var cache: [String: UIImage] = [:]
 
-    static func make(category: Category, found: Bool, big: Bool, outline: UInt32) -> UIImage {
-        let key = "\(category.rawValue)-\(found)-\(big)-\(outline)"
+    static func make(category: Category, found: Bool, big: Bool, outline: UInt32, icon: String? = nil) -> UIImage {
+        let key = "\(category.rawValue)-\(found)-\(big)-\(outline)-\(icon ?? "")"
         if let image = cache[key] { return image }
+        // A venue's own art is the reward for finding it, so it only replaces the category pin once found.
+        if found, let icon, let art = UIImage(named: icon) {
+            let image = venue(art, category: category, big: big, outline: outline)
+            cache[key] = image
+            return image
+        }
         let diameter: CGFloat = big ? 36 : 25
         let canvas = CGSize(width: 44, height: 44)
         let image = UIGraphicsImageRenderer(size: canvas).image { ctx in
@@ -267,13 +405,57 @@ enum PinImage {
         cache[key] = image
         return image
     }
+
+    /// A found venue with its own art gets a bigger badge: the art, ringed in its category colour, with a tick.
+    private static func venue(_ art: UIImage, category: Category, big: Bool, outline: UInt32) -> UIImage {
+        let diameter: CGFloat = big ? 44 : 34
+        let side = max(44, diameter + 4)
+        return UIGraphicsImageRenderer(size: CGSize(width: side, height: side)).image { _ in
+            let circle = CGRect(x: (side - diameter) / 2, y: (side - diameter) / 2, width: diameter, height: diameter)
+            let ring = UIBezierPath(ovalIn: circle)
+            UIColor(Color(hex: outline)).setFill()
+            ring.fill()
+            let inner = circle.insetBy(dx: 1.5, dy: 1.5)
+            UIColor(Color(hex: category.hex)).setFill()
+            UIBezierPath(ovalIn: inner).fill()
+            let face = inner.insetBy(dx: 2.5, dy: 2.5)
+            UIGraphicsGetCurrentContext()?.saveGState()
+            UIBezierPath(ovalIn: face).addClip()
+            art.draw(in: face)
+            UIGraphicsGetCurrentContext()?.restoreGState()
+            do {
+                let badge = CGRect(x: circle.maxX - 15, y: circle.minY - 1, width: 16, height: 16)
+                UIColor(Color.mint).setFill()
+                UIBezierPath(ovalIn: badge).fill()
+                let config = UIImage.SymbolConfiguration(pointSize: 9, weight: .black)
+                if let tick = UIImage(systemName: "checkmark", withConfiguration: config)?
+                    .withTintColor(UIColor(Color.ink), renderingMode: .alwaysOriginal) {
+                    tick.draw(at: CGPoint(x: badge.midX - tick.size.width / 2, y: badge.midY - tick.size.height / 2))
+                }
+            }
+        }
+    }
 }
 
 struct SpotPin: View {
     let category: Category
     let found: Bool
+    var icon: String?
 
     var body: some View {
+        if found, let icon {
+            Image(icon).resizable().scaledToFill().frame(width: 34, height: 34).clipShape(Circle())
+                .overlay(Circle().stroke(category.color, lineWidth: 2.5))
+                .overlay(alignment: .topTrailing) {
+                    Image(systemName: "checkmark").font(.system(size: 8, weight: .black)).foregroundStyle(Color.ink)
+                        .frame(width: 15, height: 15).background(Color.mint, in: Circle()).offset(x: 3, y: -3)
+                }
+        } else {
+            symbol
+        }
+    }
+
+    private var symbol: some View {
         ZStack {
             Circle().fill(category.color).frame(width: 30, height: 30)
             Image(systemName: found ? "checkmark" : category.symbol)
@@ -295,6 +477,9 @@ struct SpotCard: View {
     @Environment(\.theme) private var theme
     let spot: Spot
     let close: () -> Void
+    let directions: () -> Void
+    var discover: (() -> Void)?
+    var events: (() -> Void)?
     @State private var height: CGFloat = 0
 
     private var found: Bool { progress.found.contains(spot.id) }
@@ -302,7 +487,7 @@ struct SpotCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(spacing: 12) {
-                SpotPin(category: spot.category, found: found)
+                SpotPin(category: spot.category, found: found, icon: spot.icon)
                 VStack(alignment: .leading, spacing: 1) {
                     Text(spot.tag).font(.caption.weight(.bold)).foregroundStyle(theme.muted)
                     Text(spot.n).font(.title3.weight(.bold)).foregroundStyle(theme.text)
@@ -337,7 +522,21 @@ struct SpotCard: View {
                     progress.toggle(spot.id, in: \.found)
                 }
                 .buttonStyle(PrimaryButton(fill: found ? .mint : nil))
-                Button("Directions", action: openDirections).buttonStyle(OutlineButton())
+                Button(action: directions) { Label("Directions", systemImage: "figure.walk") }
+                    .buttonStyle(OutlineButton())
+            }
+            if discover != nil || events != nil {
+                HStack(spacing: 10) {
+                    if let discover {
+                        Button(action: discover) { Label("Discover", systemImage: "sparkles") }
+                            .buttonStyle(page.map { BrandButton(fill: Color(css: $0.colors.brick), ink: Color(css: $0.colors.paper)) }
+                                ?? BrandButton(fill: theme.raised, ink: theme.text))
+                    }
+                    if let events {
+                        Button(action: events) { Label("Events", systemImage: "calendar") }
+                            .buttonStyle(BrandButton(fill: theme.raised, ink: theme.text))
+                    }
+                }
             }
         }
         .padding(.horizontal, 18).padding(.vertical, 14)
@@ -348,11 +547,7 @@ struct SpotCard: View {
         .padding(.horizontal, 8).padding(.bottom, 8)
     }
 
-    private func openDirections() {
-        let item = MKMapItem(placemark: MKPlacemark(coordinate: spot.coordinate))
-        item.name = spot.n
-        item.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
-    }
+    private var page: DiscoverPage? { spot.discoverPage }
 }
 
 struct SpotList: View {
@@ -376,7 +571,7 @@ struct SpotList: View {
                     ForEach(spots) { spot in
                         Button { open(spot) } label: {
                             HStack(spacing: 12) {
-                                SpotPin(category: spot.category, found: false)
+                                SpotPin(category: spot.category, found: false, icon: spot.icon)
                                 VStack(alignment: .leading, spacing: 1) {
                                     Text(spot.n).font(.body.weight(.semibold)).foregroundStyle(theme.text)
                                     Text(spot.a).font(.footnote).foregroundStyle(theme.muted)

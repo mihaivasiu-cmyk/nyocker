@@ -344,7 +344,7 @@ struct NyockerMap: UIViewRepresentable {
             let spot = annotation.spot
             let big = parent.selected?.id == spot.id
             view.image = PinImage.make(category: spot.category, found: parent.found.contains(spot.id), big: big,
-                                       outline: parent.style == .dark ? 0x100E26 : 0xFFFFFF, icon: spot.icon)
+                                       outline: parent.style == .dark ? 0x16171A : 0xF2EFE6, icon: spot.icon)
             view.zPriority = big ? .max : .defaultUnselected
         }
 
@@ -504,8 +504,8 @@ struct SpotCard: View {
             HStack(spacing: 12) {
                 SpotPin(category: spot.category, found: found, icon: spot.icon)
                 VStack(alignment: .leading, spacing: 1) {
-                    Text(spot.tag).font(.caption.weight(.bold)).foregroundStyle(theme.muted)
-                    Text(spot.n).font(.title3.weight(.bold)).foregroundStyle(theme.text)
+                    Text(spot.tag).font(.system(.caption, design: .monospaced).weight(.medium)).foregroundStyle(theme.muted)
+                    Text(spot.n).font(.title3.weight(.semibold)).foregroundStyle(theme.accent)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 4)
@@ -517,8 +517,29 @@ struct SpotCard: View {
             }
             ScrollView {
                 VStack(alignment: .leading, spacing: 8) {
+                    if let photo = ArchivePhoto.thenAndNow(for: spot.id)?.then, UIImage(named: photo.image) != nil {
+                        HStack(alignment: .top, spacing: 12) {
+                            Image(photo.image).resizable().scaledToFill()
+                                .frame(width: 120, height: 84).clipped()
+                                .overlay(alignment: .bottomLeading) {
+                                    Text(photo.when).font(.system(size: 10, weight: .medium, design: .monospaced))
+                                        .foregroundStyle(Color(hex: 0xF2EFE6))
+                                        .padding(.horizontal, 5).padding(.vertical, 3)
+                                        .background(Color(hex: 0x16171A).opacity(0.75), in: RoundedRectangle(cornerRadius: 3))
+                                        .padding(5)
+                                }
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                                .accessibilityLabel("\(photo.when): \(photo.story)")
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(photo.story).font(.system(.subheadline, design: .serif)).foregroundStyle(theme.text)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                Text(photo.credit).font(.system(size: 10, design: .monospaced)).foregroundStyle(theme.muted)
+                            }
+                        }
+                        .padding(.bottom, 4)
+                    }
                     Text(spot.a).font(.subheadline).foregroundStyle(theme.link)
-                    Text(spot.d).font(.subheadline).foregroundStyle(theme.text)
+                    Text(spot.d).font(.system(.subheadline, design: .serif)).foregroundStyle(theme.text)
                     if let src = spot.src {
                         Text("Source: \(src)").font(.footnote).foregroundStyle(theme.muted)
                     }

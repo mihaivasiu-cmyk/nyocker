@@ -1,4 +1,317 @@
 {
+ "archive": [
+  {
+   "credit": "Fortepan / Budapest Főváros Levéltára",
+   "id": "a01",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=82158",
+   "place": "Blaha Lujza tér",
+   "spot": "blaha",
+   "story": "The Népszínház, the people's theatre, on today's Blaha Lujza tér.",
+   "when": "c. 1875"
+  },
+  {
+   "credit": "Fortepan / Kiss László",
+   "id": "a02",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=93402",
+   "place": "Baross tér",
+   "spot": "keleti",
+   "story": "Keleti station, the district's grand gateway.",
+   "when": "1895"
+  },
+  {
+   "credit": "Fortepan / Deutsche Fotothek / Brück und Sohn",
+   "id": "a03",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=277668",
+   "place": "Blaha Lujza tér",
+   "story": "The square facing the Népszínház, when it was still part of Népszínház utca.",
+   "when": "1903"
+  },
+  {
+   "credit": "Fortepan / Schmidt Albin",
+   "id": "a04",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=86026",
+   "place": "Kerepesi Cemetery",
+   "spot": "kerepesi",
+   "story": "The Kossuth Mausoleum in the national graveyard.",
+   "when": "1911"
+  },
+  {
+   "credit": "Fortepan / Országos Széchényi Könyvtár",
+   "id": "a05",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=256149",
+   "place": "Blaha Lujza tér",
+   "story": "A pro-war rally as the First World War begins.",
+   "when": "July 1914"
+  },
+  {
+   "credit": "Fortepan / Flanek-Falvay-Kováts",
+   "id": "a06",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=272942",
+   "place": "Blaha Lujza tér",
+   "spot": "corvinrip",
+   "story": "The Corvin department store lights up for its 14-day winter sale.",
+   "when": "1930"
+  },
+  {
+   "credit": "Fortepan",
+   "id": "a07",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=20705",
+   "place": "József körút",
+   "story": "Street life on the corner of József körút and Rákóczi út.",
+   "when": "1933"
+  },
+  {
+   "credit": "Fortepan / Homoródy Károly",
+   "id": "a08",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=1876",
+   "place": "Füvészkert",
+   "spot": "fuvesz",
+   "story": "A morning in the botanic garden.",
+   "when": "1935"
+  },
+  {
+   "credit": "Fortepan / Villányi György",
+   "id": "a09",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=170340",
+   "place": "Józsefváros station",
+   "story": "The district's own railway station, closed in 2005.",
+   "when": "1935"
+  },
+  {
+   "credit": "Fortepan / Molnár Gyula",
+   "id": "a10",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=274533",
+   "place": "Tisztviselőtelep",
+   "story": "The garden suburb from the air.",
+   "when": "1939"
+  },
+  {
+   "credit": "Fortepan / Vörös Hadsereg",
+   "id": "a11",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=175272",
+   "place": "József körút",
+   "story": "After the siege: the Baross utca crossing in ruins.",
+   "when": "1945"
+  },
+  {
+   "credit": "Fortepan / Vörös Hadsereg",
+   "id": "a12",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=175247",
+   "place": "Kálvária tér",
+   "story": "Paving stones piled up after the fighting.",
+   "when": "1945"
+  },
+  {
+   "credit": "Fortepan / Berkó Pál",
+   "id": "a13",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=78449",
+   "place": "Rákóczi tér market hall",
+   "spot": "csarnok",
+   "story": "Post-war shortages: the queue on Víg utca is for horse meat.",
+   "when": "1946"
+  },
+  {
+   "credit": "Fortepan / Berkó Pál",
+   "id": "a14",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=78779",
+   "place": "Kerepesi Cemetery",
+   "story": "László Rajk is reburied, two weeks before the revolution.",
+   "when": "6 Oct 1956"
+  },
+  {
+   "credit": "Fortepan / Berkó Pál",
+   "id": "a15",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=79442",
+   "place": "Bródy Sándor utca",
+   "story": "The Hungarian Radio building, where the shooting began on 23 October.",
+   "when": "1956"
+  },
+  {
+   "credit": "Fortepan / ETH Zürich",
+   "id": "a16",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=197791",
+   "place": "Corvin köz",
+   "story": "Insurgents on József körút, at the mouth of Corvin köz.",
+   "when": "1956"
+  },
+  {
+   "credit": "Fortepan / FSZEK Budapest Gyűjtemény / Sándor György",
+   "id": "a17",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=117066",
+   "place": "Corvin köz",
+   "story": "The damaged Corvin cinema.",
+   "when": "1957"
+  },
+  {
+   "credit": "Fortepan / MZSL / Ofner Károly",
+   "id": "a18",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=41842",
+   "place": "Blaha Lujza tér",
+   "story": "The National Theatre in its last full year.",
+   "when": "1964"
+  },
+  {
+   "credit": "Fortepan / Szalay Zoltán",
+   "id": "a19",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=138376",
+   "place": "Blaha Lujza tér",
+   "story": "The National Theatre is demolished.",
+   "when": "1965"
+  },
+  {
+   "credit": "Fortepan / Kovács László Péter",
+   "id": "a20",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=25594",
+   "place": "Blaha Lujza tér",
+   "story": "Digging the metro.",
+   "when": "1965"
+  },
+  {
+   "credit": "Fortepan / Kereki Sándor",
+   "id": "a21",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=205519",
+   "place": "Teleki tér",
+   "spot": "teleki",
+   "story": "A porter at the Teleki tér market.",
+   "when": "1972"
+  },
+  {
+   "credit": "Fortepan / FŐFOTÓ",
+   "id": "a22",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=207073",
+   "place": "Corvin Áruház",
+   "story": "The department store, in colour.",
+   "when": "1977"
+  },
+  {
+   "credit": "Fortepan / Prohászka Imre",
+   "id": "a23",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=288916",
+   "place": "Orczy tér",
+   "story": "Orczy tér in the rain.",
+   "when": "1980"
+  },
+  {
+   "credit": "Fortepan / Prohászka Imre",
+   "id": "a24",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=288808",
+   "place": "Baross tér",
+   "story": "The underpass in front of Keleti, in snow.",
+   "when": "1987"
+  },
+  {
+   "credit": "Fortepan / Marics Zoltán",
+   "id": "a25",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=131443",
+   "place": "National Museum",
+   "story": "Photographers on a phone box at the 15 March rally, the year the system fell.",
+   "when": "15 Mar 1989"
+  },
+  {
+   "credit": "Fortepan / tm",
+   "id": "a26",
+   "license": "CC BY-SA 3.0",
+   "page": "https://fortepan.hu/hu/photos/?id=77458",
+   "place": "Dankó utca",
+   "story": "A nursery sign in the Magdolna quarter.",
+   "when": "1989"
+  },
+  {
+   "credit": "Mstyslav Chernov, Wikimedia Commons",
+   "id": "a27",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Syrian_refugees_having_rest_at_the_floor_of_Keleti_railway_station._Refugee_crisis._Budapest,_Hungary,_Central_Europe,_5_September_2015.jpg",
+   "place": "Keleti station",
+   "spot": "keleti",
+   "story": "Syrian refugees resting on the station floor during the refugee crisis.",
+   "when": "Sept 2015"
+  },
+  {
+   "credit": "Sir Morosus, Wikimedia Commons",
+   "id": "a28",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:P%C3%A1lmah%C3%A1z_(F%C3%BCv%C3%A9szkert,_Budapest)_06.jpg",
+   "place": "Füvészkert",
+   "spot": "fuvesz",
+   "story": "The palm house.",
+   "when": "2017"
+  },
+  {
+   "credit": "Sir Morosus, Wikimedia Commons",
+   "id": "a29",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Corvin_%C3%81ruh%C3%A1z_-_fel%C3%BAj%C3%ADt%C3%A1s.jpg",
+   "place": "Corvin Áruház",
+   "spot": "corvinrip",
+   "story": "The department store under restoration, its 1960s cladding gone.",
+   "when": "2021"
+  },
+  {
+   "credit": "Sir Morosus, Wikimedia Commons",
+   "id": "a30",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Teleki_L%C3%A1szl%C3%B3_t%C3%A9r_(a).jpg",
+   "place": "Teleki tér",
+   "spot": "teleki",
+   "story": "Teleki László tér today.",
+   "when": "2022"
+  },
+  {
+   "credit": "KovacsDaniel, Wikimedia Commons",
+   "id": "a31",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Blaha_Lujza_t%C3%A9r_Budapest_2023.jpg",
+   "place": "Blaha Lujza tér",
+   "spot": "blaha",
+   "story": "The square after its 2022 rebuild.",
+   "when": "2023"
+  },
+  {
+   "credit": "Sir Morosus, Wikimedia Commons",
+   "id": "a32",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Corvin_s%C3%A9t%C3%A1ny_6._%26_8._(a).jpg",
+   "place": "Corvin sétány",
+   "spot": "grundkert",
+   "story": "The new quarter that replaced the old blocks.",
+   "when": "2023"
+  },
+  {
+   "credit": "12akd, Wikimedia Commons",
+   "id": "a33",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:R%C3%A1k%C3%B3czi_t%C3%A9ri_v%C3%A1s%C3%A1rcsarnok_bels%C5%911.jpg",
+   "place": "Rákóczi tér market hall",
+   "spot": "csarnok",
+   "story": "Inside the hall, still trading.",
+   "when": "2024"
+  }
+ ],
  "events": [
   {
    "color": "#5be37d",

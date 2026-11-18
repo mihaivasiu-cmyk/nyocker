@@ -172,11 +172,12 @@
    "text": "Legend logged."
   },
   "colors": {
-   "brick": "#1A0B08",
-   "deep": "#1A0B08",
-   "gold": "#E8341C",
-   "paper": "#F3EBD8",
-   "text": "#F3EBD8"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "blaha-hero",
   "intro": {
@@ -196,12 +197,12 @@
   "sources": "BKK, Telex",
   "style": {
    "caps": true,
-   "corner": 0,
-   "font": "mono",
+   "corner": 6,
+   "font": "serif",
    "frame": false,
-   "ornament": "▶",
+   "ornament": "—",
    "pattern": "none",
-   "shadow": "hard",
+   "shadow": "none",
    "tilt": 0
   },
   "subtitle": "10 DEC 2022",
@@ -260,11 +261,12 @@
    "text": "Legend logged."
   },
   "colors": {
-   "brick": "#1A0B08",
-   "deep": "#1A0B08",
-   "gold": "#E8341C",
-   "paper": "#F3EBD8",
-   "text": "#F3EBD8"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "corvinrip-hero",
   "intro": {
@@ -284,12 +286,12 @@
   "sources": "Wikipedia HU, We Love Budapest",
   "style": {
    "caps": true,
-   "corner": 0,
-   "font": "mono",
+   "corner": 6,
+   "font": "serif",
    "frame": false,
-   "ornament": "▶",
+   "ornament": "—",
    "pattern": "none",
-   "shadow": "hard",
+   "shadow": "none",
    "tilt": 0
   },
   "subtitle": "2007–2018",
@@ -354,12 +356,12 @@
    "text": "Rákóczi téri vásárcsarnok"
   },
   "colors": {
-   "brick": "#1E4E3F",
-   "deep": "#1E2A24",
-   "gold": "#D4A017",
-   "mark": "#1E4E3F",
-   "paper": "#F5EBD6",
-   "text": "#F5EBD6"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "csarnok-hero",
   "intro": {
@@ -388,12 +390,12 @@
   "sources": "HVG, piaconline.hu, OpenStreetMap, Time Out",
   "style": {
    "caps": true,
-   "corner": 0,
+   "corner": 6,
    "font": "serif",
-   "frame": true,
-   "ornament": "◆",
+   "frame": false,
+   "ornament": "—",
    "pattern": "none",
-   "shadow": "hard",
+   "shadow": "none",
    "tilt": 0
   },
   "subtitle": "Market hall since 1897",
@@ -518,12 +520,12 @@
    "text": "Füvészkert"
   },
   "colors": {
-   "brick": "#066C3A",
-   "deep": "#12321F",
-   "gold": "#C8E06B",
-   "mark": "#066C3A",
-   "paper": "#F4F8EF",
-   "text": "#FFFFFF"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "fuvesz-hero",
   "intro": {
@@ -558,15 +560,13 @@
   "place": "ILLÉS UTCA 25",
   "sources": "ELTE, Time Out, Wikipedia",
   "style": {
-   "caps": false,
-   "corner": 10,
+   "caps": true,
+   "corner": 6,
    "font": "serif",
-   "frame": true,
-   "logoBg": "#FFFFFF",
-   "logoShape": "wide",
-   "ornament": "❦",
+   "frame": false,
+   "ornament": "—",
    "pattern": "none",
-   "shadow": "soft",
+   "shadow": "none",
    "tilt": 0
   },
   "subtitle": "The country's oldest botanic garden",
@@ -740,11 +740,12 @@
    "text": "Legend logged."
   },
   "colors": {
-   "brick": "#1A0B08",
-   "deep": "#1A0B08",
-   "gold": "#E8341C",
-   "paper": "#F3EBD8",
-   "text": "#F3EBD8"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "grundkert-hero",
   "intro": {
@@ -761,12 +762,12 @@
   "sources": "HVG",
   "style": {
    "caps": true,
-   "corner": 0,
-   "font": "mono",
+   "corner": 6,
+   "font": "serif",
    "frame": false,
-   "ornament": "▶",
+   "ornament": "—",
    "pattern": "none",
-   "shadow": "hard",
+   "shadow": "none",
    "tilt": 0
   },
   "subtitle": "JAN 2014",
@@ -1053,12 +1054,12 @@
    "text": "Keleti, 4 September 2015."
   },
   "colors": {
-   "brick": "#2B2B2B",
-   "deep": "#1E1E1E",
-   "gold": "#BDBDBD",
-   "mark": "#6B6B6B",
-   "paper": "#F4F4F4",
-   "text": "#EDEDED"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "keleti-hero",
   "intro": {
@@ -1074,8 +1075,8 @@
   "place": "BAROSS TÉR · KELETI",
   "sources": "Euronews, Middle East Eye",
   "style": {
-   "caps": false,
-   "corner": 2,
+   "caps": true,
+   "corner": 6,
    "font": "serif",
    "frame": false,
    "ornament": "—",
@@ -1093,12 +1094,12 @@
    "text": "Fiumei úti sírkert"
   },
   "colors": {
-   "brick": "#282725",
-   "deep": "#282725",
-   "gold": "#C9AD55",
-   "mark": "#282725",
-   "paper": "#EFEBE1",
-   "text": "#E8E2D2"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "kerepesi-hero",
   "intro": {
@@ -1127,10 +1128,10 @@
   "sources": "Nemzeti Örökség Intézete, VG, We Love Budapest",
   "style": {
    "caps": true,
-   "corner": 0,
+   "corner": 6,
    "font": "serif",
-   "frame": true,
-   "ornament": "✦",
+   "frame": false,
+   "ornament": "—",
    "pattern": "none",
    "shadow": "none",
    "tilt": 0
@@ -2027,12 +2028,12 @@
    "text": "Teleki téri piac + Zsibi"
   },
   "colors": {
-   "brick": "#8A4B2A",
-   "deep": "#2E1A10",
-   "gold": "#F2B544",
-   "mark": "#8A4B2A",
-   "paper": "#FFF3E0",
-   "text": "#FFF3E0"
+   "brick": "#16171A",
+   "deep": "#16171A",
+   "gold": "#CC9F53",
+   "mark": "#7A5A1F",
+   "paper": "#E6E3DA",
+   "text": "#F2EFE6"
   },
   "hero": "teleki-hero",
   "intro": {
@@ -2063,14 +2064,14 @@
   "place": "TELEKI LÁSZLÓ TÉR 11",
   "sources": "jozsefvaros.hu, We Love Budapest, UNA",
   "style": {
-   "caps": false,
-   "corner": 8,
-   "font": "rounded",
+   "caps": true,
+   "corner": 6,
+   "font": "serif",
    "frame": false,
-   "ornament": "✺",
+   "ornament": "—",
    "pattern": "none",
-   "shadow": "hard",
-   "tilt": -2
+   "shadow": "none",
+   "tilt": 0
   },
   "subtitle": "Market hall and community flea market",
   "title": "Teleki téri piac + Zsibi"

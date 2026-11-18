@@ -83,29 +83,79 @@ struct StartScreen: View {
     let phase: DayPhase
     let start: () -> Void
 
+    private let photo = ArchivePhoto.ofTheDay
+    private var photoNumber: Int { photo.flatMap { p in Content.shared.archive.firstIndex { $0.id == p.id } }.map { $0 + 1 } ?? 0 }
+    private var hasImage: Bool { photo.map { UIImage(named: $0.image) != nil } ?? false }
+
     private var tally: String {
         let lore = Content.shared.spots.filter { $0.category == .lore }.count
-        return "\(Content.shared.spots.count - lore) spots. \(lore) legends. 1 car eaten by a street."
+        return "\(Content.shared.spots.count - lore) spots · \(lore) legends · \(Content.shared.archive.count) pictures"
     }
 
     var body: some View {
-        ZStack {
-            DayScene(palette: theme).ignoresSafeArea()
-            VStack(spacing: 8) {
-                Label(phase.title.uppercased(), systemImage: phase.symbol)
-                    .font(.footnote.weight(.semibold)).foregroundStyle(theme.skyInk)
-                Text("Nyócker").font(.system(size: 68, weight: .bold)).foregroundStyle(theme.skyInk)
-                    .minimumScaleFactor(0.7).lineLimit(1)
-                Text("the guide the district never approved").font(.body).foregroundStyle(theme.skyInk)
-                    .multilineTextAlignment(.center)
-                Spacer()
-                Button("Press start", action: start).buttonStyle(PrimaryButton())
-                Text(tally).font(.footnote).foregroundStyle(Color.white.opacity(0.9))
-                    .multilineTextAlignment(.center)
+        GeometryReader { geo in
+            ZStack(alignment: .top) {
+                Color(hex: 0x16171A).ignoresSafeArea()
+                if let photo, hasImage {
+                    Image(photo.image).resizable().scaledToFill()
+                        .frame(width: geo.size.width, height: geo.size.height * 0.66)
+                        .clipped()
+                        .overlay(LinearGradient(colors: [Color(hex: 0x16171A).opacity(0), Color(hex: 0x16171A)],
+                                                startPoint: .center, endPoint: .bottom))
+                        .ignoresSafeArea(edges: .top)
+                        .accessibilityLabel("\(photo.when), \(photo.place): \(photo.story)")
+                } else {
+                    DayScene(palette: phase.palette).frame(height: geo.size.height * 0.66).ignoresSafeArea(edges: .top)
+                }
+                VStack(alignment: .leading, spacing: 0) {
+                    HStack {
+                        Text("BUDAPEST VIII.").font(.system(size: 12, weight: .semibold)).tracking(3)
+                        Spacer()
+                        if photoNumber > 0 {
+                            Text(String(format: "Nº %02d / %02d", photoNumber, Content.shared.archive.count))
+                                .font(.system(size: 11, weight: .medium, design: .monospaced))
+                                .padding(.horizontal, 7).padding(.vertical, 5)
+                                .background(Color(hex: 0x16171A).opacity(0.6), in: RoundedRectangle(cornerRadius: 4))
+                                .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color(hex: 0xE6E3DA).opacity(0.35)))
+                        }
+                    }
+                    .foregroundStyle(Color(hex: 0xE6E3DA))
+                    Spacer()
+                    Text("NYÓCKER").font(.system(size: 50, weight: .bold)).tracking(5).foregroundStyle(Color(hex: 0xF2EFE6))
+                        .minimumScaleFactor(0.7).lineLimit(1)
+                    Text("Józsefváros, told by its own streets: then and now.")
+                        .font(.system(size: 17, design: .serif).italic()).foregroundStyle(Color(hex: 0xD9D5C7))
+                        .padding(.top, 8)
+                    if let photo {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("\(photo.when) · \(photo.place)".uppercased())
+                                .font(.system(size: 12, weight: .medium, design: .monospaced)).foregroundStyle(Color(hex: 0xCC9F53))
+                            Text(photo.story).font(.system(size: 15, design: .serif)).foregroundStyle(Color(hex: 0xE6E3DA))
+                                .fixedSize(horizontal: false, vertical: true)
+                            Text(photo.creditLine).font(.system(size: 11, design: .monospaced)).foregroundStyle(Color(hex: 0x95999D))
+                        }
+                        .padding(.top, 14)
+                        .overlay(Rectangle().fill(Color(hex: 0x3C3F44)).frame(height: 1), alignment: .top)
+                        .padding(.top, 16)
+                        HStack(spacing: 3) {
+                            ForEach(Content.shared.archive.indices, id: \.self) { index in
+                                Rectangle().fill(index + 1 < photoNumber ? Color(hex: 0xCC9F53)
+                                                 : index + 1 == photoNumber ? Color(hex: 0xF2EFE6) : Color(hex: 0x3C3F44))
+                                    .frame(height: 3)
+                            }
+                        }
+                        .padding(.top, 16)
+                        .accessibilityHidden(true)
+                    }
+                    Button("Enter the district", action: start).buttonStyle(PrimaryButton(fill: Color(hex: 0xCC9F53)))
+                        .padding(.top, 22)
+                    Text(tally).font(.system(size: 12, design: .monospaced)).foregroundStyle(Color(hex: 0x95999D))
+                        .frame(maxWidth: .infinity).padding(.top, 10)
+                }
+                .padding(.horizontal, 24)
+                .padding(.top, 12)
+                .padding(.bottom, 14)
             }
-            .padding(.horizontal, 24)
-            .padding(.top, 40)
-            .padding(.bottom, 14)
         }
     }
 }

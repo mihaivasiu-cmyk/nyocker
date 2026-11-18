@@ -571,6 +571,15 @@ for pid, page_ in pages.items():
     else:
         page_["closing"] = {"text": page_["title"], "english": address(page_["place"]),
                             "note": "Found it? Mark it on the map."}
+# Spots with archive photos (content.json "archive", pipeline/ARCHIVE.md) take the archive
+# look: the photos open the page, on silver-print ink with paper cards and the ochre accent.
+ARCHIVE_SPOTS = {a["spot"] for a in json.loads((Path(__file__).resolve().parent.parent / "Nyocker/content.json")
+                                              .read_text(encoding="utf-8")).get("archive", []) if a.get("spot")}
+for pid in ARCHIVE_SPOTS:
+    pages[pid]["colors"] = {"brick": "#16171A", "text": "#F2EFE6", "paper": "#E6E3DA", "deep": "#16171A",
+                            "gold": "#CC9F53", "mark": "#7A5A1F"}
+    pages[pid]["style"] = {"font": "serif", "caps": True, "corner": 6, "shadow": "none", "frame": False,
+                           "pattern": "none", "ornament": "—", "tilt": 0}
 kerge = pages["kerge"]
 kerge["colors"].update(text=kerge["colors"]["paper"])
 

@@ -79,11 +79,11 @@ struct Vinyl: View {
 
     var body: some View {
         ZStack {
-            Circle().fill(Color(hex: 0x0A0918))
-            ForEach([0.82, 0.68], id: \.self) { Circle().stroke(Color(hex: 0x2A2652), lineWidth: 1).scaleEffect($0) }
+            Circle().fill(Color(hex: 0x111214))
+            ForEach([0.82, 0.68], id: \.self) { Circle().stroke(Color(hex: 0x3C3F44), lineWidth: 1).scaleEffect($0) }
             Circle().fill(label).scaleEffect(0.36)
             Circle().fill(Color.ink).frame(width: 6, height: 6).offset(y: -12)
-            Circle().fill(Color(hex: 0x0A0918)).scaleEffect(0.06)
+            Circle().fill(Color(hex: 0x111214)).scaleEffect(0.06)
         }
     }
 }

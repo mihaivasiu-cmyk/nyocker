@@ -37,6 +37,39 @@ struct QuestEvent: Decodable, Identifiable {
     let d: String
 }
 
+/// One of the 33 archive photos (pipeline/ARCHIVE.md). Its image is the asset "archive-<id>",
+/// fetched at build time by pipeline/fetch_archive.py.
+struct ArchivePhoto: Decodable, Identifiable {
+    let id: String
+    let when: String
+    let place: String
+    let story: String
+    let credit: String
+    let license: String
+    let page: String
+    let spot: String?
+
+    var image: String { "archive-\(id)" }
+    var creditLine: String { "\(credit) · \(license)" }
+    var link: URL? { URL(string: page).flatMap { $0.scheme == "https" ? $0 : nil } }
+
+    /// A different photo each day, the same for everyone.
+    static var ofTheDay: ArchivePhoto? {
+        let all = Content.shared.archive
+        guard !all.isEmpty else { return nil }
+        let day = Calendar.current.ordinality(of: .day, in: .era, for: Date()) ?? 0
+        return all[day % all.count]
+    }
+
+    /// The oldest and newest photo of a spot, for its then-and-now switch.
+    static func thenAndNow(for spot: String) -> (then: ArchivePhoto, now: ArchivePhoto?)? {
+        let photos = Content.shared.archive.filter { $0.spot == spot }
+        guard let first = photos.first else { return nil }
+        let last = photos.count > 1 ? photos.last : nil
+        return (first, last)
+    }
+}
+
 struct Release: Decodable, Identifiable {
     let artist: String
     let release: String
@@ -53,6 +86,7 @@ struct Content: Decodable {
     let spots: [Spot]
     let events: [QuestEvent]
     let radio: [Release]
+    let archive: [ArchivePhoto]
 
     static let shared: Content = {
         let url = Bundle.main.url(forResource: "content", withExtension: "json")!

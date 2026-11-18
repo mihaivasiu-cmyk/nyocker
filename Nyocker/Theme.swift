@@ -7,8 +7,8 @@ extension Color {
     }
 
     /// Text on bright fills, whatever the time of day.
-    static let ink = Color(hex: 0x100E26)
-    static let mint = Color(hex: 0x5BE37D)
+    static let ink = Color(hex: 0x16171A)
+    static let mint = Color(hex: 0x8FA87A)
 }
 
 /// The app's look at each moment of the day, by the clock on the phone.
@@ -49,48 +49,20 @@ enum DayPhase: String, CaseIterable {
         }
     }
 
+    /// The archive look: silver-print ink after dark, paper by day. The only warm colour
+    /// is the ochre of the Rákóczi tér market hall roof (see pipeline/ARCHIVE.md).
     var palette: Palette {
         switch self {
-        case .dawn:
-            return Palette(scheme: .dark, bg: 0x1D1A4A, surface: 0x2D2966, raised: 0x423C85, line: 0x7A74BF, text: 0xFFFFFF,
-                    muted: 0xD6D2F0, accent: 0xFFB8C9, link: 0xB8DCFF, lore: 0x3A2F86, fill: 0xFFB8C9,
-                    sky: [0x12103A, 0x3B2A78, 0xB4568C], skyInk: 0xFFE4EC, body: 0xFFE9B0, bodyY: 0.60, moon: false,
-                    stars: 0.7, windows: 0.8, far: 0x2F2670, near: 0x1B1748, ground: 0x12103A)
-        case .sunrise:
-            return Palette(scheme: .light, bg: 0xFFE8DD, surface: 0xFFF6F1, raised: 0xFFD8C7, line: 0xC98D76, text: 0x3B1730,
-                    muted: 0x6E4656, accent: 0xB42A52, link: 0x8A2F6F, lore: 0xFFD8E0, fill: 0xFF9A6B,
-                    sky: [0x3A2A7A, 0xD65A8A, 0xFFB56B, 0xFFE59A], skyInk: 0xFFF3C4, body: 0xFFF2B0, bodyY: 0.56, moon: false,
-                    stars: 0.15, windows: 0.35, far: 0x7A4A8C, near: 0x4A2A66, ground: 0x2C1A4A)
-        case .morning:
-            return Palette(scheme: .light, bg: 0xE4F3FB, surface: 0xFFFFFF, raised: 0xCDE7F5, line: 0x7FAFC9, text: 0x10304A,
-                    muted: 0x3F6078, accent: 0x0A6AA0, link: 0x0A6AA0, lore: 0xD6ECFA, fill: 0xFFD23F,
-                    sky: [0x5BB8EC, 0xA8DDF5, 0xE9F6FB], skyInk: 0x0B2A44, body: 0xFFF3C0, bodyY: 0.38, moon: false,
-                    stars: 0, windows: 0, far: 0x9CC4DC, near: 0x6C9CBC, ground: 0x34607E)
-        case .midday:
-            return Palette(scheme: .light, bg: 0xFFF6D8, surface: 0xFFFFFF, raised: 0xFFE9A8, line: 0xC4AC5E, text: 0x2B2408,
-                    muted: 0x5E5426, accent: 0x8F5400, link: 0x0A6AA0, lore: 0xFFEDB8, fill: 0xFFD23F,
-                    sky: [0x4AA9EC, 0x9AD8F7, 0xDFF3FB], skyInk: 0x08233A, body: 0xFFF7D0, bodyY: 0.38, moon: false,
-                    stars: 0, windows: 0, far: 0xA4C8DE, near: 0x78A0BC, ground: 0x3E6680)
-        case .golden:
-            return Palette(scheme: .light, bg: 0xFFDFAE, surface: 0xFFF0D6, raised: 0xFFCF8A, line: 0xB88444, text: 0x3D1E08,
-                    muted: 0x5E3A18, accent: 0x9A3600, link: 0x7A3A00, lore: 0xFFD39B, fill: 0xFF9E3D,
-                    sky: [0xF2A03D, 0xFFC56B, 0xFFE9B0], skyInk: 0x3D1E08, body: 0xFFF3C4, bodyY: 0.44, moon: false,
-                    stars: 0, windows: 0.1, far: 0xC48A5A, near: 0x8C5A3C, ground: 0x5C3826)
-        case .sunset:
-            return Palette(scheme: .dark, bg: 0x3B1444, surface: 0x56205E, raised: 0x743078, line: 0xA763A8, text: 0xFFFFFF,
-                    muted: 0xF3D6E4, accent: 0xFFB36B, link: 0xFFD0A8, lore: 0x6B1F52, fill: 0xFF9E5E,
-                    sky: [0x2A1458, 0xA0357F, 0xFF8A5C, 0xFFC56B], skyInk: 0xFFD23F, body: 0xFFD27A, bodyY: 0.60, moon: false,
-                    stars: 0.25, windows: 0.6, far: 0x4A2470, near: 0x2C1648, ground: 0x1E0F36)
-        case .dusk:
-            return Palette(scheme: .dark, bg: 0x17174A, surface: 0x27276A, raised: 0x3A3A8A, line: 0x6C6CC0, text: 0xFFFFFF,
-                    muted: 0xD0D0F0, accent: 0xFFC98A, link: 0xB4C6FF, lore: 0x2E2E7E, fill: 0xFFC98A,
-                    sky: [0x100E3A, 0x2A1F6E, 0x7A3A8E, 0xD46A6A], skyInk: 0xFFD23F, body: 0xFFE9B0, bodyY: 0.38, moon: true,
-                    stars: 0.7, windows: 0.9, far: 0x2A2470, near: 0x191548, ground: 0x100E30)
-        case .night:
-            return Palette(scheme: .dark, bg: 0x100E26, surface: 0x1E1B42, raised: 0x332C66, line: 0x5F58A3, text: 0xFFFFFF,
-                    muted: 0xC9C6E4, accent: 0xFFD23F, link: 0xA8E4FA, lore: 0x232A7A, fill: 0xFFD23F,
-                    sky: [0x0A0820, 0x1A1650, 0x3A2A7A], skyInk: 0xFFD23F, body: 0xFFE9B0, bodyY: 0.38, moon: true,
-                    stars: 1, windows: 1, far: 0x2A1F66, near: 0x191540, ground: 0x100E26)
+        case .sunrise, .morning, .midday, .golden:
+            return Palette(scheme: .light, bg: 0xE6E3DA, surface: 0xF2EFE6, raised: 0xD9D5C7, line: 0xB9B4AA, text: 0x16171A,
+                           muted: 0x55595E, accent: 0x7A5A1F, link: 0x3F5A66, lore: 0xD9D5C7, fill: 0xCC9F53,
+                           sky: [0xE6E3DA, 0xD9D5C7, 0xB9B4AA], skyInk: 0x16171A, body: 0xF2EFE6, bodyY: 0.38, moon: false,
+                           stars: 0, windows: 0, far: 0x95999D, near: 0x55595E, ground: 0x3C3F44)
+        case .dawn, .sunset, .dusk, .night:
+            return Palette(scheme: .dark, bg: 0x16171A, surface: 0x1E1F23, raised: 0x2E3035, line: 0x3C3F44, text: 0xF2EFE6,
+                           muted: 0x95999D, accent: 0xCC9F53, link: 0xA9C2CC, lore: 0x2A2220, fill: 0xCC9F53,
+                           sky: [0x16171A, 0x1E1F23, 0x2E3035], skyInk: 0xF2EFE6, body: 0xE6E3DA, bodyY: 0.38, moon: true,
+                           stars: 0.4, windows: 0.8, far: 0x2E3035, near: 0x1E1F23, ground: 0x16171A)
         }
     }
 }
@@ -219,13 +191,13 @@ enum Category: String, CaseIterable, Identifiable {
 
     var hex: UInt32 {
         switch self {
-        case .lore: return 0xE8341C
-        case .bar: return 0xF8B800
-        case .club: return 0xFF5FA2
-        case .art: return 0x4CC9F0
-        case .eat: return 0xFF7A59
-        case .thrift: return 0x5BE37D
-        case .local: return 0xE6E3F6
+        case .lore: return 0xB5483A
+        case .bar: return 0xCC9F53
+        case .club: return 0xC47A86
+        case .art: return 0x7FA0AC
+        case .eat: return 0xC27A45
+        case .thrift: return 0x8FA87A
+        case .local: return 0xD9D5C7
         }
     }
 
@@ -239,7 +211,8 @@ struct PrimaryButton: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: 16, weight: .bold))
+            .font(.system(size: 15, weight: .semibold))
+            .textCase(.uppercase)
             .foregroundStyle(Color.ink)
             .frame(maxWidth: .infinity, minHeight: 48)
             .background(fill ?? theme.fill, in: RoundedRectangle(cornerRadius: 12))
@@ -252,7 +225,8 @@ struct OutlineButton: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: 15, weight: .semibold))
+            .font(.system(size: 14, weight: .semibold))
+            .textCase(.uppercase)
             .foregroundStyle(theme.text)
             .frame(maxWidth: .infinity, minHeight: 46)
             .overlay(RoundedRectangle(cornerRadius: 12).stroke(theme.line, lineWidth: 1.5))
@@ -268,10 +242,10 @@ struct ScreenTitle: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(title).font(.system(size: 32, weight: .bold)).foregroundStyle(theme.accent)
-                .minimumScaleFactor(0.8).lineLimit(1)
+            Text(title.uppercased()).font(.system(size: 28, weight: .semibold)).tracking(3).foregroundStyle(theme.text)
+                .minimumScaleFactor(0.7).lineLimit(1)
             if let subtitle {
-                Text(subtitle).font(.subheadline).foregroundStyle(theme.muted)
+                Text(subtitle).font(.system(.footnote, design: .monospaced)).foregroundStyle(theme.muted)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

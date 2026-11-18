@@ -470,7 +470,7 @@ async function drawEvents() {
       ${https(link) ? `<button class="btn outline" data-open="${esc(link)}" data-title="${esc(name)}">Details</button>` : ""}
       ${content.spots.some((s) => s.id === spot) ? `<button class="btn outline" data-spot="${esc(spot)}">On map</button>` : ""}</div></div>`;
   };
-  $("screen-events").innerHTML = title("Quest board", live.live ? "Real dates from around the district." : "Offline. Showing saved events.", "erefresh")
+  $("screen-events").innerHTML = title("Events", live.live ? "Real dates from around the district." : "Offline. Showing saved events.", "erefresh")
     + (upcoming.length ? "" : `<div class="item fine" style="font-size:15px">No dated events right now. New ones land here, by date, as soon as they're posted.</div>`)
     + agenda(upcoming)
     + `<div class="subhead">Regulars</div>`
@@ -527,7 +527,7 @@ async function openEvents(spot) {
     ${dated.map((e) => row(fmtWhen(e.start), "var(--fill)", e.title, e.note, e.link)).join("")}
     ${regulars.map((e) => row(e.when, e.color, e.title, e.d, null)).join("")}
     ${dated.length || regulars.length ? "" : `<div class="item"><h3>No dates listed here yet.</h3>
-      <div class="detail">New ones land on the Quest board as soon as they're posted.</div>
+      <div class="detail">New ones land in the Events tab as soon as they're posted.</div>
       ${site ? `<div class="btns"><button class="btn outline" data-open="${esc(site.url)}" data-title="${esc(site.title)}">Check ${esc(site.title)}</button></div>` : ""}</div>`}
   </div>`);
   body.querySelector("#eclose").onclick = closeSheet;

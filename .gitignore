@@ -5,3 +5,4 @@ build/
 *.xcarchive
 xcuserdata/
 target/
+Nyocker/Assets.xcassets/archive-*.imageset/

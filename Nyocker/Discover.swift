@@ -132,7 +132,9 @@ struct DiscoverScreen: View {
         ZStack(alignment: .topTrailing) {
             ScrollView {
                 VStack(spacing: 0) {
-                    if let hero = page.hero {
+                    if let pair = ArchivePhoto.thenAndNow(for: spot.id), UIImage(named: pair.then.image) != nil {
+                        ArchiveHero(then: pair.then, now: pair.now)
+                    } else if let hero = page.hero {
                         Image(hero).resizable().scaledToFit()
                             .accessibilityLabel("\(spot.n) logo")
                     } else {
@@ -357,6 +359,57 @@ struct DiscoverScreen: View {
             Text("Sources: \(sources)").font(.caption).foregroundStyle(text.opacity(0.75))
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
+    }
+}
+
+/// A spot's archive photo, with a Then / Now switch when there is a present-day one.
+struct ArchiveHero: View {
+    let then: ArchivePhoto
+    let now: ArchivePhoto?
+    @State private var showingNow = false
+
+    private var photo: ArchivePhoto { showingNow ? (now ?? then) : then }
+    private static let ink = Color(hex: 0x16171A)
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            ZStack(alignment: .bottomLeading) {
+                Image(photo.image).resizable().scaledToFill()
+                    .frame(maxWidth: .infinity).frame(height: 320).clipped()
+                    .overlay(LinearGradient(colors: [Self.ink.opacity(0), Self.ink.opacity(0.85)], startPoint: .center, endPoint: .bottom))
+                    .accessibilityLabel("\(photo.when), \(photo.place): \(photo.story)")
+                if let now {
+                    HStack(spacing: 0) {
+                        era("Then · \(then.when)", selected: !showingNow) { showingNow = false }
+                        era("Now · \(now.when)", selected: showingNow) { showingNow = true }
+                    }
+                    .padding(3)
+                    .background(Self.ink.opacity(0.85), in: RoundedRectangle(cornerRadius: 12))
+                    .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(hex: 0x3C3F44)))
+                    .padding(16)
+                }
+            }
+            VStack(alignment: .leading, spacing: 3) {
+                Text(photo.story).font(.system(.subheadline, design: .serif)).foregroundStyle(Color(hex: 0xE6E3DA))
+                    .fixedSize(horizontal: false, vertical: true)
+                Text("\(photo.when) · \(photo.creditLine)").font(.system(size: 10.5, design: .monospaced))
+                    .foregroundStyle(Color(hex: 0x95999D))
+            }
+            .padding(.horizontal, 18)
+        }
+        .padding(.bottom, 18)
+        .animation(.easeInOut(duration: 0.25), value: showingNow)
+    }
+
+    private func era(_ title: String, selected: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Text(title.uppercased()).font(.system(size: 11, weight: .medium, design: .monospaced))
+                .foregroundStyle(selected ? Self.ink : Color(hex: 0xE6E3DA))
+                .padding(.horizontal, 12).frame(height: 36)
+                .background(selected ? Color(hex: 0xCC9F53) : Color.clear, in: RoundedRectangle(cornerRadius: 9))
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(selected ? .isSelected : [])
     }
 }
 

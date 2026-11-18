@@ -68,8 +68,21 @@ struct EventsScreen: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 14) {
+                if let banner = Content.shared.archive.first(where: { $0.id == "a21" }), UIImage(named: banner.image) != nil {
+                    Image(banner.image).resizable().scaledToFill()
+                        .frame(maxWidth: .infinity).frame(height: 170).clipped()
+                        .overlay(alignment: .bottomLeading) {
+                            Text("\(banner.when) · \(banner.place) · \(banner.credit)")
+                                .font(.system(size: 10.5, design: .monospaced)).foregroundStyle(Color(hex: 0xE6E3DA))
+                                .padding(.horizontal, 6).padding(.vertical, 4)
+                                .background(Color(hex: 0x16171A).opacity(0.75), in: RoundedRectangle(cornerRadius: 3))
+                                .padding(10)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .accessibilityLabel("\(banner.when), \(banner.place): \(banner.story)")
+                }
                 HStack(alignment: .top) {
-                    ScreenTitle(title: "Quest board", subtitle: status)
+                    ScreenTitle(title: "Events", subtitle: status)
                     Button { Task { await events.refresh(force: true) } } label: {
                         Group {
                             if events.loading {
@@ -93,14 +106,16 @@ struct EventsScreen: View {
                         .background(theme.surface, in: RoundedRectangle(cornerRadius: 16))
                 }
                 ForEach(agenda) { day in
-                    Text(day.title).font(.title3.weight(.bold)).foregroundStyle(theme.text)
+                    Text(day.title.uppercased()).font(.system(size: 12, weight: .medium, design: .monospaced)).tracking(2)
+                        .foregroundStyle(theme.accent)
                         .frame(maxWidth: .infinity, alignment: .leading).padding(.top, 6)
                     ForEach(day.events) { event in
                         AgendaRow(event: event, today: day.title == "Today", showOnMap: showOnMap)
                     }
                 }
 
-                Text("Regulars").font(.title3.weight(.bold)).foregroundStyle(theme.text)
+                Text("REGULARS").font(.system(size: 12, weight: .medium, design: .monospaced)).tracking(2)
+                    .foregroundStyle(theme.accent)
                     .frame(maxWidth: .infinity, alignment: .leading).padding(.top, 8)
                 ForEach(Content.shared.events) { event in
                     card(pill: event.when, pillColor: Color(css: event.color), title: event.title, place: event.place,
@@ -285,7 +300,7 @@ struct SpotEventsSheet: View {
                 if live.isEmpty && regulars.isEmpty {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("No dates listed here yet.").font(.headline).foregroundStyle(theme.text)
-                        Text("New ones land on the Quest board as soon as they're posted.")
+                        Text("New ones land in the Events tab as soon as they're posted.")
                             .font(.subheadline).foregroundStyle(theme.muted)
                         if let site = spot.discoverPage?.links?.first, let url = site.link {
                             Button("Check \(site.title)") { reading = url }.buttonStyle(OutlineButton()).padding(.top, 4)

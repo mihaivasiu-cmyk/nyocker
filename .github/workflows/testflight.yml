@@ -16,6 +16,8 @@ jobs:
         run: |
           sudo xcode-select -s "$(ls -d /Applications/Xcode_26*.app | grep -v beta | sort -V | tail -1)"
           xcodebuild -version
+      - name: Archive photos
+        run: python3 pipeline/fetch_archive.py --if-missing
       - name: App Store Connect key
         env:
           ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}

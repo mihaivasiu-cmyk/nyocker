@@ -1,0 +1,29 @@
+name: Apply kerge.patch
+
+# One-off: applies the Kerge/Discover/TestFlight work uploaded as kerge.patch,
+# then removes the patch. Safe to delete this file afterwards.
+on:
+  push:
+    branches: [main]
+    paths: [kerge.patch]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply commits
+        run: |
+          git config user.name "mihaivasiu-cmyk"
+          git config user.email "mihaivasiu-cmyk@users.noreply.github.com"
+          cp kerge.patch /tmp/kerge.patch
+          git rm -q kerge.patch
+          git commit -qm "Remove kerge.patch before applying it"
+          git am -3 --keep-cr --committer-date-is-author-date /tmp/kerge.patch
+          git log --oneline -10
+          git push origin HEAD:main

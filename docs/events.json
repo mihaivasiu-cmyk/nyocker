@@ -1,5 +1,97 @@
 {
  "version": 1,
- "updated": "2026-11-18T16:59:56Z",
- "items": []
+ "updated": "2026-11-18T17:43:53Z",
+ "items": [
+  {
+   "id": "2f9bb64f03c4",
+   "title": "Muftaking open mic",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-11-18T11:00+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "419825114b76",
+   "title": "Felhő utca - Holtzer Gábor",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-11-21T20:00+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "26c6ad8718b2",
+   "title": "Alex torres",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-11-24T20:00+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "a915c8103d17",
+   "title": "Kerényi Robi & Gyárfás Attila",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-11-25T20:30+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "79015c434548",
+   "title": "Csángós Táncház a Zsírban",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-11-27T13:00+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge",
+   "note": "November 27-én, (pénteken) 20:00-tól 22:00-ig újra moldvai és balkáni táncdallamokkal érkezünk! Ambrus Bonifác - furulya, kaval, trombita Albert János - furulya, kaval, szaxofon Veres Vilmos -…"
+  },
+  {
+   "id": "4a9ec36f8630",
+   "title": "Transz Kalahári",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-11-28T20:00+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge",
+   "note": "Zenéink: örmény, arab, indiai, afgán, szefard, török, üzbég és moldvai népzenék, sok improvizációval. Mezey Péter: fuvola, bansuri, ének Lábos Szabolcs: gitár, saz, azeri tar Hajnal Péter: bőgő…"
+  },
+  {
+   "id": "735f459f0146",
+   "title": "Cserga táncház",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-12-04T23:00+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "6415d61cc6fe",
+   "title": "Törtpéntek",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-12-05T16:30+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "fb95144553cf",
+   "title": "Gyimesi",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-12-11T20:30+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "5e5debf6f2fe",
+   "title": "Rézeleje",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-12-19T16:30+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "1ef1d8d04c0a",
+   "title": "Bulgar Klezmer Band",
+   "venue": "Kerge Kulturklub",
+   "start": "2027-07-14T20:00+02:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge",
+   "note": "Bulgar Klezmer Band on its first tour in Hungary 2027. Bulgar Klezmer Band is Bulgaria’s first and the most international klezmer orchestra for party, wedding, holiday and street music. The band…"
+  }
+ ]
 }

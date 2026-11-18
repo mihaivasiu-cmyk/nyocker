@@ -15,6 +15,11 @@ fn main() {
         ("Nyocker/Assets.xcassets/kerge-pin.imageset/kerge-pin.png", "kerge-pin.png"),
         ("Nyocker/Assets.xcassets/underbar.imageset/underbar.png", "underbar.png"),
         ("Nyocker/Assets.xcassets/so.imageset/so.png", "so.png"),
+        ("Nyocker/Assets.xcassets/hintalo-hero.imageset/hintalo-hero.jpg", "hintalo-hero.jpg"),
+        ("Nyocker/Assets.xcassets/lumen-hero.imageset/lumen-hero.jpg", "lumen-hero.jpg"),
+        ("Nyocker/Assets.xcassets/golya-hero.imageset/golya-hero.jpg", "golya-hero.jpg"),
+        ("Nyocker/Assets.xcassets/grund-hero.imageset/grund-hero.jpg", "grund-hero.jpg"),
+        ("Nyocker/Assets.xcassets/fecske-hero.imageset/fecske-hero.jpg", "fecske-hero.jpg"),
         // Saved copies of the live feeds, shown until the network answers.
         ("docs/news.json", "news.json"),
         ("docs/events.json", "events.json"),

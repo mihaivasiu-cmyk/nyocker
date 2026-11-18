@@ -18,6 +18,7 @@ const CAT = Object.fromEntries(CATS.map(([id, title, hex, sym]) => [id, { title,
 const TAG = { lore: "LORE", bar: "BAR", club: "CLUB", art: "ART SPACE", eat: "EATS", thrift: "SECOND HAND", local: "LOCAL" };
 /** Venue art shipped with the app, by the asset name content.json uses. */
 const ART = { "kerge-pin": "data/kerge-pin.png", "kerge-hero": "data/kerge-hero.jpg", underbar: "data/underbar.png", so: "data/so.png" };
+for (const id of ["hintalo", "lumen", "golya", "grund", "fecske"]) ART[`${id}-hero`] = `data/${id}-hero.jpg`;
 
 /* ---------- Time of day: the same eight phases and palettes as Theme.swift ---------- */
 

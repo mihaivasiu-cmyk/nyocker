@@ -424,7 +424,7 @@ STYLES = {
     "susuka": S("#5B3A8C", "#FFF4E0", "#FFF4E0", "#2B1A44", "#FFC94D", "#5B3A8C",
                 font="rounded", caps=False, corner=14, shadow="soft", frame=False, pattern="dots", ornament="✿", tilt=-2),
     # Clubs
-    "golya": S("#E10600", "#FFFFFF", "#FFFFFF", "#000000", "#FFD400", "#E10600", "golya", "#FFFFFF", "circle",
+    "golya": S("#F2EEE6", "#111111", "#FFFFFF", "#111111", "#E10600", "#E10600", "golya", "#FFFFFF", "circle",
                font="default", caps=True, corner=0, shadow="hard", frame=False, pattern="stripes", ornament="★", tilt=-2),
     "grund": S("#121212", "#FFE9A8", "#FFF6DA", "#1A1A1A", "#F5C542", "#8A6510", "grund", "#F5C542", "circle",
                font="default", caps=False, corner=10, shadow="soft", frame=False, pattern="dots", ornament="✺", tilt=-1),
@@ -501,6 +501,28 @@ LOGO_SOURCES = {
     "fuvesz": "https://www.fuveszkert.org/images/web/fuveszkert_logo_150.jpg",
 }
 
+# Venues with a Kerge-style page: their logo big at the top, the facts numbered, a closing stamp.
+# Heroes are built by tools/make_heroes.py from the venues' own logos.
+FEATURED = {
+    "hintalo": dict(site=("hintalobar.com", "https://www.hintalobar.com/"),
+                    closing={"text": "Luxus Putri.", "english": "Luxury hovel: the bar's own motto.",
+                             "note": "Putri: a shack, said fondly."}),
+    "lumen": dict(site=("lumen.hu", "https://www.lumen.hu/"),
+                  closing={"text": "Két tér, egy Lumen.",
+                           "english": "Two squares, one Lumen: the big one here, the small one on Mikszáth tér."}),
+    "golya": dict(site=("golyaszovetkezet.hu", "https://golyaszovetkezet.hu/"),
+                  closing={"text": "A Gólya mindenkié.", "english": "Gólya belongs to everyone. It's a cooperative.",
+                           "note": "Szövetkezet: cooperative."}),
+    "grund": dict(site=("agrund.hu", "https://agrund.hu/"),
+                  closing={"text": "A grund a miénk!",
+                           "english": "The grund is ours! The rallying cry of The Paul Street Boys, the 1906 novel the pub is named after.",
+                           "note": "Grund: an empty lot, the boys' playground."}),
+    "fecske": dict(site=("fecskepresszo.hu", "https://fecskepresszo.hu/"),
+                   closing={"text": "Fecske lent, Főfoto fent.", "english": "Fecske downstairs, Főfoto upstairs.",
+                            "note": "Fecske: swallow, the bird."}),
+}
+
+
 def contrast(a, b):
     def lum(h):
         r, g, b_ = (int(h[i:i + 2], 16) / 255 for i in (1, 3, 5))
@@ -516,6 +538,15 @@ for pid, (colors, style) in STYLES.items():
         colors["mark"] = colors["brick"] if contrast(colors["brick"], colors["paper"]) >= 3 else colors["deep"]
     pages[pid]["colors"] = colors
     pages[pid]["style"] = style
+for pid, extra in FEATURED.items():
+    page_ = pages[pid]
+    page_["hero"] = f"{pid}-hero"
+    page_["numbered"] = True
+    page_["closing"] = extra["closing"]
+    page_["style"].pop("logo", None)
+    page_["style"]["pattern"] = "none"  # the hero runs straight into a plain page
+    title, url = extra["site"]
+    page_["links"] = [link(title, url)] + page_.get("links", [])
 kerge = pages["kerge"]
 kerge["colors"].update(text=kerge["colors"]["paper"])
 

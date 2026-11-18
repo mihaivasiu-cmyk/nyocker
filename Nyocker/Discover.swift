@@ -192,10 +192,12 @@ struct DiscoverScreen: View {
         return inner
             .padding(wide ? 18 : 20)
             .frame(width: wide ? 240 : 132, height: wide ? 110 : 132)
-            .background(fill, in: RoundedRectangle(cornerRadius: shape == "circle" ? 66 : min(corner, 18), style: .continuous))
+            .background(
+                RoundedRectangle(cornerRadius: shape == "circle" ? 66 : min(corner, 18), style: .continuous).fill(fill)
+                    .shadow(color: .black.opacity(look.shadow == "none" ? 0 : 0.25), radius: 0, x: 4, y: 4)
+            )
             .overlay(RoundedRectangle(cornerRadius: shape == "circle" ? 74 : min(corner, 18) + 6, style: .continuous)
                 .stroke(text.opacity(0.55), lineWidth: 2).padding(-8))
-            .shadow(color: .black.opacity(look.shadow == "none" ? 0 : 0.25), radius: 0, x: 4, y: 4)
     }
 
     private var badge: some View {
@@ -237,15 +239,19 @@ struct DiscoverScreen: View {
 
     private func paperCard<Inner: View>(@ViewBuilder _ inner: () -> Inner) -> some View {
         let shadow = look.shadow ?? "hard"
+        // The shadow belongs to the card's shape only. On the whole view, SwiftUI
+        // would draw it under every line of text too.
         return inner()
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(18)
-            .background(paper, in: card)
+            .background(
+                card.fill(paper)
+                    .shadow(color: deep.opacity(shadow == "hard" ? (look.frame == false ? 0.9 : 0.35) : shadow == "soft" ? 0.22 : 0),
+                            radius: shadow == "soft" ? 10 : 0, x: shadow == "soft" ? 0 : 4, y: 4)
+            )
             .overlay(RoundedRectangle(cornerRadius: max(corner - 3, 0), style: .continuous)
                 .stroke(deep.opacity(look.frame == false ? 0 : 0.25), lineWidth: 1).padding(5))
             .overlay(card.stroke(deep, lineWidth: shadow == "hard" && look.frame == false ? 2 : 0))
-            .shadow(color: deep.opacity(shadow == "hard" ? (look.frame == false ? 0.9 : 0.35) : shadow == "soft" ? 0.22 : 0),
-                    radius: shadow == "soft" ? 10 : 0, x: shadow == "soft" ? 0 : 4, y: 4)
     }
 
     private func lines(_ line: DiscoverPage.Line, big: Bool = false) -> some View {

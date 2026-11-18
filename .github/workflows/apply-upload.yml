@@ -1,0 +1,39 @@
+name: Apply uploaded project
+
+# One-off: moves the uploaded "nyocker 7" folder over the repo root, then removes it.
+# Safe to delete this file afterwards.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Move files into place
+        run: |
+          src="nyocker 7"
+          test -d "$src"
+          find "$src" -name .DS_Store -delete
+          rsync -a --exclude docs --exclude pipeline --exclude .github "$src"/ ./
+          git rm -rq "$src"
+          mkdir -p .cargo
+          printf '%s\n' '[alias]' \
+            '# `cargo sim` from the repo root builds the iOS app and runs it in the Simulator.' \
+            'sim = "run --quiet --release --manifest-path tools/nyocker-sim/Cargo.toml --"' \
+            '# `cargo desktop` opens the Tauri desktop app (desktop/).' \
+            'desktop = "run --release --manifest-path desktop/src-tauri/Cargo.toml"' > .cargo/config.toml
+          grep -qx 'target/' .gitignore || echo 'target/' >> .gitignore
+          printf '%s\n' 'web/data/' 'src-tauri/target/' 'src-tauri/gen/' > desktop/.gitignore
+          git add -A
+          git update-index --chmod=+x run-sim.sh tools/testflight.sh
+          git status --short | head -80
+      - name: Commit
+        run: |
+          git config user.name "mihaivasiu-cmyk"
+          git config user.email "mihaivasiu-cmyk@users.noreply.github.com"
+          git commit -qm "Kerge Kulturklub, Discover pages, desktop app, Xcode 14 and TestFlight builds"
+          git push

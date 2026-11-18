@@ -1,0 +1,30 @@
+name: Mirror venue logos
+
+# Copies each venue's logo (pipeline/logos.json) to docs/logos/ for the Discover pages.
+on:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/logos.json
+      - pipeline/mirror_logos.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick librsvg2-bin webp
+      - name: Mirror logos
+        run: python3 pipeline/mirror_logos.py
+      - name: Publish
+        run: |
+          git config user.name "nyocker-news"
+          git config user.email "nyocker-news@users.noreply.github.com"
+          git add docs/logos
+          git diff --cached --quiet || git commit -m "Mirror venue logos"
+          git pull --rebase -q && git push

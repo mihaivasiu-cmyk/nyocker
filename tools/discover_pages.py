@@ -379,6 +379,146 @@ pages["keleti"] = lore("BAROSS TÉR · KELETI", "Keleti, September 2015", "4 SEP
     ["After days stranded outside a closed station, about a thousand people, most of them Syrian, set off from here on foot for Vienna."],
     "Euronews, Middle East Eye")
 
+
+# Each page's own look, taken from the venue's own branding where it has one
+# (website, sign, logo; checked November 2026). Colours:
+#   brick: page background   text: words on the page   paper: cards
+#   deep: words on cards     gold: stamp/closing fill (deep text sits on it)
+#   mark: bullets on cards (defaults to gold)
+# Style keys (all optional; the defaults are the Kerge look):
+#   font serif|rounded|mono|default · caps · corner · shadow hard|soft|none · frame
+#   pattern none|dots|stripes|grid|rays|waves|diamonds · ornament · tilt
+#   logo: mirrored logo file (docs/logos/<id>.png, from LOGO_SOURCES) · logoBg · logoShape circle|square|wide
+LOGO_BASE = "https://mihaivasiu-cmyk.github.io/nyocker/logos/"
+
+
+def S(brick, text, paper, deep, gold, mark=None, logo=None, logo_bg=None, logo_shape="circle", **style):
+    colors = {"brick": brick, "text": text, "paper": paper, "deep": deep, "gold": gold}
+    if mark:
+        colors["mark"] = mark
+    if logo:
+        style.update(logo=LOGO_BASE + logo + ".png", logoShape=logo_shape)
+        if logo_bg:
+            style["logoBg"] = logo_bg
+    return colors, style
+
+
+GAME = dict(font="mono", caps=True, corner=0, shadow="hard", frame=False, pattern="grid", ornament="▶", tilt=0)
+
+STYLES = {
+    # Bars
+    "lumen": S("#EDEBE4", "#111111", "#FFFFFF", "#111111", "#FF6868", "#C62F2F", "lumen", "#FFFFFF", "square",
+               font="mono", caps=True, corner=0, shadow="hard", frame=False, pattern="grid", ornament="■", tilt=0),
+    "kislumen": S("#111111", "#FFFFFF", "#FFFFFF", "#111111", "#FF6868", "#111111", "lumen", "#FFFFFF", "square",
+                  font="mono", caps=True, corner=0, shadow="hard", frame=False, pattern="dots", ornament="□", tilt=0),
+    "brody": S("#2E3B2C", "#F4E9C8", "#F4E9C8", "#1E2A1C", "#E8B04A", None,
+               font="serif", caps=True, corner=2, shadow="hard", frame=True, pattern="stripes", ornament="◆", tilt=-1),
+    "kk": S("#3F4596", "#FCF2EC", "#FCF2EC", "#2A2F6B", "#FAA61A", "#C23D7A", "kk", None, "wide",
+            font="rounded", caps=False, corner=22, shadow="soft", frame=False, pattern="waves", ornament="●", tilt=-3),
+    "hintalo": S("#16271E", "#F3EFE7", "#F3EFE7", "#2A1A12", "#E0A93A", "#AA3D1D", "hintalo", "#000000", "square",
+                 font="serif", caps=True, corner=0, shadow="hard", frame=True, pattern="diamonds", ornament="❦", tilt=0),
+    "kraken": S("#3B2A1A", "#E9D8B4", "#E9D8B4", "#2A1C10", "#C88B3A", None,
+                font="serif", caps=True, corner=4, shadow="hard", frame=True, pattern="rays", ornament="⚙", tilt=-1),
+    "zsir": S("#1C1C1C", "#FFE8C2", "#FFE8C2", "#1C1C1C", "#FF5A4E", None,
+              font="default", caps=True, corner=0, shadow="hard", frame=False, pattern="stripes", ornament="★", tilt=2),
+    "susuka": S("#5B3A8C", "#FFF4E0", "#FFF4E0", "#2B1A44", "#FFC94D", "#5B3A8C",
+                font="rounded", caps=False, corner=14, shadow="soft", frame=False, pattern="dots", ornament="✿", tilt=-2),
+    # Clubs
+    "golya": S("#E10600", "#FFFFFF", "#FFFFFF", "#000000", "#FFD400", "#E10600", "golya", "#FFFFFF", "circle",
+               font="default", caps=True, corner=0, shadow="hard", frame=False, pattern="stripes", ornament="★", tilt=-2),
+    "grund": S("#121212", "#FFE9A8", "#FFF6DA", "#1A1A1A", "#F5C542", "#8A6510", "grund", "#F5C542", "circle",
+               font="default", caps=False, corner=10, shadow="soft", frame=False, pattern="dots", ornament="✺", tilt=-1),
+    # Art
+    "fofoto": S("#0A0A0A", "#FFFFFF", "#F2F2F2", "#111111", "#B24BF3", "#9B0DD7", "fofoto", "#000000", "wide",
+                font="default", caps=False, corner=12, shadow="soft", frame=False, pattern="rays", ornament="⬡", tilt=0),
+    "isbn": S("#F8F8F8", "#1A1A1A", "#FFFFFF", "#1A1A1A", "#A9C8EC", "#4686CC", "isbn", "#FFFFFF", "square",
+              font="serif", caps=False, corner=0, shadow="none", frame=True, pattern="stripes", ornament="+", tilt=0),
+    "kupsus": S("#7A1F2B", "#F6EEDF", "#F6EEDF", "#2B1416", "#D9A441", None,
+                font="serif", caps=False, corner=4, shadow="hard", frame=True, pattern="none", ornament="❧", tilt=-1),
+    "cozy": S("#C9A88A", "#2E211A", "#FBF6EE", "#2E211A", "#E8C9A0", "#8C5A3C",
+              font="rounded", caps=False, corner=24, shadow="soft", frame=False, pattern="dots", ornament="◍", tilt=0),
+    "museum": S("#003141", "#FFFFFF", "#FFFFFF", "#22262A", "#F4A6A0", "#003141", "museum", "#FFFFFF", "wide",
+                font="default", caps=False, corner=4, shadow="none", frame=False, pattern="none", ornament="◆", tilt=0),
+    "kazan": S("#1F1F1F", "#FFFFFF", "#F0EEE9", "#111111", "#FF5A1F", "#D9400B",
+               font="default", caps=True, corner=0, shadow="hard", frame=False, pattern="stripes", ornament="▲", tilt=-1),
+    # Eats
+    "kv": S("#3A2E26", "#F3E7D7", "#F3E7D7", "#241A14", "#D98E4A", None,
+            font="default", caps=False, corner=8, shadow="soft", frame=False, pattern="none", ornament="•", tilt=0),
+    "apricot": S("#30271C", "#F5EDE3", "#FFFFFF", "#212121", "#C7A17A", "#8A6A44", "apricot", "#FFFFFF", "wide",
+                 font="default", caps=True, corner=2, shadow="none", frame=False, pattern="none", ornament="◆", tilt=0),
+    "anton": S("#E9D9BF", "#3B2A1A", "#FFFBF3", "#3B2A1A", "#E0A458", "#A8692A",
+               font="serif", caps=False, corner=18, shadow="soft", frame=False, pattern="dots", ornament="❀", tilt=-1),
+    "fecske": S("#200F01", "#FFFFFF", "#FFF8EE", "#200F01", "#E8D3A8", "#8A6A3C", "fecske", "#FFFFFF", "circle",
+                font="default", caps=False, corner=20, shadow="soft", frame=False, pattern="none", ornament="❦", tilt=0),
+    "csarnok": S("#1E4E3F", "#F5EBD6", "#F5EBD6", "#1E2A24", "#D4A017", None,
+                 font="serif", caps=True, corner=0, shadow="hard", frame=True, pattern="grid", ornament="◆", tilt=0),
+    "kiskina": S("#B3121B", "#FFE9B0", "#FFF4DC", "#3A0A0C", "#F2C14E", "#B3121B",
+                 font="default", caps=True, corner=6, shadow="hard", frame=False, pattern="stripes", ornament="◆", tilt=-1),
+    # Second hand
+    "humana": S("#FFF200", "#1D2E7A", "#FFFFFF", "#1D2E7A", "#FFF200", "#1D2E7A", "humana", "#FFFFFF", "wide",
+                font="default", caps=True, corner=0, shadow="hard", frame=False, pattern="none", ornament="●", tilt=0),
+    "prater": S("#4E6B59", "#FFFFFF", "#F7F2E8", "#24302A", "#E9B44C", None,
+                font="serif", caps=False, corner=6, shadow="hard", frame=True, pattern="stripes", ornament="✂", tilt=-1),
+    "konfekcio": S("#FF3EA5", "#111111", "#FFFFFF", "#111111", "#C6FF00", "#FF3EA5",
+                   font="mono", caps=True, corner=0, shadow="hard", frame=False, pattern="dots", ornament="✕", tilt=3),
+    "typo": S("#F7D6E0", "#4A2335", "#FFFFFF", "#4A2335", "#F0A3BA", "#D9577F",
+              font="rounded", caps=False, corner=20, shadow="soft", frame=False, pattern="dots", ornament="✿", tilt=-2),
+    "gizmo": S("#2D2A6E", "#F2EFE6", "#F2EFE6", "#1A1840", "#FF8A3D", None,
+               font="default", caps=False, corner=4, shadow="hard", frame=False, pattern="grid", ornament="✦", tilt=-1),
+    "teleki": S("#8A4B2A", "#FFF3E0", "#FFF3E0", "#2E1A10", "#F2B544", None,
+                font="rounded", caps=False, corner=8, shadow="hard", frame=False, pattern="stripes", ornament="✺", tilt=-2),
+    # Local
+    "szabo": S("#042F4D", "#FFFBE7", "#FFFBE7", "#042F4D", "#D8B25A", None, "szabo", "#FFFFFF", "circle",
+               font="serif", caps=False, corner=2, shadow="hard", frame=True, pattern="none", ornament="❦", tilt=0),
+    "horvath": S("#2F2A6B", "#FFFFFF", "#F4F1FF", "#1E1A4A", "#FF7AC6", "#2F2A6B",
+                 font="default", caps=False, corner=12, shadow="soft", frame=False, pattern="dots", ornament="✺", tilt=-2),
+    "matyas": S("#3D6B4F", "#FFFFFF", "#F3F7EE", "#1F3326", "#F2C14E", "#3D6B4F",
+                font="rounded", caps=False, corner=16, shadow="soft", frame=False, pattern="waves", ornament="❀", tilt=-1),
+    "fuvesz": S("#066C3A", "#FFFFFF", "#F4F8EF", "#12321F", "#C8E06B", "#066C3A", "fuvesz", "#FFFFFF", "wide",
+                font="serif", caps=False, corner=10, shadow="soft", frame=True, pattern="none", ornament="❦", tilt=0),
+    "kerepesi": S("#282725", "#E8E2D2", "#EFEBE1", "#282725", "#C9AD55", None,
+                  font="serif", caps=True, corner=0, shadow="none", frame=True, pattern="none", ornament="✦", tilt=0),
+}
+for lid in ("sinkhole", "raid", "aurora", "tigris", "corvinrip", "blaha", "oldgolya", "grundkert"):
+    STYLES[lid] = S("#1A0B08", "#F3EBD8", "#F3EBD8", "#1A0B08", "#E8341C", None, **GAME)
+STYLES["keleti"] = S("#2B2B2B", "#EDEDED", "#F4F4F4", "#1E1E1E", "#BDBDBD", "#6B6B6B",
+                     font="serif", caps=False, corner=2, shadow="none", frame=False, pattern="none", ornament="—", tilt=0)
+
+# Logos published on each venue's own website. The logos workflow mirrors them to docs/logos/<id>.png.
+LOGO_SOURCES = {
+    "golya": "https://golyaszovetkezet.hu/templates/g5_helium/custom/images/00%20golyaszovetkezet%20logo%20szines.png",
+    "lumen": "https://static.wixstatic.com/media/df24a0_f6d14de2c7a64a998b45290080e7be7a~mv2.png",
+    "kk": "https://treffort.hu/wp-content/themes/treffort/assets/treffort_kk_logo_beige.svg",
+    "hintalo": "https://static.wixstatic.com/media/6c5eab_651206920e214ae0acb14df20255facf~mv2.jpg",
+    "grund": "https://agrund.hu/wp-content/uploads/2017/09/grund-logo-black.png",
+    "fofoto": "https://fofoto.hu/wp-content/uploads/2026/05/Fofotolognewffheadermasolat.png",
+    "isbn": "https://www.isbnbooks.hu/wp-content/uploads/2024/11/cropped-IG_logo_1-180x180.png",
+    "museum": "https://jozsefvarosimuzeum.hu/wp-content/uploads/2023/07/logo.svg",
+    "apricot": "https://www.apricotcoffee.hu/wp-content/uploads/2026/10/logo_vegleges_1_png-600x194.webp",
+    "fecske": "https://fecskepresszo.hu/fecske_logo_full.png",
+    "humana": "https://humanahasznaltruha.hu/wp-content/uploads/2020/11/humana-logo-1.png",
+    "szabo": "https://fszek.hu/img/logo2.png",
+    "fuvesz": "https://www.fuveszkert.org/images/web/fuveszkert_logo_150.jpg",
+}
+
+def contrast(a, b):
+    def lum(h):
+        r, g, b_ = (int(h[i:i + 2], 16) / 255 for i in (1, 3, 5))
+        f = lambda c: c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+        return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b_)
+    x, y = sorted((lum(a), lum(b)), reverse=True)
+    return (x + 0.05) / (y + 0.05)
+
+
+for pid, (colors, style) in STYLES.items():
+    if "mark" not in colors and contrast(colors["gold"], colors["paper"]) < 3:
+        # Bullets must show on the cards: the page colour if it stands out, else the ink.
+        colors["mark"] = colors["brick"] if contrast(colors["brick"], colors["paper"]) >= 3 else colors["deep"]
+    pages[pid]["colors"] = colors
+    pages[pid]["style"] = style
+kerge = pages["kerge"]
+kerge["colors"].update(text=kerge["colors"]["paper"])
+
 root = Path(__file__).resolve().parent.parent
 content = json.loads((root / "Nyocker/content.json").read_text(encoding="utf-8"))
 ids = {s["id"] for s in content["spots"]}
@@ -386,5 +526,8 @@ missing = ids - pages.keys()
 assert not missing, f"no page for {missing}"
 extra = pages.keys() - ids
 assert not extra, f"page without a spot: {extra}"
+missing_style = pages.keys() - STYLES.keys() - {"kerge"}
+assert not missing_style, f"no style for {missing_style}"
+(root / "pipeline/logos.json").write_text(json.dumps(LOGO_SOURCES, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 (root / "Nyocker/discover.json").write_text(json.dumps(pages, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 print(f"wrote {len(pages)} pages")

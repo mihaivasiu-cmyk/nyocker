@@ -529,7 +529,7 @@ struct SpotCard: View {
                 HStack(spacing: 10) {
                     if let discover {
                         Button(action: discover) { Label("Discover", systemImage: "sparkles") }
-                            .buttonStyle(page.map { BrandButton(fill: Color(css: $0.colors.brick), ink: Color(css: $0.colors.paper)) }
+                            .buttonStyle(page.map { BrandButton(fill: Color(css: $0.colors.brick), ink: Color(css: $0.colors.text ?? $0.colors.paper)) }
                                 ?? BrandButton(fill: theme.raised, ink: theme.text))
                     }
                     if let events {

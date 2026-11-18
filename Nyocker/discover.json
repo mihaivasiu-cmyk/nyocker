@@ -1,10 +1,12 @@
 {
  "anton": {
   "colors": {
-   "brick": "#7A2E1A",
-   "deep": "#1A1530",
-   "gold": "#FF7A59",
-   "paper": "#F3EBD8"
+   "brick": "#E9D9BF",
+   "deep": "#3B2A1A",
+   "gold": "#E0A458",
+   "mark": "#A8692A",
+   "paper": "#FFFBF3",
+   "text": "#3B2A1A"
   },
   "intro": {
    "text": "László and Ilona opened Anton in February 2020 and got famous for their baking before they even had a Facebook page."
@@ -33,15 +35,27 @@
   "numbered": false,
   "place": "BRÓDY SÁNDOR UTCA 23/A",
   "sources": "We Love Budapest, Wanderlog",
+  "style": {
+   "caps": false,
+   "corner": 18,
+   "font": "serif",
+   "frame": false,
+   "ornament": "❀",
+   "pattern": "dots",
+   "shadow": "soft",
+   "tilt": -1
+  },
   "subtitle": "Coffee and its own sourdough",
   "title": "Anton Coffee & Bakery"
  },
  "apricot": {
   "colors": {
-   "brick": "#7A2E1A",
-   "deep": "#1A1530",
-   "gold": "#FF7A59",
-   "paper": "#F3EBD8"
+   "brick": "#30271C",
+   "deep": "#212121",
+   "gold": "#C7A17A",
+   "mark": "#8A6A44",
+   "paper": "#FFFFFF",
+   "text": "#F5EDE3"
   },
   "intro": {
    "text": "A small specialty café in the Palace Quarter with its own Apricot Blend of Guatemalan, Colombian and Ethiopian beans."
@@ -67,15 +81,29 @@
   "numbered": false,
   "place": "BRÓDY SÁNDOR UTCA 17",
   "sources": "We Love Budapest, Offbeat Budapest, Go Specialty Coffee",
+  "style": {
+   "caps": true,
+   "corner": 2,
+   "font": "default",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/apricot.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "wide",
+   "ornament": "◆",
+   "pattern": "none",
+   "shadow": "none",
+   "tilt": 0
+  },
   "subtitle": "Specialty coffee, house blend",
   "title": "Apricot Coffee"
  },
  "aurora": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "A self-governing community house, gig room and pub that gave a home to dozens of civil groups. It closed on 29 March 2026, when the owner didn't renew the lease."
@@ -107,15 +135,26 @@
   "numbered": false,
   "place": "AURÓRA UTCA 11",
   "sources": "We Love Budapest, HVG, XpatLoop, Front Line Defenders",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "2014–2026",
   "title": "R.I.P. Auróra"
  },
  "blaha": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "Rebuilding the square took 505 days and 3.68 billion forints."
@@ -132,15 +171,27 @@
   "numbered": false,
   "place": "BLAHA LUJZA TÉR",
   "sources": "BKK, Telex",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "10 DEC 2022",
   "title": "Blaha Speedrun: 505 Days"
  },
  "brody": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#2E3B2C",
+   "deep": "#1E2A1C",
+   "gold": "#E8B04A",
+   "mark": "#2E3B2C",
+   "paper": "#F4E9C8",
+   "text": "#F4E9C8"
   },
   "intro": {
    "text": "Several taps and a terrace at the very start of Bródy Sándor utca, with the National Museum across the road."
@@ -160,15 +211,26 @@
   "numbered": false,
   "place": "BRÓDY SÁNDOR UTCA 2",
   "sources": "Audiala",
+  "style": {
+   "caps": true,
+   "corner": 2,
+   "font": "serif",
+   "frame": true,
+   "ornament": "◆",
+   "pattern": "stripes",
+   "shadow": "hard",
+   "tilt": -1
+  },
   "subtitle": "A beer institute by the Museum Garden",
   "title": "Bródy Italintézet"
  },
  "corvinrip": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "A rooftop terrace on the fifth floor of the old Corvin department store, open from May 2007."
@@ -185,15 +247,27 @@
   "numbered": false,
   "place": "BLAHA LUJZA TÉR · DEPARTMENT STORE ROOF",
   "sources": "Wikipedia HU, We Love Budapest",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "2007–2018",
   "title": "R.I.P. Corvin Club"
  },
  "cozy": {
   "colors": {
-   "brick": "#0F4D63",
-   "deep": "#1A1530",
-   "gold": "#4CC9F0",
-   "paper": "#F3EBD8"
+   "brick": "#C9A88A",
+   "deep": "#2E211A",
+   "gold": "#E8C9A0",
+   "mark": "#8C5A3C",
+   "paper": "#FBF6EE",
+   "text": "#2E211A"
   },
   "intro": {
    "text": "Three old friends opened this café-meets-pottery studio in March 2025. Drink your coffee, then come back to make the cup."
@@ -219,15 +293,27 @@
   "numbered": false,
   "place": "VAS UTCA · NEXT TO BIHARY WATCHES",
   "sources": "We Love Budapest",
+  "style": {
+   "caps": false,
+   "corner": 24,
+   "font": "rounded",
+   "frame": false,
+   "ornament": "◍",
+   "pattern": "dots",
+   "shadow": "soft",
+   "tilt": 0
+  },
   "subtitle": "Ceramics workshop and specialty café",
   "title": "Cozy Studio & Café"
  },
  "csarnok": {
   "colors": {
-   "brick": "#7A2E1A",
-   "deep": "#1A1530",
-   "gold": "#FF7A59",
-   "paper": "#F3EBD8"
+   "brick": "#1E4E3F",
+   "deep": "#1E2A24",
+   "gold": "#D4A017",
+   "mark": "#1E4E3F",
+   "paper": "#F5EBD6",
+   "text": "#F5EBD6"
   },
   "intro": {
    "text": "One of five market halls opened together in 1897, the year the city shut its street markets and moved the traders indoors."
@@ -253,15 +339,27 @@
   "numbered": false,
   "place": "RÁKÓCZI TÉR 7-9",
   "sources": "HVG, piaconline.hu, OpenStreetMap, Time Out",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "serif",
+   "frame": true,
+   "ornament": "◆",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "Market hall since 1897",
   "title": "Rákóczi téri vásárcsarnok"
  },
  "fecske": {
   "colors": {
-   "brick": "#7A2E1A",
-   "deep": "#1A1530",
-   "gold": "#FF7A59",
-   "paper": "#F3EBD8"
+   "brick": "#200F01",
+   "deep": "#200F01",
+   "gold": "#E8D3A8",
+   "mark": "#8A6A3C",
+   "paper": "#FFF8EE",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "A cheap, laid-back presszó with a retro look and a terrace, a stone's throw from the Szabó Ervin Library."
@@ -284,15 +382,30 @@
   "numbered": false,
   "place": "MIKSZÁTH KÁLMÁN TÉR · BAROSS UTCA",
   "sources": "Offbeat Budapest, We Love Budapest",
+  "style": {
+   "caps": false,
+   "corner": 20,
+   "font": "default",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/fecske.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "circle",
+   "ornament": "❦",
+   "pattern": "none",
+   "shadow": "soft",
+   "tilt": 0
+  },
   "subtitle": "Student HQ with a lunch menu",
   "title": "Fecske"
  },
  "fofoto": {
   "colors": {
-   "brick": "#0F4D63",
-   "deep": "#1A1530",
-   "gold": "#4CC9F0",
-   "paper": "#F3EBD8"
+   "brick": "#0A0A0A",
+   "deep": "#111111",
+   "gold": "#B24BF3",
+   "mark": "#9B0DD7",
+   "paper": "#F2F2F2",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "A former private flat behind Kálvin tér, turned into a refuge for analogue photography. Ring the bell like you're visiting a friend."
@@ -321,15 +434,30 @@
   "numbered": false,
   "place": "BAROSS UTCA · ABOVE FECSKE",
   "sources": "We Love Budapest",
+  "style": {
+   "caps": false,
+   "corner": 12,
+   "font": "default",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/fofoto.png",
+   "logoBg": "#000000",
+   "logoShape": "wide",
+   "ornament": "⬡",
+   "pattern": "rays",
+   "shadow": "soft",
+   "tilt": 0
+  },
   "subtitle": "Café, gallery, lab and photo shop",
   "title": "Főfoto"
  },
  "fuvesz": {
   "colors": {
-   "brick": "#34305E",
-   "deep": "#1A1530",
-   "gold": "#E6E3F6",
-   "paper": "#F3EBD8"
+   "brick": "#066C3A",
+   "deep": "#12321F",
+   "gold": "#C8E06B",
+   "mark": "#066C3A",
+   "paper": "#F4F8EF",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "Founded in 1771 and on this spot since 1847: 3.5 hectares of garden and 2,000 m² of greenhouses hidden behind the blocks."
@@ -362,15 +490,30 @@
   "numbered": false,
   "place": "ILLÉS UTCA 25",
   "sources": "ELTE, Time Out, Wikipedia",
+  "style": {
+   "caps": false,
+   "corner": 10,
+   "font": "serif",
+   "frame": true,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/fuvesz.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "wide",
+   "ornament": "❦",
+   "pattern": "none",
+   "shadow": "soft",
+   "tilt": 0
+  },
   "subtitle": "The country's oldest botanic garden",
   "title": "Füvészkert"
  },
  "gizmo": {
   "colors": {
-   "brick": "#1D5B2E",
-   "deep": "#1A1530",
-   "gold": "#5BE37D",
-   "paper": "#F3EBD8"
+   "brick": "#2D2A6E",
+   "deep": "#1A1840",
+   "gold": "#FF8A3D",
+   "mark": "#2D2A6E",
+   "paper": "#F2EFE6",
+   "text": "#F2EFE6"
   },
   "intro": {
    "text": "A small shop with a big rack of women's clothing."
@@ -386,15 +529,27 @@
   "listTitle": "Good to know",
   "numbered": false,
   "place": "SOMOGYI BÉLA UTCA",
+  "style": {
+   "caps": false,
+   "corner": 4,
+   "font": "default",
+   "frame": false,
+   "ornament": "✦",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": -1
+  },
   "subtitle": "Small shop, big rack",
   "title": "Gizmo Vintage"
  },
  "golya": {
   "colors": {
-   "brick": "#6E1F47",
-   "deep": "#1A1530",
-   "gold": "#FF5FA2",
-   "paper": "#F3EBD8"
+   "brick": "#E10600",
+   "deep": "#000000",
+   "gold": "#FFD400",
+   "mark": "#E10600",
+   "paper": "#FFFFFF",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "Budapest's cooperative presszó: the people pouring your beer own the place. Bar, concert hall, rooftop and community house in one old industrial building."
@@ -423,15 +578,30 @@
   "numbered": false,
   "place": "ORCZY ÚT 46-48",
   "sources": "We Love Budapest, Spotted by Locals, Cooperative City",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "default",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/golya.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "circle",
+   "ornament": "★",
+   "pattern": "stripes",
+   "shadow": "hard",
+   "tilt": -2
+  },
   "subtitle": "Cooperative pub, gig venue, community house",
   "title": "Gólya"
  },
  "grund": {
   "colors": {
-   "brick": "#6E1F47",
-   "deep": "#1A1530",
-   "gold": "#FF5FA2",
-   "paper": "#F3EBD8"
+   "brick": "#121212",
+   "deep": "#1A1A1A",
+   "gold": "#F5C542",
+   "mark": "#8A6510",
+   "paper": "#FFF6DA",
+   "text": "#FFE9A8"
   },
   "intro": {
    "text": "A sprawling, many-roomed pub around a courtyard with a tree. It works for daytime family drinks as much as late nights."
@@ -457,15 +627,29 @@
   "numbered": false,
   "place": "NAGY TEMPLOM UTCA 30 · CORVIN",
   "sources": "We Love Budapest, Budapest by Locals",
+  "style": {
+   "caps": false,
+   "corner": 10,
+   "font": "default",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/grund.png",
+   "logoBg": "#F5C542",
+   "logoShape": "circle",
+   "ornament": "✺",
+   "pattern": "dots",
+   "shadow": "soft",
+   "tilt": -1
+  },
   "subtitle": "A huge pub with a tree inside",
   "title": "A Grund"
  },
  "grundkert": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "The Grund Kert community garden was cleared to make way for new Corvin Sétány housing."
@@ -479,15 +663,27 @@
   "numbered": false,
   "place": "BÓKAY UTCA",
   "sources": "HVG",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "JAN 2014",
   "title": "The Vanishing Garden"
  },
  "hintalo": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#16271E",
+   "deep": "#2A1A12",
+   "gold": "#E0A93A",
+   "mark": "#AA3D1D",
+   "paper": "#F3EFE7",
+   "text": "#F3EFE7"
   },
   "intro": {
    "text": "Hintaló means rocking horse, and yes, there are rocking horses among the ruin-pub junk-shop decor. Five minutes from Blaha."
@@ -513,15 +709,30 @@
   "numbered": false,
   "place": "BACSÓ BÉLA UTCA 15",
   "sources": "We Love Budapest, Lonely Planet, jozsefvaros.hu",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "serif",
+   "frame": true,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/hintalo.png",
+   "logoBg": "#000000",
+   "logoShape": "square",
+   "ornament": "❦",
+   "pattern": "diamonds",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "The rocking-horse bar",
   "title": "Hintaló Iszoda"
  },
  "horvath": {
   "colors": {
-   "brick": "#34305E",
-   "deep": "#1A1530",
-   "gold": "#E6E3F6",
-   "paper": "#F3EBD8"
+   "brick": "#2F2A6B",
+   "deep": "#1E1A4A",
+   "gold": "#FF7AC6",
+   "mark": "#2F2A6B",
+   "paper": "#F4F1FF",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "Baross utca splits it into a church side and a school side. This is where Józsefváros does its seasonal celebrations."
@@ -550,15 +761,27 @@
   "numbered": false,
   "place": "HORVÁTH MIHÁLY TÉR",
   "sources": "jozsefvaros.hu",
+  "style": {
+   "caps": false,
+   "corner": 12,
+   "font": "default",
+   "frame": false,
+   "ornament": "✺",
+   "pattern": "dots",
+   "shadow": "soft",
+   "tilt": -2
+  },
   "subtitle": "The district's party square",
   "title": "Horváth Mihály tér"
  },
  "humana": {
   "colors": {
-   "brick": "#1D5B2E",
-   "deep": "#1A1530",
-   "gold": "#5BE37D",
-   "paper": "#F3EBD8"
+   "brick": "#FFF200",
+   "deep": "#1D2E7A",
+   "gold": "#FFF200",
+   "mark": "#1D2E7A",
+   "paper": "#FFFFFF",
+   "text": "#1D2E7A"
   },
   "intro": {
    "text": "One of the biggest vintage floors in the country. The entire stock is swapped every five weeks, with big sales before each change."
@@ -584,15 +807,30 @@
   "numbered": false,
   "place": "JÓZSEF KÖRÚT 74",
   "sources": "We Love Budapest, XpatLoop",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "default",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/humana.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "wide",
+   "ornament": "●",
+   "pattern": "none",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "Vintage on a five-week clock",
   "title": "Humana Vintage"
  },
  "isbn": {
   "colors": {
-   "brick": "#0F4D63",
-   "deep": "#1A1530",
-   "gold": "#4CC9F0",
-   "paper": "#F3EBD8"
+   "brick": "#F8F8F8",
+   "deep": "#1A1A1A",
+   "gold": "#A9C8EC",
+   "mark": "#4686CC",
+   "paper": "#FFFFFF",
+   "text": "#1A1A1A"
   },
   "intro": {
    "text": "The art bookshop that started on Víg utca outgrew its room after six and a half years, moved to Baross utca and gained a plus sign."
@@ -621,15 +859,30 @@
   "numbered": false,
   "place": "BAROSS UTCA 42",
   "sources": "Lampoon, YKRA, Exindex, We Love Budapest, Telekom Spots",
+  "style": {
+   "caps": false,
+   "corner": 0,
+   "font": "serif",
+   "frame": true,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/isbn.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "square",
+   "ornament": "+",
+   "pattern": "stripes",
+   "shadow": "none",
+   "tilt": 0
+  },
   "subtitle": "Art bookshop, gallery and video room",
   "title": "ISBN+"
  },
  "kazan": {
   "colors": {
-   "brick": "#0F4D63",
-   "deep": "#1A1530",
-   "gold": "#4CC9F0",
-   "paper": "#F3EBD8"
+   "brick": "#1F1F1F",
+   "deep": "#111111",
+   "gold": "#FF5A1F",
+   "mark": "#D9400B",
+   "paper": "#F0EEE9",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "Gólya's sibling next door, run by SZAKI, the Alliance for Community Property Development. Kazán means boiler house."
@@ -655,15 +908,27 @@
   "numbered": false,
   "place": "ORCZY ÚT 46-48",
   "sources": "Cooperative City, Eastern Daze",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "default",
+   "frame": false,
+   "ornament": "▲",
+   "pattern": "stripes",
+   "shadow": "hard",
+   "tilt": -1
+  },
   "subtitle": "Community house with its own power",
   "title": "Kazán Közösségi Ház"
  },
  "keleti": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
-   "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "brick": "#2B2B2B",
+   "deep": "#1E1E1E",
+   "gold": "#BDBDBD",
+   "mark": "#6B6B6B",
+   "paper": "#F4F4F4",
+   "text": "#EDEDED"
   },
   "intro": {
    "text": "No joke on this one."
@@ -677,15 +942,27 @@
   "numbered": false,
   "place": "BAROSS TÉR · KELETI",
   "sources": "Euronews, Middle East Eye",
+  "style": {
+   "caps": false,
+   "corner": 2,
+   "font": "serif",
+   "frame": false,
+   "ornament": "—",
+   "pattern": "none",
+   "shadow": "none",
+   "tilt": 0
+  },
   "subtitle": "4 SEPT 2015",
   "title": "Keleti, September 2015"
  },
  "kerepesi": {
   "colors": {
-   "brick": "#34305E",
-   "deep": "#1A1530",
-   "gold": "#E6E3F6",
-   "paper": "#F3EBD8"
+   "brick": "#282725",
+   "deep": "#282725",
+   "gold": "#C9AD55",
+   "mark": "#282725",
+   "paper": "#EFEBE1",
+   "text": "#E8E2D2"
   },
   "intro": {
    "text": "The Fiumei Road cemetery, once called Kerepesi, covers 56 hectares and is known for its plants and wildlife as much as its tombs."
@@ -711,6 +988,16 @@
   "numbered": false,
   "place": "FIUMEI ÚT 16-18",
   "sources": "Nemzeti Örökség Intézete, VG, We Love Budapest",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "serif",
+   "frame": true,
+   "ornament": "✦",
+   "pattern": "none",
+   "shadow": "none",
+   "tilt": 0
+  },
   "subtitle": "National graveyard, 56 hectares",
   "title": "Fiumei úti sírkert"
  },
@@ -738,7 +1025,8 @@
    "brick": "#9E3B1A",
    "deep": "#2B140D",
    "gold": "#E0A030",
-   "paper": "#E8DCC0"
+   "paper": "#E8DCC0",
+   "text": "#E8DCC0"
   },
   "hero": "kerge-hero",
   "intro": {
@@ -779,10 +1067,12 @@
  },
  "kiskina": {
   "colors": {
-   "brick": "#7A2E1A",
-   "deep": "#1A1530",
-   "gold": "#FF7A59",
-   "paper": "#F3EBD8"
+   "brick": "#B3121B",
+   "deep": "#3A0A0C",
+   "gold": "#F2C14E",
+   "mark": "#B3121B",
+   "paper": "#FFF4DC",
+   "text": "#FFE9B0"
   },
   "intro": {
    "text": "Before the Four Tigers market was cleared, traders had already started moving across the road into the old Ganz-MÁVAG factory halls. They're still there."
@@ -808,15 +1098,27 @@
   "numbered": false,
   "place": "KŐBÁNYAI ÚT · GANZ-MÁVAG SITE",
   "sources": "We Love Budapest, Budapest Times",
+  "style": {
+   "caps": true,
+   "corner": 6,
+   "font": "default",
+   "frame": false,
+   "ornament": "◆",
+   "pattern": "stripes",
+   "shadow": "hard",
+   "tilt": -1
+  },
   "subtitle": "Little China",
   "title": "Kiskína"
  },
  "kislumen": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#111111",
+   "deep": "#111111",
+   "gold": "#FF6868",
+   "mark": "#111111",
+   "paper": "#FFFFFF",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "The original Lumen: a small café and photo gallery with one of the most fought-over terraces in the district."
@@ -842,15 +1144,30 @@
   "numbered": false,
   "place": "MIKSZÁTH KÁLMÁN TÉR 2",
   "sources": "We Love Budapest, Just Budapest",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/lumen.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "square",
+   "ornament": "□",
+   "pattern": "dots",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "Where the Lumen story began",
   "title": "Kis Lumen"
  },
  "kk": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#3F4596",
+   "deep": "#2A2F6B",
+   "gold": "#FAA61A",
+   "mark": "#C23D7A",
+   "paper": "#FCF2EC",
+   "text": "#FCF2EC"
   },
   "intro": {
    "text": "The cellar pub students just call KK, inside ELTE's humanities campus. You don't need a student card, just the stairs."
@@ -870,15 +1187,29 @@
   "numbered": false,
   "place": "MÚZEUM KÖRÚT 4 · TREFORT KERT",
   "sources": "We Love Budapest, Eduline, Funzine",
+  "style": {
+   "caps": false,
+   "corner": 22,
+   "font": "rounded",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/kk.png",
+   "logoShape": "wide",
+   "ornament": "●",
+   "pattern": "waves",
+   "shadow": "soft",
+   "tilt": -3
+  },
   "subtitle": "University cellar pub, open to all",
   "title": "Könyvtár Klub"
  },
  "konfekcio": {
   "colors": {
-   "brick": "#1D5B2E",
-   "deep": "#1A1530",
-   "gold": "#5BE37D",
-   "paper": "#F3EBD8"
+   "brick": "#FF3EA5",
+   "deep": "#111111",
+   "gold": "#C6FF00",
+   "mark": "#FF3EA5",
+   "paper": "#FFFFFF",
+   "text": "#111111"
   },
   "intro": {
    "text": "Art historian and curator Kata Oltai's shop behind the Rákóczi tér market: animal prints, statement pieces and gloriously aimless clothes."
@@ -907,15 +1238,27 @@
   "numbered": false,
   "place": "JÓZSEF UTCA 16",
   "sources": "We Love Budapest, Time Out",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "✕",
+   "pattern": "dots",
+   "shadow": "hard",
+   "tilt": 3
+  },
   "subtitle": "Trash is high fashion",
   "title": "Konfekció"
  },
  "kraken": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#3B2A1A",
+   "deep": "#2A1C10",
+   "gold": "#C88B3A",
+   "mark": "#3B2A1A",
+   "paper": "#E9D8B4",
+   "text": "#E9D8B4"
   },
   "intro": {
    "text": "Step inside and it's the year 2316: a rebel saloon where the staff play characters and the beer list is Hungarian craft."
@@ -944,15 +1287,27 @@
   "numbered": false,
   "place": "JÓZSEF KÖRÚT 31/A",
   "sources": "XpatLoop, Daily News Hungary, Budapest by Locals",
+  "style": {
+   "caps": true,
+   "corner": 4,
+   "font": "serif",
+   "frame": true,
+   "ornament": "⚙",
+   "pattern": "rays",
+   "shadow": "hard",
+   "tilt": -1
+  },
   "subtitle": "Budapest's first steampunk saloon",
   "title": "Krak'n Town"
  },
  "kupsus": {
   "colors": {
-   "brick": "#0F4D63",
-   "deep": "#1A1530",
-   "gold": "#4CC9F0",
-   "paper": "#F3EBD8"
+   "brick": "#7A1F2B",
+   "deep": "#2B1416",
+   "gold": "#D9A441",
+   "mark": "#7A1F2B",
+   "paper": "#F6EEDF",
+   "text": "#F6EEDF"
   },
   "intro": {
    "text": "Finnish entrepreneur Ari Kupsus opened this gallery in 2009: contemporary art hung among early 19th-century antiques."
@@ -972,15 +1327,27 @@
   "numbered": false,
   "place": "BRÓDY SÁNDOR UTCA 23/B",
   "sources": "XpatLoop, Rolling in Budapest, HVG",
+  "style": {
+   "caps": false,
+   "corner": 4,
+   "font": "serif",
+   "frame": true,
+   "ornament": "❧",
+   "pattern": "none",
+   "shadow": "hard",
+   "tilt": -1
+  },
   "subtitle": "New paintings, old furniture",
   "title": "Ari Kupsus Galéria"
  },
  "kv": {
   "colors": {
-   "brick": "#7A2E1A",
-   "deep": "#1A1530",
-   "gold": "#FF7A59",
-   "paper": "#F3EBD8"
+   "brick": "#3A2E26",
+   "deep": "#241A14",
+   "gold": "#D98E4A",
+   "mark": "#3A2E26",
+   "paper": "#F3E7D7",
+   "text": "#F3E7D7"
   },
   "intro": {
    "text": "Barbi and Marci opened it in autumn 2025 on a corner Barbi spotted in an ad. The name was decided long before the place was."
@@ -1006,15 +1373,27 @@
   "numbered": false,
   "place": "VAS UTCA & KŐFARAGÓ UTCA",
   "sources": "We Love Budapest",
+  "style": {
+   "caps": false,
+   "corner": 8,
+   "font": "default",
+   "frame": false,
+   "ornament": "•",
+   "pattern": "none",
+   "shadow": "soft",
+   "tilt": 0
+  },
   "subtitle": "Coffee by day, bar by night",
   "title": "kv the coffee shop"
  },
  "lumen": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#EDEBE4",
+   "deep": "#111111",
+   "gold": "#FF6868",
+   "mark": "#C62F2F",
+   "paper": "#FFFFFF",
+   "text": "#111111"
   },
   "intro": {
    "text": "The big Lumen: coffee and breakfast by day, Hungarian craft beer and wine by night, and live music in the back room."
@@ -1040,15 +1419,30 @@
   "numbered": false,
   "place": "HORÁNSZKY UTCA 5 · PALOTANEGYED",
   "sources": "We Love Budapest, Offbeat Budapest, JazzNearYou",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/lumen.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "square",
+   "ornament": "■",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "Café, bar and a tiny gig room",
   "title": "Lumen"
  },
  "matyas": {
   "colors": {
-   "brick": "#34305E",
-   "deep": "#1A1530",
-   "gold": "#E6E3F6",
-   "paper": "#F3EBD8"
+   "brick": "#3D6B4F",
+   "deep": "#1F3326",
+   "gold": "#F2C14E",
+   "mark": "#3D6B4F",
+   "paper": "#F3F7EE",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "Once home to Jewish craftsmen and Roma musician families, the square went from run-down to lively after a renewal."
@@ -1077,15 +1471,27 @@
   "numbered": false,
   "place": "MÁTYÁS TÉR · MAGDOLNA QUARTER",
   "sources": "We Love Budapest, Kristin Faurest: Ten Spaces, jozsefvaros.hu",
+  "style": {
+   "caps": false,
+   "corner": 16,
+   "font": "rounded",
+   "frame": false,
+   "ornament": "❀",
+   "pattern": "waves",
+   "shadow": "soft",
+   "tilt": -1
+  },
   "subtitle": "Heart of the Magdolna Quarter",
   "title": "Mátyás tér"
  },
  "museum": {
   "colors": {
-   "brick": "#0F4D63",
-   "deep": "#1A1530",
-   "gold": "#4CC9F0",
-   "paper": "#F3EBD8"
+   "brick": "#003141",
+   "deep": "#22262A",
+   "gold": "#F4A6A0",
+   "mark": "#003141",
+   "paper": "#FFFFFF",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "Józsefváros never had a local history collection of its own until this museum opened in 2024, in the old Józsefvárosi Galéria rooms."
@@ -1114,15 +1520,29 @@
   "numbered": false,
   "place": "JÓZSEF KÖRÚT 70",
   "sources": "We Love Budapest, Budapest Times, jozsefvaros.hu",
+  "style": {
+   "caps": false,
+   "corner": 4,
+   "font": "default",
+   "frame": false,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/museum.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "wide",
+   "ornament": "◆",
+   "pattern": "none",
+   "shadow": "none",
+   "tilt": 0
+  },
   "subtitle": "The district finally has a museum",
   "title": "Józsefvárosi Múzeum"
  },
  "oldgolya": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "Rising rents pushed Gólya out of its old pub on Bókay János utca."
@@ -1142,15 +1562,27 @@
   "numbered": false,
   "place": "BÓKAY JÁNOS UTCA",
   "sources": "HVG, Index, Wikipedia HU, We Love Budapest",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "2018–2019",
   "title": "The Great Stork Migration"
  },
  "prater": {
   "colors": {
-   "brick": "#1D5B2E",
-   "deep": "#1A1530",
-   "gold": "#5BE37D",
-   "paper": "#F3EBD8"
+   "brick": "#4E6B59",
+   "deep": "#24302A",
+   "gold": "#E9B44C",
+   "mark": "#4E6B59",
+   "paper": "#F7F2E8",
+   "text": "#FFFFFF"
   },
   "intro": {
    "text": "A jumble of decades: old theatre gowns hang next to belts and scarves, with a second room full of everyday dresses."
@@ -1170,15 +1602,26 @@
   "numbered": false,
   "place": "PRÁTER UTCA 9",
   "sources": "XpatLoop, We Love Budapest, Lufthansa, Wanderlog",
+  "style": {
+   "caps": false,
+   "corner": 6,
+   "font": "serif",
+   "frame": true,
+   "ornament": "✂",
+   "pattern": "stripes",
+   "shadow": "hard",
+   "tilt": -1
+  },
   "subtitle": "Two shops, one owner",
   "title": "Vintage Shop Práter"
  },
  "raid": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "Police searched Auróra for 14 hours and detained 15 people."
@@ -1198,15 +1641,26 @@
   "numbered": false,
   "place": "AURÓRA UTCA 11",
   "sources": "444.hu, Global Voices",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "JUNE 2017",
   "title": "The 14-Hour Boss Fight"
  },
  "sinkhole": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "A parked car dropped into a pit in the road about 2.5 m wide and 6–7 m long."
@@ -1226,15 +1680,27 @@
   "numbered": false,
   "place": "KARÁCSONY SÁNDOR UTCA",
   "sources": "HVG, Index",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "18 NOV 2013",
   "title": "The Street That Ate A Car"
  },
  "susuka": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#5B3A8C",
+   "deep": "#2B1A44",
+   "gold": "#FFC94D",
+   "mark": "#5B3A8C",
+   "paper": "#FFF4E0",
+   "text": "#FFF4E0"
   },
   "intro": {
    "text": "It looks puritan when it opens in the early afternoon. As the evening goes on, the sobriety wears off and the place fills up."
@@ -1260,15 +1726,27 @@
   "numbered": false,
   "place": "NAGY FUVAROS UTCA 12",
   "sources": "We Love Budapest, Intravel",
+  "style": {
+   "caps": false,
+   "corner": 14,
+   "font": "rounded",
+   "frame": false,
+   "ornament": "✿",
+   "pattern": "dots",
+   "shadow": "soft",
+   "tilt": -2
+  },
   "subtitle": "The dorm club that forgot to close",
   "title": "Susuka"
  },
  "szabo": {
   "colors": {
-   "brick": "#34305E",
-   "deep": "#1A1530",
-   "gold": "#E6E3F6",
-   "paper": "#F3EBD8"
+   "brick": "#042F4D",
+   "deep": "#042F4D",
+   "gold": "#D8B25A",
+   "mark": "#042F4D",
+   "paper": "#FFFBE7",
+   "text": "#FFFBE7"
   },
   "intro": {
    "text": "The central branch of Budapest's biggest library network sits in the neo-baroque Wenckheim Palace, finished in 1889."
@@ -1294,15 +1772,30 @@
   "numbered": false,
   "place": "SZABÓ ERVIN TÉR 1",
   "sources": "Wikipedia, We Love Budapest",
+  "style": {
+   "caps": false,
+   "corner": 2,
+   "font": "serif",
+   "frame": true,
+   "logo": "https://mihaivasiu-cmyk.github.io/nyocker/logos/szabo.png",
+   "logoBg": "#FFFFFF",
+   "logoShape": "circle",
+   "ornament": "❦",
+   "pattern": "none",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "A library in a palace",
   "title": "Szabó Ervin Library"
  },
  "teleki": {
   "colors": {
-   "brick": "#1D5B2E",
-   "deep": "#1A1530",
-   "gold": "#5BE37D",
-   "paper": "#F3EBD8"
+   "brick": "#8A4B2A",
+   "deep": "#2E1A10",
+   "gold": "#F2B544",
+   "mark": "#8A4B2A",
+   "paper": "#FFF3E0",
+   "text": "#FFF3E0"
   },
   "intro": {
    "text": "Teleki tér held the city's official junk market from 1897 to 1950. Today a renewed market hall runs the Teleki Zsibi community flea market."
@@ -1331,15 +1824,26 @@
   "numbered": false,
   "place": "TELEKI LÁSZLÓ TÉR 11",
   "sources": "jozsefvaros.hu, We Love Budapest, UNA",
+  "style": {
+   "caps": false,
+   "corner": 8,
+   "font": "rounded",
+   "frame": false,
+   "ornament": "✺",
+   "pattern": "stripes",
+   "shadow": "hard",
+   "tilt": -2
+  },
   "subtitle": "Market hall and community flea market",
   "title": "Teleki téri piac + Zsibi"
  },
  "tigris": {
   "colors": {
-   "brick": "#3A0F0A",
-   "deep": "#1A1530",
+   "brick": "#1A0B08",
+   "deep": "#1A0B08",
    "gold": "#E8341C",
-   "paper": "#F3EBD8"
+   "paper": "#F3EBD8",
+   "text": "#F3EBD8"
   },
   "intro": {
    "text": "A 39,000 m² container market, running since 1993, with more than 2,000 stall tenants at its peak."
@@ -1356,15 +1860,27 @@
   "numbered": false,
   "place": "KŐBÁNYAI ÚT",
   "sources": "444.hu, Index, Pénzcentrum",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "mono",
+   "frame": false,
+   "ornament": "▶",
+   "pattern": "grid",
+   "shadow": "hard",
+   "tilt": 0
+  },
   "subtitle": "16 JUNE 2014",
   "title": "Level Cleared: Négy Tigris"
  },
  "typo": {
   "colors": {
-   "brick": "#1D5B2E",
-   "deep": "#1A1530",
-   "gold": "#5BE37D",
-   "paper": "#F3EBD8"
+   "brick": "#F7D6E0",
+   "deep": "#4A2335",
+   "gold": "#F0A3BA",
+   "mark": "#D9577F",
+   "paper": "#FFFFFF",
+   "text": "#4A2335"
   },
   "intro": {
    "text": "Typo began on a gallery level under the old Corvin department store, sold from a warehouse for a while, then settled on Krúdy utca. Since winter 2025 it's called Momoko Vintage."
@@ -1390,15 +1906,27 @@
   "numbered": false,
   "place": "KRÚDY GYULA UTCA",
   "sources": "We Love Budapest, Time Out",
+  "style": {
+   "caps": false,
+   "corner": 20,
+   "font": "rounded",
+   "frame": false,
+   "ornament": "✿",
+   "pattern": "dots",
+   "shadow": "soft",
+   "tilt": -2
+  },
   "subtitle": "Formerly Typo Showroom",
   "title": "Momoko Vintage"
  },
  "zsir": {
   "colors": {
-   "brick": "#6B4A00",
-   "deep": "#1A1530",
-   "gold": "#F8B800",
-   "paper": "#F3EBD8"
+   "brick": "#1C1C1C",
+   "deep": "#1C1C1C",
+   "gold": "#FF5A4E",
+   "mark": "#1C1C1C",
+   "paper": "#FFE8C2",
+   "text": "#FFE8C2"
   },
   "intro": {
    "text": "A basement pub on the corner of Kiss József utca and Népszínház utca. Spot the big ZSÍR sign in the gloom, then go down."
@@ -1424,6 +1952,16 @@
   "numbered": false,
   "place": "KISS JÓZSEF UTCA · NÉPSZÍNHÁZ UTCA",
   "sources": "We Love Budapest, HVG, Wanderlog",
+  "style": {
+   "caps": true,
+   "corner": 0,
+   "font": "default",
+   "frame": false,
+   "ornament": "★",
+   "pattern": "stripes",
+   "shadow": "hard",
+   "tilt": 2
+  },
   "subtitle": "Fővárosi Kulipintyó: the capital's shack",
   "title": "Zsír"
  }

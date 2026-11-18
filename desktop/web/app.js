@@ -269,7 +269,7 @@ function drawCard() {
       <button class="btn outline" id="cwalk">🚶 Directions</button>
     </div>
     ${page || https(s.events) ? `<div class="btns">
-      ${page ? `<button class="btn brand" id="cdisc" style="--brand-bg:${esc(page.colors.brick)};--brand-ink:${esc(page.colors.paper)}">✨ Discover</button>` : ""}
+      ${page ? `<button class="btn brand" id="cdisc" style="--brand-bg:${esc(page.colors.brick)};--brand-ink:${esc(page.colors.text || page.colors.paper)}">✨ Discover</button>` : ""}
       ${https(s.events) ? '<button class="btn raised" id="cevts">📅 Events</button>' : ""}
     </div>` : ""}`;
   $("cclose").onclick = () => select(null);
@@ -363,7 +363,25 @@ async function walk(spot, start) {
 /* ---------- Discover (DiscoverScreen in Swift) ---------- */
 
 function showDiscover(spot) {
-  const page = pages[spot.discover], c = page.colors, cat = CAT[spot.c] || CAT.local;
+  const page = pages[spot.discover], c = page.colors, cat = CAT[spot.c] || CAT.local, st = page.style || {};
+  const fonts = { rounded: 'ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif', mono: 'ui-monospace, "SF Mono", Menlo, monospace',
+    default: '-apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif' };
+  const ink = (a) => `color-mix(in srgb, ${c.text || c.paper} ${a}%, transparent)`;
+  const patterns = {
+    dots: `radial-gradient(${ink(7)} 1.6px, transparent 1.8px) 0 0/18px 18px`,
+    stripes: `repeating-linear-gradient(45deg, ${ink(7)} 0 1.2px, transparent 1.2px 11px)`,
+    grid: `linear-gradient(${ink(7)} 1.2px, transparent 1.2px) 0 0/22px 22px, linear-gradient(90deg, ${ink(7)} 1.2px, transparent 1.2px) 0 0/22px 22px`,
+    rays: `repeating-conic-gradient(from 0deg at 50% 120px, ${ink(7)} 0 .4deg, transparent .4deg 7.5deg)`,
+    waves: `radial-gradient(circle at 50% 0, transparent 9px, ${ink(7)} 9.5px 10.7px, transparent 11px) 0 0/44px 34px`,
+    diamonds: `linear-gradient(45deg, transparent 46%, ${ink(7)} 46% 54%, transparent 54%) 0 0/28px 28px, linear-gradient(-45deg, transparent 46%, ${ink(7)} 46% 54%, transparent 54%) 0 0/28px 28px`,
+  };
+  const vars = [`--d-paper:${c.paper}`, `--d-brick:${c.brick}`, `--d-deep:${c.deep}`, `--d-gold:${c.gold}`,
+    c.text && `--d-text:${c.text}`, c.mark && `--d-mark:${c.mark}`, fonts[st.font] && `--d-font:${fonts[st.font]}`,
+    st.corner != null && `--d-r:${st.corner}px`, st.tilt != null && `--d-tilt:${st.tilt}deg`,
+    patterns[st.pattern] && `--d-pattern:${patterns[st.pattern]}`, st.logoBg && `--d-logo-bg:${st.logoBg}`].filter(Boolean).join(";");
+  const classes = [st.caps && "caps", st.frame === false && "flat", ({ hard: "hard", soft: "soft", none: "noshadow" })[st.shadow || "hard"]].filter(Boolean).join(" ");
+  const orn = esc(st.ornament || "✶");
+  const logo = https(st.logo || "") ? `<div class="logo ${st.logoShape === "wide" ? "wide" : st.logoShape === "square" ? "square" : ""}"><img src="${esc(st.logo)}" alt="${esc(spot.n)} logo"></div>` : "";
   const numerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
   const line = (l) => `<div class="hu">${esc(l.text)}</div>${l.english ? `<div class="en">${esc(l.english)}</div>` : ""}`;
   const art = (i) => (page.art || []).filter((a) => a.afterLine === i).map((a) => {
@@ -371,10 +389,10 @@ function showDiscover(spot) {
     return `<div class="art${a.leading ? "" : " right"}"><i aria-hidden="true" style="width:${a.image === "so" ? 115 : 137}px;transform:rotate(${a.tilt}deg);-webkit-mask-image:url(${img});mask-image:url(${img})"></i></div>`;
   }).join("");
   const links = (page.links || []).filter((l) => https(l.url));
-  const body = openSheet(`<div class="sheet-scroll disc" style="--d-paper:${c.paper};--d-brick:${c.brick};--d-deep:${c.deep};--d-gold:${c.gold}">
+  const body = openSheet(`<div class="sheet-scroll disc ${classes}" style="${esc(vars)}">
     <button class="close" id="dclose" aria-label="Close">✕</button>
     ${page.hero && ART[page.hero] ? `<img class="hero" src="${ART[page.hero]}" alt="${esc(spot.n)} logo">`
-      : `<div class="badge" aria-hidden="true"><i style="${spot.c === "lore" ? "color:#fff" : ""}">${cat.sym}</i></div>`}
+      : `${logo}<div class="badge" aria-hidden="true"${logo ? " hidden" : ""}><i style="color:${esc(c.deep)}">${cat.sym}</i></div>`}
     <div class="body">
       <div class="head">
         <div class="place">${esc(page.place)}</div>
@@ -385,18 +403,20 @@ function showDiscover(spot) {
       <div class="paper big">${line(page.intro)}</div>
       ${page.listTitle ? `<div class="label">${esc(page.listTitle.toUpperCase())}</div>` : ""}
       ${page.lines.map((l, i) => `<div class="paper"><div class="rule">${page.numbered
-        ? `<div class="num" aria-label="Rule ${i + 1}">${numerals[i]}</div>` : '<div class="bullet"></div>'}<div>${line(l)}</div></div></div>${art(i)}`).join("")}
-      ${page.closing ? `<div class="closing"><div style="opacity:.6;font-size:22px">✶</div><div class="hu">${esc(page.closing.text)}</div>
+        ? `<div class="num" aria-label="Rule ${i + 1}">${numerals[i]}</div>` : st.ornament ? `<div class="orn" aria-hidden="true">${orn}</div>` : '<div class="bullet"></div>'}<div>${line(l)}</div></div></div>${art(i)}`).join("")}
+      ${page.closing ? `<div class="closing"><div style="opacity:.6;font-size:22px">${orn}</div><div class="hu">${esc(page.closing.text)}</div>
         ${page.closing.english ? `<div class="en">${esc(page.closing.english)}</div>` : ""}
         ${page.closing.note ? `<div class="tiny">${esc(page.closing.note)}</div>` : ""}</div>` : ""}
       <div>
         <div class="btns"><button class="btn d-paper" id="dwalk">🚶 Directions</button>
           ${https(spot.events) ? '<button class="btn d-deep" id="devts">📅 Events</button>' : ""}</div>
-        ${links.map((l, i) => `<div class="btns"><button class="btn d-soft" data-link="${i}">↗ ${esc(l.title)}</button></div>`).join("")}
+        ${links.map((l, i) => `<div class="btns"><button class="btn d-gold" data-link="${i}">↗ ${esc(l.title)}</button></div>`).join("")}
       </div>
       ${page.sources ? `<div class="sources">Sources: ${esc(page.sources)}</div>` : ""}
     </div></div>`);
   body.querySelector("#dclose").onclick = closeSheet;
+  // No logo yet (not mirrored, or offline): show the category sign instead.
+  body.querySelector(".logo img")?.addEventListener("error", () => { body.querySelector(".logo").remove(); body.querySelector(".badge").hidden = false; });
   body.querySelector("#dwalk").onclick = () => { closeSheet(); walk(spot); };
   body.querySelector("#devts")?.addEventListener("click", () => openWeb(`${spot.n} · Events`, spot.events));
   body.querySelectorAll("[data-link]").forEach((b) => { const l = links[b.dataset.link]; b.onclick = () => openWeb(l.title, l.url); });

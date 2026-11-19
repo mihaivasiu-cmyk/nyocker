@@ -3,6 +3,7 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Péceli fenyő lesz az ország karácsonyfája, amelyet a Kossuth téren állítanak fel — budapestkornyeke.hu (2026-11-19) <https://budapestkornyeke.hu/peceli-fenyo-lesz-az-orszag-karacsonyfaja-amelyet-a-kossuth-teren-allitanak-fel/> `1735137a8013`
 - [ ] Személyes gratuláció a kitüntetett kolléganőknek — Hírstart (2026-11-18) <https://www.hirstart.hu/hk/20261119_szemelyes_gratulacio_a_kituntetett_kolleganoknek> `7b0f248fa843`
 - [ ] Jégfolyosó és fényinstallációk: november 27-én indul az adventi forgatag Dunakeszin — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/jegfolyoso-es-fenyinstallaciok-november-27-en-indul-az-adventi-forgatag-dunakeszin/> `8c8fd498ff81`
 - [ ] Pénzt kaphatnak a biatorbágyi civil szervezetek, december 10-ig lehet pályázni — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/penzt-kaphatnak-a-biatorbagyi-civil-szervezetek-december-10-ig-lehet-palyazni/> `1babb5d5f863`

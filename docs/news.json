@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-19T11:40:17Z",
+ "updated": "2026-11-19T20:37:37Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -10,11 +10,25 @@
    "date": "2026-11-24T00:00:00Z"
   },
   {
+   "id": "56712324902e",
+   "title": "Temporary changes to normal opening hours at certain departments of the Municipality of Józsefváros",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/11/temporary-changes-to-normal-opening-hours-at-certain-departments-of-the-municipality-of-jozsefvaros/",
+   "date": "2026-11-19T13:49:50Z"
+  },
+  {
    "id": "2eae1bc23947",
    "title": "Kezdődik a tisztviselőtelepi csomópontok akadálymentesítése",
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/kezdodik-a-tisztviselotelepi-csomopontok-akadalymentesitese/",
    "date": "2026-11-19T09:06:51Z"
+  },
+  {
+   "id": "a99b90abaeaa",
+   "title": "Szombaton ismét Rákóczi reggeli a vásárcsarnokban",
+   "source": "Józsefváros Újság",
+   "url": "https://jozsefvarosujsag.hu/szombaton-ismet-rakoczi-reggeli-a-vasarcsarnokban/",
+   "date": "2026-11-19T05:56:00Z"
   },
   {
    "id": "ac80997af581",
@@ -407,20 +421,6 @@
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/tobb-zold-helyben-tartott-csapadekviz-indul-a-baross-utcai-parkolo-fejlesztese/",
    "date": "2026-11-03T09:31:11Z"
-  },
-  {
-   "id": "1ae2614786d1",
-   "title": "A Józsefvárosi Múzeum novemberi programjai",
-   "source": "Józsefváros",
-   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/a-jozsefvarosi-muzeum-novemberi-programjai-2/",
-   "date": "2026-11-03T09:05:06Z"
-  },
-  {
-   "id": "1c7fba20058d",
-   "title": "A Ludovika Uszoda átmenetileg zárva",
-   "source": "Józsefváros",
-   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/a-ludovika-uszoda-atmenetileg-zarva/",
-   "date": "2026-11-03T06:15:17Z"
   }
  ]
 }

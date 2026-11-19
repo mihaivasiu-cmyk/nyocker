@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-19T02:34:42Z",
+ "updated": "2026-11-19T20:37:40Z",
  "items": [
   {
    "id": "419825114b76",
@@ -36,15 +36,6 @@
    "note": "November 27-én, (pénteken) 20:00-tól 22:00-ig újra moldvai és balkáni táncdallamokkal érkezünk! Ambrus Bonifác - furulya, kaval, trombita Albert János - furulya, kaval, szaxofon Veres Vilmos -…"
   },
   {
-   "id": "4a9ec36f8630",
-   "title": "Transz Kalahári",
-   "venue": "Kerge Kulturklub",
-   "start": "2026-11-28T20:00+01:00",
-   "source": "calendar:Kerge Kulturklub",
-   "spot": "kerge",
-   "note": "Zenéink: örmény, arab, indiai, afgán, szefard, török, üzbég és moldvai népzenék, sok improvizációval. Mezey Péter: fuvola, bansuri, ének Lábos Szabolcs: gitár, saz, azeri tar Hajnal Péter: bőgő…"
-  },
-  {
    "id": "735f459f0146",
    "title": "Cserga táncház",
    "venue": "Kerge Kulturklub",
@@ -65,6 +56,14 @@
    "title": "Gyimesi",
    "venue": "Kerge Kulturklub",
    "start": "2026-12-11T20:30+01:00",
+   "source": "calendar:Kerge Kulturklub",
+   "spot": "kerge"
+  },
+  {
+   "id": "17f1b55426b0",
+   "title": "Transz Kalahári",
+   "venue": "Kerge Kulturklub",
+   "start": "2026-12-12T16:30+01:00",
    "source": "calendar:Kerge Kulturklub",
    "spot": "kerge"
   },

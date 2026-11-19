@@ -3,6 +3,8 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Személyes gratuláció a kitüntetett kolléganőknek — Hírstart (2026-11-18) <https://www.hirstart.hu/hk/20261119_szemelyes_gratulacio_a_kituntetett_kolleganoknek> `7b0f248fa843`
+- [ ] Jégfolyosó és fényinstallációk: november 27-én indul az adventi forgatag Dunakeszin — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/jegfolyoso-es-fenyinstallaciok-november-27-en-indul-az-adventi-forgatag-dunakeszin/> `8c8fd498ff81`
 - [ ] Pénzt kaphatnak a biatorbágyi civil szervezetek, december 10-ig lehet pályázni — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/penzt-kaphatnak-a-biatorbagyi-civil-szervezetek-december-10-ig-lehet-palyazni/> `1babb5d5f863`
 - [ ] 436 ötletből 53 maradt versenyben: így lehet szavazni a dunakeszi közösségi költségvetésről — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/436-otletbol-53-maradt-versenyben-igy-lehet-szavazni-a-dunakeszi-kozossegi-koltsegvetesrol/> `97bc13aad700`
 - [ ] Vasárnapig küldhetnek ötletet a szentendreiek, városrészenként 15 millió forintról dönthetnek — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/vasarnapig-kuldhetnek-otletet-a-szentendreiek-varosreszenkent-15-millio-forintrol-donthetnek/> `362db39117e9`

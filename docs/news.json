@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-18T15:37:50Z",
+ "updated": "2026-11-19T11:40:17Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,13 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "2eae1bc23947",
+   "title": "Kezdődik a tisztviselőtelepi csomópontok akadálymentesítése",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/kezdodik-a-tisztviselotelepi-csomopontok-akadalymentesitese/",
+   "date": "2026-11-19T09:06:51Z"
   },
   {
    "id": "ac80997af581",
@@ -414,13 +421,6 @@
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/a-ludovika-uszoda-atmenetileg-zarva/",
    "date": "2026-11-03T06:15:17Z"
-  },
-  {
-   "id": "eb3fddf5d440",
-   "title": "„Ha fél megfogni a babát, és nincs semmi segítsége, akkor mi itt vagyunk neki”",
-   "source": "24.hu",
-   "url": "https://24.hu/belfold/2026/10/31/biztos-kezdet-gyerekhaz-jozsefvaros-riport-24extra/",
-   "date": "2026-10-31T13:01:38Z"
   }
  ]
 }

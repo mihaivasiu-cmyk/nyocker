@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-19T20:37:37Z",
+ "updated": "2026-11-20T11:40:15Z",
  "items": [
   {
    "id": "dyms-final-invitation",
@@ -8,6 +8,20 @@
    "source": "New music",
    "url": "https://decolonizeyourmind.bandcamp.com/album/a-final-invitation-to-an-uncompromising-acrobatic-beam",
    "date": "2026-11-24T00:00:00Z"
+  },
+  {
+   "id": "cc2e0d7e4c13",
+   "title": "Állatos kulcstartó és hajdísz készítés",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/allatos-kulcstarto-es-hajdisz-keszites/",
+   "date": "2026-11-20T09:33:52Z"
+  },
+  {
+   "id": "1b2b851ecd39",
+   "title": "Gyermekjogok Világnapja Józsefvárosban – a gyerekeké a főszerep!",
+   "source": "Józsefváros",
+   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/gyermekjogok-vilagnapja-jozsefvarosban-a-gyerekeke-a-foszerep/",
+   "date": "2026-11-20T08:54:00Z"
   },
   {
    "id": "56712324902e",
@@ -407,20 +421,6 @@
    "source": "Józsefváros",
    "url": "https://jozsefvaros.hu/english/news-in-the-district/2026/11/more-green-space-more-rainwater-retained-on-site-redevelopment-of-the-baross-utca-parking-area-begins/",
    "date": "2026-11-03T11:01:37Z"
-  },
-  {
-   "id": "9fb5c51a2be6",
-   "title": "Férfiak egészsége – figyeljünk magunkra, ne csak akkor, ha baj van!",
-   "source": "Józsefváros",
-   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/ferfiak-egeszsege-figyeljunk-magunkra-ne-csak-akkor-ha-baj-van/",
-   "date": "2026-11-03T09:38:42Z"
-  },
-  {
-   "id": "4308b5795aad",
-   "title": "Több zöld, helyben tartott csapadékvíz: indul a Baross utcai parkoló fejlesztése",
-   "source": "Józsefváros",
-   "url": "https://jozsefvaros.hu/otthon/hirdetotabla/hirek/2026/11/tobb-zold-helyben-tartott-csapadekviz-indul-a-baross-utcai-parkolo-fejlesztese/",
-   "date": "2026-11-03T09:31:11Z"
   }
  ]
 }

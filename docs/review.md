@@ -3,6 +3,8 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Napok óta keresik a 14 éves józsefvárosi Anasztáziát, a rendőrség a lakosság segítségét kéri — budapestkornyeke.hu (2026-11-20) <https://budapestkornyeke.hu/napok-ota-keresik-a-14-eves-jozsefvarosi-anasztaziat-a-rendorseg-a-lakossag-segitseget-keri/> `8fce1259660d`
+- [ ] Botrány az Operában: megalázó bánásmód miatt azonnali belső vizsgálatot rendeltek el az egyik igazgató ellen, a felfüggesztését kérik — budapestkornyeke.hu (2026-11-20) <https://budapestkornyeke.hu/botrany-az-operaban-megalazo-banasmod-miatt-azonnali-belso-vizsgalatot-rendeltek-el-az-egyik-igazgato-ellen-a-felfuggeszteset-kerik/> `0a4ac930700a`
 - [ ] Péceli fenyő lesz az ország karácsonyfája, amelyet a Kossuth téren állítanak fel — budapestkornyeke.hu (2026-11-19) <https://budapestkornyeke.hu/peceli-fenyo-lesz-az-orszag-karacsonyfaja-amelyet-a-kossuth-teren-allitanak-fel/> `1735137a8013`
 - [ ] Személyes gratuláció a kitüntetett kolléganőknek — Hírstart (2026-11-18) <https://www.hirstart.hu/hk/20261119_szemelyes_gratulacio_a_kituntetett_kolleganoknek> `7b0f248fa843`
 - [ ] Jégfolyosó és fényinstallációk: november 27-én indul az adventi forgatag Dunakeszin — budapestkornyeke.hu (2026-11-18) <https://budapestkornyeke.hu/jegfolyoso-es-fenyinstallaciok-november-27-en-indul-az-adventi-forgatag-dunakeszin/> `8c8fd498ff81`
@@ -23,5 +25,6 @@ Untouched stories disappear after 14 days.
 - [ ] Újabb három hónapra befagyasztották az Airbnb-piacot — msn.com (2026-11-11) <https://www.msn.com/hu-hu/hirek/other/%C3%BAjabb-h%C3%A1rom-h%C3%B3napra-befagyasztott%C3%A1k-az-airbnb-piacot/ar-AA2heBdQ> `9ca71d3d9070`
 - [ ] 19,2 milliárd forint volt a tét: kihúzták az Eurojackpot keddi nyerőszámait — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004611-19-2-milliard-forint-volt-a-tet-kihuztak-az-eurojackpot-keddi-nyeroszamait> `e27e2a14b308`
 - [ ] Egy józsefvárosi loft, ahol nappal reklámfilmek forognak, este exkluzív vacsorákat rendeznek — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11004597-egy-jozsefvarosi-loft-ahol-nappal-reklamfilmek-forognak-este-exkluziv-vacsorakat-rendeznek> `d98c748e34f9`
+- [ ] Most érkezett, brutális esőzés tombol: ekkor tisztul ki végre az ég — hirnavigator.hu (2026-11-10) <https://hirnavigator.hu/hir/11002998-most-erkezett-brutalis-esozes-tombol-ekkor-tisztul-ki-vegre-az-eg> `7491180ab355`
 
 <!-- rejected:  -->

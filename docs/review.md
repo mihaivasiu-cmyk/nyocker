@@ -3,6 +3,9 @@
 Change `[ ]` to `[x]` to publish a story, or to `[n]` to drop it.
 Untouched stories disappear after 14 days.
 
+- [ ] Ezek a települések lettek a Virágos Magyarország verseny idei győztesei — agroinform.hu (2026-11-21) <https://www.agroinform.hu/gazdaelet/ezek-a-telepulesek-lettek-a-viragos-magyarorszag-verseny-idei-gyoztesei-108484-001> `a8515fd12073`
+- [ ] Kihirdették a Virágos Magyarország verseny 2026-os nyerteseit – A Balaton-régióból Alsóörs fődíjas, Paloznak és Balatonudvari különdíjas lett — hirbalaton.hu (2026-11-20) <https://www.hirbalaton.hu/kihirdettek-a-viragos-magyarorszag-verseny-2026-os-nyerteseit-a-balaton-regiobol-alsoors-fodijas-paloznak-es-balatonudvari-kulondijas-lett/> `3b4ec6f91915`
+- [ ] Virágos Magyarország: itt van a győztesek listája — egerszegihirek.hu (2026-11-20) <https://www.egerszegihirek.hu/belfold/viragos-magyarorszag-itt-van-a-gyoztesek-listaja> `d2cb82923f18`
 - [ ] Virágos Magyarország: itt a győztesek listája — Infostart (2026-11-20) <https://infostart.hu/belfold/2026/11/20/viragos-magyarorszag-itt-a-gyoztesek-listaja> `d8be8c15cbb0`
 - [ ] Kihirdették a Virágos Magyarország verseny 2026-os nyerteseit — alon.hu (2026-11-20) <https://www.alon.hu/orszagos-hirek/2026/11/kihirdettek-a-viragos-magyarorszag-verseny-2026-os-nyerteseit> `243b094dc67a`
 - [ ] Napok óta keresik a 14 éves józsefvárosi Anasztáziát, a rendőrség a lakosság segítségét kéri — budapestkornyeke.hu (2026-11-20) <https://budapestkornyeke.hu/napok-ota-keresik-a-14-eves-jozsefvarosi-anasztaziat-a-rendorseg-a-lakossag-segitseget-keri/> `8fce1259660d`
